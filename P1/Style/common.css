@@ -150,7 +150,7 @@ header>img:hover {
 
 /* Archive Images */
 header div.arcHeaderImg {
-    /* background-image: url("../Photos/img-0001-HQ-SingularRedPinkRose.jpg"); */
+    /* background-image: url("../Images/img-0001-HQ-SingularRedPinkRose.jpg"); */
     transition: opacity 1s, filter 1s;
 }
 
@@ -216,7 +216,7 @@ div.pageBreak {
 }
 
 div.headerBreak {
-    height: 15vh;
+    height: 7vh;
     width: 100%;
 }
 
@@ -227,26 +227,86 @@ div.headerBreak {
 
 /* ARCBLOCKS */
 
-.arcBlock {
+.arcBlock, .imgBlock {
+    overflow: hidden;
+    position: relative;
     display: block;
     float:left;
-    width: 40%;
+    width: 45%;
+    height: 20em;
     margin: 2.5%;
     border-radius: 0.5em;
     border: 2px solid black;
     background-color: #DDD;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* opacity: 0.8; */
+    filter: grayscale(70%);
+    transition: opacity 1s, filter 1s;
+} .arcBlock:hover {
+    /* opacity: 1; */
+    filter: grayscale(0%);
+} 
+.arcBlockHeader {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0.3em 0.5em 0.5em 0.5em;
+    color: #111;
+    border-radius: 0 0.5em 0 0;
+    background-color: rgba(50,50,50,0);
+    opacity: 1;
+    transition: color 1s, background-color 1s, opacity 1s, transform 1s;
+} .arcBlock:hover .arcBlockHeader {
+    color: rgb(255, 47, 82);
+    background-color: rgba(40,40,40,0.6);
+    
+}
+
+.arcBlockHeaderTitle {
+    padding: 0;
+    margin: 0;
+}
+.arcBlockLink {
+    display: block;
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+.arcBlockHeader {
+    
 }
 
 .arcBlockImg {
     display: block;
     float: right;
-    width: 40%;
-    background-size: cover;
-    background-repeat: no-repeat;
+    width: 100%;
+    height:5em;
     border-radius: 0.4em;
 } .arcBlockImg:before {
     /* Edits height to keep aspect ratio */
-    content: "";
+    /* content: "";
     display: block;
-    margin-top: 70%;
+    margin-top: 70%; */
 }
+
+.imgBlock {
+    display: block;
+    float: left;
+    width: 40%;
+    position: relative;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+/* .imgBlock > img {
+    display: block;
+    max-width: 200%;
+    max-height: 100%;
+    margin: auto; 
+} */
+

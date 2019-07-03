@@ -7,7 +7,7 @@
     <?php 
     // require "../Resources/head.php";
     require "../Resources/nav.php";?>
-    <div class="headerBreak"></div>
+    <div class="breakHeader"></div>
 
 <div class="centeredBox">
     <h2>Contact Us</h2>

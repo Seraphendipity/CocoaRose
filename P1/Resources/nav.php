@@ -8,11 +8,12 @@
         //3: Calculated, is it the current site (in hindsight not necessary at all, oh well; TODO: optimize;)
         //4: Boolean, does it need to be right adjusted
 $URI =  $_SERVER['REQUEST_URI'];
+$ROOT = basename(dirname(dirname(__FILE__)));
 $NavArr = Array(
-    array("Home","/P1/Main/home.php", "home", "", false),
-    array("Archive","/P1/Main/archive.php", "folder-open", "", false),
-    array("Images","/P1/Main/images.php", "picture", "", false),
-    array("Contact","/P1/Main/contact.php", "question-sign", "", true)
+    array("Home","/{$ROOT}/Main/home.php", "home", "", false),
+    array("Archive","/{$ROOT}/Main/archive.php", "folder-open", "", false),
+    array("Images","/{$ROOT}/Main/images.php", "picture", "", false),
+    array("Contact","/{$ROOT}/Main/contact.php", "question-sign", "", true)
 );
 
 echo '<nav class="site">';
@@ -22,7 +23,7 @@ while(isset($NavArr[$i][0])) {
     echo '<a href="'.$NavArr[$i][1].'" class="'.$NavArr[$i][3].' '.($NavArr[$i][4]?'NavFloatRight':'').'"><div><i class="glyphicon glyphicon-'.$NavArr[$i][2].'"></i><br><p>'.$NavArr[$i][0].'</p></div></a>';
     $i++;
 }
-echo '</nav>'; 
+echo '</nav><div class="main">'; 
 
 //LEGACY
 // <a href="../Main/home.php"><div><i class="glyphicon glyphicon-home"></i><br><p>Home</p></div></a>

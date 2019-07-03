@@ -1,3 +1,4 @@
+</div> <!-- MAIN -->
 <div class="breakFooter"></div>
 <footer class="mainFooter">
     <nav>
@@ -6,4 +7,5 @@
         <a href="mailto:elijah@kinetic.com">elijah@kinetic.com</a>
     </nav>
     <p>&copy; Copywright 2019, ElijahTheRose</p>
+    <div class="breakClear"></div>
 </footer>

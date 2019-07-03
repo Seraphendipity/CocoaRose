@@ -7,8 +7,7 @@
     <?php 
     // require "../Resources/head.php";
     require "../Resources/nav.php";
-    echo '<div class="headerBreak"></div>';
-    echo '<div class="main">';
+    echo '<div class="breakHeader"></div>';
 
     $id = 0; //post index/id
     $postsPerPage = 20;
@@ -23,7 +22,6 @@ POST;
     $id++;$j++;}
     ?>
     <div class="breakClear"></div>
-    </div>
     
     <?php require "../Resources/footer.php";?>
 </body>

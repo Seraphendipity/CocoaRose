@@ -2,7 +2,7 @@
 
 echo '<!DOCTYPE html>';
 require("../Resources/head.php");
-echo '<body onload="arcPageLoader()">';
+echo '<body class="arc" onload="arcPageLoader()">';
 require("../Resources/nav.php");
 
 $id = $_GET["id"];
@@ -24,7 +24,7 @@ if(!isset($id)) {
             url(../Images/'.$header[1].');"></div>',
         '<button class="arcHeaderBtn" onclick="arcShrinkTitle()">'
             .$header[0].'</button>',
-        '</header> <div class="pageBreak"></div>',
+        '</header> <div class="breakPage"></div>',
         '<section class="textPoem"><h2>'.$header[2].'</h2><p>';
     while (!feof($fo)) { 
         $s = fgets($fo, 512);

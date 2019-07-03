@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 
 <head>
-    <meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script></script>
     <link rel="stylesheet" type="text/css" href="../Style/common.css">
+    <link rel="stylesheet" type="text/css" href="../Style/home.css">
 </head>
 
 <body>
-    <?php include "../Resources/nav.php" ?>
     <header id="photoIntro">
         <!-- The Photo intro is the top-most picture that greets the user -->
         <picture>
             <img class="imgHome" src="../Images/img-0000-HQ-FriendsAtTheZoo.jpg" alt="" height="800" width="1000">
         </picture>
     </header>
-
+    <?php include "../Resources/nav.php" ?>
     <section id="textIntro">
         <!-- This text introduces the user to the site. Nothing fancy. -->
         <h2>Creating Somethingness...</h2>

@@ -9,14 +9,13 @@
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
 body {
     /* background-color: #404040; */
-    /* background-image: linear-gradient(to left bottom, #222, #555); */
-    background-image: linear-gradient(to top left, rgb(250, 102, 57), rgb(250, 57, 99));
+    background-image: linear-gradient(to left bottom, #222, #555);
     border: 0;
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    position: relative;
 }
+
 
 /* NAVIGATION BAR */
 
@@ -32,8 +31,8 @@ body {
         padding: 0;
         position: fixed;
         top: 0;
-        width: 100%;
-        z-index: 5;
+        width: 100%
+        /* z-index: 5; */
     } nav.home {
         position: sticky;
         /* TODO:  later need to make only home sticky */
@@ -122,45 +121,7 @@ body {
         width:100%
     }
 
-/* FOOTER */
-.mainFooter {
-    position: absolute;
-    bottom: 0;
-    float:left;
-    background-color: #1B1B1B;
-    width: 100%;
-    height: 5vh;
-    color: #CCC;
-    padding: 5px;
-} .mainFooter nav {
-    display: right; 
-    float: left;
-} .mainFooter p {
-    display: block;
-    float: right;
-} .mainFooter a {
-    color: #CCC;
-    transition: color 1s;
-} .mainFooter a:hover {
-    text-decoration: none;
-    color: #EEE;
-}
-
-.breakClear {
-    clear: both;
-}
-
-.breakFooter {
-    height: 5vh;
-}
-
 /* HEADER IMAGE */
-
-hr {
-    width: 90%;
-    opacity: 0.8;
-    
-}
 
 header {
     margin: 0;
@@ -281,11 +242,11 @@ div.headerBreak {
     background-repeat: no-repeat;
     background-position: center;
     /* opacity: 0.8; */
-    /* filter: grayscale(70%); */
+    filter: grayscale(70%);
     transition: opacity 1s, filter 1s;
 } .arcBlock:hover {
     /* opacity: 1; */
-    filter: brightness(120%);
+    filter: grayscale(0%);
 } 
 .arcBlockHeader {
     position: absolute;
@@ -311,7 +272,7 @@ div.headerBreak {
     display: block;
     position: absolute;
     height: inherit;
-    width: 100%;
+    width: inherit;
     color: inherit;
     text-decoration: none;
 }
@@ -324,7 +285,7 @@ div.headerBreak {
     display: block;
     float: right;
     width: 100%;
-    height: 5em;
+    height:5em;
     border-radius: 0.4em;
 } .arcBlockImg:before {
     /* Edits height to keep aspect ratio */
@@ -333,69 +294,10 @@ div.headerBreak {
     margin-top: 70%; */
 }
 
-.homeArcBlock {
-    display: block;
-    width: 100%;
-    height: 15em;
-    overflow: hidden;
-    transition: filter 0.5s, box-shadow 0.5s;
-} .homeArcBlock:hover {
-    box-shadow: 5px 5px 10px #1B1B1B inset;
-    filter: brightness(80%);
-} .homeArcBlock:first-child {
-    border-radius: 15px 15px 0 0;
-} .homeArcBlock:last-child {
-    border-radius: 0 0 15px 15px;
-}
-
-.homeArcBlockLink {
-    display: block;
-    width: 30%;
-    height: 75%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    float: left;
-    box-shadow: inherit;
-    border-radius: 0 0 8px 0;
-}
-
-.homeArcBlockHeader {
-    display: block;
-    float: left;
-    width:70%;
-}
-.homeArcBlockHeader h3 {
-    margin: 0;
-    font-size: 30px;
-}
-
-.homeArcBlock:nth-child(odd) {
-    /* background-color: rgba(255,255,255,0.2); */
-    background-color: rgba(255,255,255,0.1);
-} .homeArcBlock:nth-child(even)>a {
-    float: right;
-    border-radius: 0 0 0 8px;
-
-} .homeArcBlock:nth-child(even) header {
-    float: right; 
-    text-align: right;
-} .homeArcBlock:nth-child(even):hover {
-    box-shadow: -5px 5px 10px #1B1B1B inset;
-}
-
-.imgHome {
-    max-width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    
-    
-}
-
 .imgBlock {
     display: block;
     float: left;
-    width: 45%;
+    width: 40%;
     position: relative;
     border-radius: 0.5em;
     overflow: hidden;
@@ -408,41 +310,3 @@ div.headerBreak {
     margin: auto; 
 } */
 
-/* FORMS */
-.centeredBox {
-    width: 80%;
-    margin: 0 auto;
-    background-color: #fff; 
-    padding: 2em;
-    border-radius: 2em;
-    opacity: 0.95;
-}
-
-.form {
-    border-radius: 0.5;
-} 
-
-
-
-.formTextarea {
-    resize: vertical;
-    width: 100%;
-    /* color: rgb(250, 102, 57);rgb(250, 57, 99) */
-}
-
-.form:hover {
-}
-.formSubmit {
-    border: 1px solid #555;
-    width: 30%;
-    height: 3em;
-    color: rgb(0, 207, 52);
-    background-color: inherit;
-    transition: color 0.5s, background-color 0.5s;
-    border-radius: 0.5em;
-    /* float: right; */
-    opacity: 0.9;
-} .formSubmit:hover {
-    color: white;
-    background-color: rgb(0, 197, 76);
-}

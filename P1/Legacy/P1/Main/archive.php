@@ -34,6 +34,6 @@ echo <<<POST
 POST;
     $id++;}
     ?>
+
     </div>
-    <?php require "../Resources/footer.php";?>
 </body>

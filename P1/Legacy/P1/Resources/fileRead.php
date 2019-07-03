@@ -22,7 +22,6 @@ function fileRead($id, $maxLines) {
             // $bNewLine = ($line == $EOL) || ($line == $EOLCR);
             // echo ( $bNewLine ? '</p><p>' : '<span>' ).$line.'</span>';
         }
-        fclose($fo);
         return ($file);
     }
 }

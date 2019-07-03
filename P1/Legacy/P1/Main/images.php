@@ -12,6 +12,7 @@
 
     $id = 0; //post index/id
     $postsPerPage = 20;
+    require "../Resources/fileRead.php";
     $pics = array_slice(scandir('../Images/'), 2);
     $j = 0;
     while ( ($j < sizeof($pics)) && ($id < $postsPerPage) ) {
@@ -22,9 +23,7 @@ echo <<<POST
 POST;
     $id++;$j++;}
     ?>
-    <div class="breakClear"></div>
+
     </div>
-    
-    <?php require "../Resources/footer.php";?>
 </body>
 <!-- style='background-image: url(../Images/{$file[1]});' -->

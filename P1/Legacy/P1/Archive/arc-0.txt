@@ -1,0 +1,61 @@
+Flowers
+img-0001-HQ-SingularRedPinkRose.jpg
+Why do we love flowers...
+Flowers have long been adored as symbols of beauty, love, fettility, innocence, hope, and other such positvely-connotated words.
+They have inspired many a greater and lesser individual to write symbolic and lovely prose. <span class="textHL">This is not that.</span>
+
+No, while I attempt to be 
+<span class="textToolTipWord">wordy
+<span class="textToolTipDefinition">sesquipedalian adj. characterized by long words; long-winded</span></span>
+such that I present myself as well-versed, I am myself not that great at the literary arts. I find it dificult to
+quantitate and very abstrast, both its strength as well as its weakness. The ambiguity allows interoperability, like
+a very vague root class or function that serves to create others down the road, which enables literary fans to discuss and 
+develop ideas from the novel at length. 
+ But the cost is the lack of structure. That is not to say poetry and novels, as well as their analyses, do not have structure --
+far from it, developing structured arguements is an essential art to developing well-designed pieces. Simply put, though,
+the lack of specificty removes the pointedness that more direct approaches may have.
+
+Let us take the Bible, for instance. One of <em>the</em> most alluded to works of all time and the cornerstone of the 
+<a href="https://www.worldatlas.com/articles/largest-religions-in-the-world.html">the world's largest religion.</a> However, the same heavy use of symbolism and morals that allowed it to survive through
+numerous centuries also lends itself to the rampant issue of religious sects and denominations: baptist, catholic, methodist, lutheran, etc.
+Each sect believes in a different interpretation of parts of the Bible and preaching that its view is the correct meaning meant for us.
+These differences in oppinion can range from nuances on what we are allowed to eat to having slave-owners and the enslaved alike to use the book as the core for their platforms. 1984 has a similar issue: it is a terrific dystopian novel that warns of an overpowering government, but is that government born out of the far right or far left (or both)? 
+
+That is why ambiguity can be dangerous, for the freedom it leaves in interpretation by the readers
+can be abused easily. With mathematics, you can rarely "fluff" a proof or twist words into some axiom. There must be foundation, evidence, and reasoning
+that definitively proves your claims on the basis of given assumptions. With programming, even random functions are only pseudo-random, 
+everything hinging on the way a programmer writes their software into existence based on defined rules and principles.
+I thusly appreciate these subjects more. I know that, if I work hard enough, I can find a definitive answer and truth behind any 
+solution (at least in the capacity of anything to be definitive built off of our understanding and assumptions). There is an air of
+honesty, of skill. You do not have to decipher between truly great poets and those who are merely good at fluff. Not entirely, but 
+it is more black and white, a high-contrast, as opposed to the grey ambiguity of words.
+
+Yet this speaks moreover to my ineptitude more than a universal truth. As a child I adored the concepts of justice -- mercy and retribution, punishment
+and reward. There was a victor, and there was a victim. I was a "tattle-tale" or "snitch" to others, but to myself I was enacting deliverance. When you grow-up, 
+though, you are supposed to shed the "illusion" of a black and white world and don on adulthood with all of its mixed shades.
+
+ Indeed, many famous works that are built on the transition (or lack thereof in some cases) from childhood to adulthood use the cracking of the barrier as a major theme: 
+Catcher in the Rye, To Kill a Mockingbird, Tom Sawyer/Huckleberry Finn, Great Expectations, and the rest of the Highschool Reading checklist. The black and white spilling
+onto a singular canvas, producing a more nuanced and messy picture but one that, supposedly, reflects a truer reality.
+
+Yet, while like most I have of course come to recognize the amiguity of the world, I still like to hold onto the old black and white. It's soothing, like reliving childhood
+fantasies. Mind you, I'm not one to hold nolstagia at my core and proclaim daily that the grass was greener yesterday. That said, I still feel child-ish at my core. I still
+like to enact fantasy adventures, hold to firm rules, and delve into mathematics and programming more than the arts. I suppose most everyone does, though, to some extent.
+        
+Which, to vainly try to remain on-topic, I suppose is the reason I do not appreciate flowers that much, or fauna in general for that matter. Yes, they are beautiful (or can be at least),
+but also messy. They mix and match, varying in color and output. They are dificult to quantify and seperate into sections -- where does the root end and the stem begin? How can one wade into
+an underbrush and count every leaf there? This is not even delving into their literary use. Is a flower only meant to be defiled; does the white petal exist only so that it may be corrupted for 
+whatever moral is needed? The leaves of a stem: all contributing to one goal or competing for resources; competitive cooperation or cooperative competition?
+        
+And even with these simple questions you see my dilemna:  while offering that these are the "greys," I still imply a dichotomy. Yes or no, this or that. Maybe this and that but at a ratio.
+I do not consider instead some more enlightened question free of the built-in assumptions, relating to my refusal to address such open-ended problems. I dislike it, I am not mature
+or intelligent enough to tackle these problems, and thus incetead of leaving them messily about I deny them conception in the first place. A self-delusion.
+        
+It is said that 'tis better to die than be killed. That's why, I suppose, I deceive myself. I will not have my very way of thinking and foundation shaken by such an innocuous plant. Nay; should I have to drown in the amiguity it will be by my own hand and choosing. The mask of complexity and isolation shall be
+forged by myself and myself alone to hide the dread of the Grey. I would rather be my own executioner and outwardly prefer black and white for a persona instead of being
+challenged out in the open by the color of the flower. 
+        
+Afterall, the deadliest sin is pride. I cannot get over myself enough to even address such core concerns, or perhaps I am simply unwilling. Whatever the case, it makes me hesitant to sit there too long
+with these colored and silent sirens.
+        
+Thank you for stopping and smelling the Roses with me.

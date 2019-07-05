@@ -10,10 +10,10 @@
 $URI =  $_SERVER['REQUEST_URI'];
 $ROOT = basename(dirname(dirname(__FILE__)));
 $NavArr = Array(
-    array("Home","/{$ROOT}/Main/home.php", "home", "", false),
-    array("Archive","/{$ROOT}/Main/archive.php", "folder-open", "", false),
-    array("Images","/{$ROOT}/Main/images.php", "picture", "", false),
-    array("Contact","/{$ROOT}/Main/contact.php", "question-sign", "", true)
+    array("Home","/{$ROOT}/Main/home", "home", "", false),
+    array("Archive","/{$ROOT}/Main/archive", "folder-open", "", false),
+    array("Images","/{$ROOT}/Main/images", "picture", "", false),
+    array("Contact","/{$ROOT}/Main/contact", "question-sign", "", true)
 );
 
 echo '<nav class="site">';
@@ -23,7 +23,8 @@ while(isset($NavArr[$i][0])) {
     echo '<a href="'.$NavArr[$i][1].'" class="'.$NavArr[$i][3].' '.($NavArr[$i][4]?'NavFloatRight':'').'"><div><i class="glyphicon glyphicon-'.$NavArr[$i][2].'"></i><br><p>'.$NavArr[$i][0].'</p></div></a>';
     $i++;
 }
-echo '</nav><div class="main">'; 
+echo '</nav>';
+echo (($URI != "/{$ROOT}/Main/home") || ($URI != "/{$ROOT}/Main/home") ? '' : '<div class="main">'); 
 
 //LEGACY
 // <a href="../Main/home.php"><div><i class="glyphicon glyphicon-home"></i><br><p>Home</p></div></a>

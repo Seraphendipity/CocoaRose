@@ -6,7 +6,7 @@
 <body>
     
     <?php 
-    // require "../Resources/head.php";
+    // require "../Resources/head";
     require "../Resources/nav.php";?>
     <div class="headerBreak"></div>
    

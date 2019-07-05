@@ -5,7 +5,7 @@
 </head>
 <body>
     <?php 
-    // require "../Resources/head.php";
+    // require "../Resources/head";
     require "../Resources/nav.php";
     echo '<div class="breakHeader"></div>';
 

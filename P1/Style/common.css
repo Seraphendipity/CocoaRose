@@ -218,6 +218,12 @@ ________________________________________*/
         background-image: linear-gradient(to left bottom, #222, #555);
     }
 
+    .arcImg {
+        /* Images that are not the main */
+        max-width: 100%;
+        border-radius: 20px;
+    }
+
     .arcHeaderImg {
         transition: opacity 1s, filter 1s;
     }
@@ -292,7 +298,7 @@ ________________________________________*/
         background-position: center;
         transition: filter 1s;
     } .arcBlock:hover {
-        /* filter: brightness(100%); */
+        filter: brightness(130%);
     } 
 
     .arcBlockHeader {

@@ -15,7 +15,7 @@ potty or eat. However, this also means that at night they go absolutely bat-out-
 and running about. For some this can be a huge drawback, hindering the sleep of the owner, however certain nocturnal
 professions (i.e. engineering and gamers) enjoy these hours of excitement and play as well. For some brief info 
 about them, I created this dossier (parodying <a href="">Ark: Survival Evolved</a>'s style):
-<img src="img-0016-HQ-SugarGliderDossier"></img>
+<img class="arcImg" src="../Images/img-0016-HQ-SugarGliderDossier.png"></img>
 Don't be fooled: the "drawings" are merely images of real gliders with a fair bit of editing. I think. It's been some years...
 
 Regarding my personal possession of these critters, I had two during highschool, after my parents decided to get me these instead

@@ -5,7 +5,7 @@
 </head>
 <body>
     <?php 
-    // require "../Resources/head.php";
+    // require "../Resources/head";
     require "../Resources/nav.php";
     echo '<div class="breakHeader"></div>';
 
@@ -17,7 +17,7 @@
         // echo $file[0];
 echo <<<POST
     <div class='arcBlock' style='background-image: url(../Images/{$file[1]});'>
-        <a class='arcBlockLink' href="../Archive/arc-model.php?id={$id}">
+        <a class='arcBlockLink' href="../Archive/arc-model?id={$id}">
         <header class="arcBlockHeader">
             <h2 class="arcBlockHeaderTitle">{$file[0]}</h2>
             <!--<p class="arcBlockHeaderSubtitle">{$file[2]}

@@ -1,5 +1,5 @@
 <?php
-// FileRead.php
+// FileRead
 // Reads the data from a file and parses its header, picture, subtitle, and text.
 function fileRead($id, $maxLines) {
     if(!isset($id)) {

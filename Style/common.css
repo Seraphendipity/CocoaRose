@@ -1,0 +1,432 @@
+/* COMMON.css -- Serves as the root for all special site-specific stylization */
+
+/* This is serving as a root for ally additional styling outside of the normalize.css */
+@import "./normalize.css";
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+
+/*________________________________________
+____ ____ _  _ _  _ ____ _  _ 
+|    |  | |\/| |\/| |  | |\ | 
+|___ |__| |  | |  | |__| | \|                              
+________________________________________*/
+    body {
+        /* background-color: #404040; */
+        /* background-image: linear-gradient(to left bottom, #222, #555); */
+        background-image: linear-gradient(to top left, rgb(250, 102, 57), rgb(250, 57, 99));
+        border: 0;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        position: relative;
+    }
+
+    .main {
+        padding: 0 10%;
+    }
+
+    p, a, a:hover, a:visited, ul, ol, li, td {
+        /* color: #303030; */
+        color: #DDD;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    
+    h4, h5, h6 {
+        color: #2A2A2A;
+    }
+
+    h1, h2, h3 {
+        color: #222;
+    } 
+
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+    
+    h3 {
+        font-size: 32px;
+    }
+
+    h4 {
+        font-size: 28px;
+    }
+
+    h5 {
+        font-size: 24px;
+    }
+    
+    h6 {
+        font-size: 20px;
+    }
+
+    a, a:visited {
+        padding: 2px 2px;
+        background-color: rgba(200,200,200,0.2);
+        border-radius: 5px; 
+        transition: background-color 0.5s, color 0.5s;
+    } a:hover {
+        background-color: rgba(200,200,200,0.4);
+    } a:active {
+        background-color: rgba(200,200,200,0.6);
+        color: #222;
+    }
+
+    .textToolTipDefinition {
+        opacity: 0;
+        display: none;
+    }
+
+    hr {
+        width: 70%;
+    }
+
+/*________________________________________
+_  _ ____ _  _ 
+|\ | |__| |  | 
+| \| |  |  \/  
+________________________________________*/
+    nav.site {
+        /* background-color: rgb(80, 80, 80); */
+        background-image: linear-gradient( to top left, #222, #1B1B1B);
+        border-width: 0;
+        display: block;
+        margin: 0;
+        opacity: 0.8;
+        overflow: hidden;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 5;
+    }
+
+    /* Nav Link Block */
+    nav.site>a {
+        color: #CCC;
+        display: block;
+        float: left;
+        height: 2.4em;
+        width: 3.4em;
+        padding: 0.12em 0; /*T LR D*/
+        text-align: center;
+        text-decoration: none;
+        transition: color 1s, background-color 1s, padding 1s, height 1s, width 1s;
+    } nav.site>a.NavFloatRight {
+        float: right;
+    } nav.site:hover>a {
+        /* hover expand */
+        height: 3.8em;
+        width: 4em;
+    } nav.site>a:hover { 
+        /* hover color select */
+        background-color: #333; /*30AAAA*/
+        width: 6em;
+        color: #F0F0F0;
+    } nav.site>a:active {
+        /* link - clicked/selected */
+        background-color: #000;
+        color: #FFF;
+    } nav.site>a.currSite {
+        background-color: #111;
+        color: #F0F0F0;
+    }
+
+    nav.site>a i {
+        font-size: 2em;
+    } 
+
+    nav.site>a p {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.75s 0.25s, visibility 1s;
+    } nav.site:hover>a p {
+        opacity: 100;
+        visibility: visible;
+    }
+
+/*________________________________________
+____ ____ ____ ___ ____ ____ 
+|___ |  | |  |  |  |___ |__/ 
+|    |__| |__|  |  |___ |  \ 
+________________________________________*/
+    .mainFooter {
+        position: absolute;
+        bottom: 0;
+        float:left;
+        background-color: #1B1B1B;
+        width: 100%;
+        /* height: 50px; */
+        color: #CCC;
+        padding: 5px;
+    } .mainFooter nav {
+        display: right; 
+        float: left;
+    } .mainFooter p {
+        display: block;
+        float: right;
+        margin: 0;
+    } .mainFooter a {
+        color: #CCC;
+        transition: color 1s;
+        background-color: transparent;
+    } .mainFooter a:hover {
+        text-decoration: none;
+        color: #EEE;
+    }
+
+/*________________________________________
+___  ____ ____ ____ _  _ ____ 
+|__] |__/ |___ |__| |_/  [__  
+|__] |  \ |___ |  | | \_ ___] 
+________________________________________*/
+    .breakHeader {
+        height: 7vh;
+        width: 100%;
+    }
+
+    .breakPage {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .breakClear {
+        clear: both;
+    }
+
+    .breakFooter {
+        height: 60px;
+    }
+
+/*________________________________________
+_  _ ____ _  _ ____ 
+|__| |  | |\/| |___ 
+|  | |__| |  | |___ 
+________________________________________*/
+
+
+/*________________________________________
+____ ____ ____ _  _ _ _  _ ____ 
+|__| |__/ |    |__| | |  | |___ 
+|  | |  \ |___ |  | |  \/  |___ 
+________________________________________*/
+    /* Archive Posts */
+    body.arc {
+        background-image: linear-gradient(to left bottom, #222, #555);
+    }
+
+    .arcImg {
+        /* Images that are not the main */
+        max-width: 100%;
+        border-radius: 20px;
+    }
+
+    .arcHeaderImg {
+        transition: opacity 1s, filter 1s;
+    }
+
+    .arcHeaderBtn {
+        color: #FFF;
+        background-color: inherit;
+        border: none;
+        position: fixed;
+        top: 10vh; 
+        left: 0;
+        width: 100%;
+        font-size: 6em;
+        text-align: center;
+        opacity: 0.7;
+        border-radius: 0 0.6em 0.6em 0;
+        transition: color 1s, background-color 1s, width 1s, top 1s, font-size 1s, opacity 1s;
+    } button.arcHeaderBtn:hover {
+        opacity: 0.5 !important;
+    }
+
+    header div.bgImg {
+        height: 100vh;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: fixed;
+        z-index: -1;
+    }
+
+    section.textPoem {
+        display: block;
+        width: 100%;
+        height: auto;
+    } section.textPoem p {
+        font-size: 1.5em;
+        color: #DDD;
+        width: 60%;
+        float: left;
+        text-align: left;
+        margin: 1em;
+    } section.textPoem p:nth-child(odd) {
+        float: right;
+        text-align: right;
+        color: #EEE;
+    } section.textPoem h2 {
+        text-align:center;
+        float: none;
+        width: 100%;
+    } section.textPoem a {
+            color: #f40d30; 
+            transition: color 1s;   
+    } section.textPoem a:hover {
+            color: #ff1d3f;    
+    }
+
+    /* ArcBlocks */
+    .arcBlock, .imgBlock {
+        overflow: hidden;
+        position: relative;
+        display: block;
+        float:left;
+        width: 45%;
+        height: 20em;
+        margin: 2.5%;
+        border-radius: 0.5em;
+        border: 2px solid black;
+        background-color: #DDD;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: filter 1s;
+    } .arcBlock:hover {
+        filter: brightness(130%);
+    } 
+
+    .arcBlockHeader {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 0.3em 0.5em 0.5em 0.5em;
+        color: #111;
+        border-radius: 0 0.5em 0 0;
+        background-color: rgba(50,50,50,0);
+        opacity: 1;
+        transition: color 1s, background-color 1s, opacity 1s, transform 1s;
+        background-color: rgba(40,40,40,0.6);
+    } .arcBlock:hover .arcBlockHeader {
+        background-color: rgba(40,40,40,0.6);
+        
+    } .arcBlockHeaderTitle {
+        padding: 0;
+        margin: 0;
+        color: rgb(200, 200, 200);
+        transition: color 1s;
+    } .arcBlock:hover h2 {
+        color: white;
+    }
+
+    .arcBlockLink {
+        display: block;
+        position: absolute;
+        height: inherit;
+        width: 100%;
+        color: inherit;
+        text-decoration: none;
+        background-color: transparent;
+    } .arcBlockLink:hover {
+        background-color: transparent;
+    }
+
+    .arcBlockImg {
+        display: block;
+        float: right;
+        width: 100%;
+        height: 5em;
+        border-radius: 0.4em;
+    } 
+
+/*________________________________________
+_ _  _ ____ ____ ____ ____ 
+| |\/| |__| | __ |___ [__  
+| |  | |  | |__] |___ ___] 
+________________________________________*/
+    .imgBlock {
+        display: block;
+        float: left;
+        width: 45%;
+        position: relative;
+        border-radius: 0.5em;
+        overflow: hidden;
+    }
+
+/*________________________________________
+____ ____ ____ _  _ ____ 
+|___ |  | |__/ |\/| [__  
+|    |__| |  \ |  | ___] 
+________________________________________*/
+    .centeredBox {
+        width: 80%;
+        margin: 0 auto;
+        background-color: #fff; 
+        padding: 2em;
+        border-radius: 2em;
+        opacity: 0.95;
+    }
+
+    .formTextarea {
+        resize: vertical;
+        width: 100%;
+        /* color: rgb(250, 102, 57);rgb(250, 57, 99) */
+    }
+
+    .formSubmit {
+        border: 1px solid #555;
+        width: 30%;
+        height: 3em;
+        color: rgb(0, 207, 52);
+        background-color: inherit;
+        transition: color 0.5s, background-color 0.5s;
+        border-radius: 0.5em;
+        /* float: right; */
+        opacity: 0.9;
+    } .formSubmit:hover {
+        color: white;
+        background-color: rgb(0, 197, 76);
+    }
+
+/*________________________________________
+_  _ ____ ___  _ ____    ____ _  _ ____ ____ _   _ 
+|\/| |___ |  \ | |__| __ |  | |  | |___ |__/  \_/  
+|  | |___ |__/ | |  |    |_\| |__| |___ |  \   |   
+________________________________________*/
+
+/* Smol Loli Screen */
+@media only screen and (max-width: 400px) {
+    .main {
+        padding: 0 2.5%;
+    }
+    
+    .mainFooter p {
+        float:left;
+    }
+
+    .arcBlockHeader {
+        text-align: center;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .arcBlock {
+        width: 90%;
+        margin: 5%;
+    }
+}
+
+
+/* Thicc Neesan Screen */
+@media only screen and (min-width: 1400px) {
+    .arcBlock {
+        width: 30%;
+        margin: 1%;
+    }
+
+}

@@ -1,0 +1,38 @@
+<!-- var arcMeta {
+    "title": "Sugar Gliders",
+    "subtitle": "Tiny little fluff balls...",
+    "author": "Elijah T.he Rose",
+    "date": "7.11.2019",
+    "bg-img": "img-0013-HQ-SugarGliderEatingGrape.jpg"} -->
+
+Sugar gliders are quite adorable, if you have ever seen one. They hail from Australia, and being marsupials
+are related to kangaroos, koalas, and the like. Their most distinctive feature, perhaps, is their webbed together
+limbs that form a glider of sorts, allowing them to soften their landings and jump between branches and such.
+
+Gliders are somewhat exotic pets, but not anymore than, say, foxes are. They live long lives (15+ years) and are very
+social animals that bond to humans and their own. They can become very emotionally attached, to the extent of becoming
+depressed and even suicidal in isolation. They ae also quite intelligent, capable of learning their name and some tricks,
+not unlike a small dog or cat. Their biggest pro -- or con, depending on what type of person you are -- is that they are
+nocturnal (hence the big black eyes and typically dull fur-color). This means that they sleep during the day, and as such,
+are great "pocket pets", riding in a pouch or pocket throughout the day while occasionally waking up to eat or
+potty or eat. However, this also means that at night they go absolutely bat-out-of-heck crazy, jumping to and fro
+and running about. For some this can be a huge drawback, hindering the sleep of the owner, however certain nocturnal
+professions (i.e. engineering and gamers) enjoy these hours of excitement and play as well. For some brief info 
+about them, I created this dossier (parodying <a href="">Ark: Survival Evolved</a>'s style):
+<img class="arcImg" src="../Images/img-0016-HQ-SugarGliderDossier.png"></img>
+Don't be fooled: the "drawings" are merely images of real gliders with a fair bit of editing. I think. It's been some years...
+
+Regarding my personal possession of these critters, I had two during highschool, after my parents decided to get me these instead
+of a cat. Although at first hesitant, I grew to love my two girls very much. Unfortunately, like everything
+under my care, they died a few years later. 
+
+I have recently (6.30.2019) acquired two new gliders, though, and plan
+to make them good pets. I am a big fan of cute things (which some see as creepy but that's for another day), and as such
+gliders bring me good deal of joy -- they're extremely soft and they make a purring-esque vibration when they are cold
+or happy and snuggling up to you. Plus, there are few things in the world more adorable than handing
+a half-grape or apple slice and watching the little ones chew on it merrily. In my experience, they also like to curl up
+on your belly, or sit on your shoulder and watch you play games or work, occasionally "kissing" your nose/cheek or
+stick their heads in or around your ear to tickle. That's why I love them -- so small, yet such dense fluffiness and
+cuteness.
+
+

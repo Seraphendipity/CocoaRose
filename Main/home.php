@@ -56,7 +56,7 @@
 
             echo <<<POST
             <div class='homeArcBlock'>
-                <a class='homeArcBlockLink' href="../Archive/arc-model.php?id={$id}" style='background-image: url(../Images/{$header["bg-img"]});'></a>
+                <a class='homeArcBlockLink' href="../Main/archive?id={$id}" style='background-image: url(../Images/{$header["bg-img"]});'></a>
                 <header class="homeArcBlockHeader">
                     <h3 class="homeArcBlockHeaderTitle">{$header["title"]}</h3>
                     <p class="homeArcBlockHeaderSubtitle">{$header["subtitle"]}
@@ -66,7 +66,7 @@
 POST;
             echo '<section class="homeArcBlockSummary"><p>';
                 echo $content; //TODO: This is too much data, need to dynamically grab first lines only, or drop down more...
-            echo "<a href='../Archive/arc-model.php?id={$id}'>...[READ MORE]</a></p></section>";
+            echo "<a href='../Main/archive?id={$id}'>...[READ MORE]</a></p></section>";
             echo '</div>';
 
             $id++;

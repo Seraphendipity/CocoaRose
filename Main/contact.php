@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="../Style/common.css">
+<?php require_once('../Resources/head-common.php'); ?>
 </head>
 <body>
     <?php 
@@ -14,13 +12,13 @@
     <p>Have a question? Want to suggest something? Contact the site owner.</p>
     <form action="../Resources/contactFormHandler.php" method="post" id="contactForm">
         <h3>Name</h3>
-        <input type="text" name="name" class="form formText" ></input>
+        <input type="text" name="name" class="form formText" >
         <h3>Email</h3>
-        <input type="email" name="email" class="form formEmail"></input>
+        <input type="email" name="email" class="form formEmail">
         <h3>Phone</h3>
-        <input type="tel" name="phone" class="form formTel"></input>
+        <input type="tel" name="phone" class="form formTel">
         <h3>Subject</h3>      
-        <!-- <input type="text" name="subject"  class="form formEmail"></input> -->
+        <!-- <input type="text" name="subject"  class="form formEmail"> -->
         <select name="subject"  class="form formEmail">
             <option>Question</option>
             <option>Suggestion</option>
@@ -29,13 +27,14 @@
             <option>Other</option>
         </select>
         <h3>Message</h3>      
-        <!-- <input type="textfield" name="message"></input> -->
+        <!-- <input type="textfield" name="message"> -->
         <textarea name="message" form="contactForm" class="formTextarea"></textarea><br/>
-        <input type="submit" class="formSubmit"></input>
+        <input type="submit" class="formSubmit">
     </form>
 </div>
 
 <?php require "../Resources/footer.php";?>
 
 </body>
+</html>
 <!-- style='background-image: url(../Images/{$file[1]});' -->

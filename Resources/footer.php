@@ -1,7 +1,7 @@
 <?php
-$URI =  $_SERVER['REQUEST_URI'];
-$ROOT = basename(dirname(dirname(__FILE__)));
-echo (($URI != "/{$ROOT}/Main/home") || ($URI != "/{$ROOT}/Main/home") ? '' : '</div>'); ?>
+    $URI =  $_SERVER['REQUEST_URI'];
+    // echo (($URI != "../Main/home") ? '' : '</div>');
+?>
 <div class="breakFooter"></div>
 <footer class="mainFooter">
     <nav>
@@ -12,3 +12,5 @@ echo (($URI != "/{$ROOT}/Main/home") || ($URI != "/{$ROOT}/Main/home") ? '' : '<
     <p>&copy; Copywright 2019, ElijahTheRose</p>
     <div class="breakClear"></div>
 </footer>
+</body>
+</html>

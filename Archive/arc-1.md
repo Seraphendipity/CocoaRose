@@ -39,11 +39,11 @@ hundreds of innocents, or pull the trigger to murder a former marine officer. Fa
 deconstruction would have not been the same if you simply watched Jason become an inhuman slaughterer,
 as you are detached from him and would likely empathize with his friends and write him off as crazy; 
 it is more convincing, however, when you are performing bad-to-the-bone feats like slitting the throat
-of a pirate before tomahawking his friend and burning th rest of them to the ground whilst paragliding --
+of a pirate before tomahawking his friend and burning the rest of them to the ground whilst paragliding --
 the first-person PoV and typical "upgrade on lvl up and be good-er" expectation of games contrasts and masks
 with the increasingly violent and animalistic brutality of Jason as he exceeds even the antagonists in raw
 ferocity, and it is not till the end that the player is shown the logical conclusion of his journey,
-eventually becoming worst than those he killed and losing his initial motives  by gaining power.
+eventually becoming worst than those he killed and losing his initial motives by gaining power.
 (Note: I know these two are contraversial in regards to these plot elements and how effective
 they were in their roles, and there are better examples, but I personally like these two).
 

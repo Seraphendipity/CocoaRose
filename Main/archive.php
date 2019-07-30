@@ -1,4 +1,5 @@
-<?php require("../Resources/head-js.php"); 
+<?php require_once("../Resources/head-js.php"); 
+echo '</head>';
 
     $id = isset($_GET["id"]) ? $_GET["id"] : $id = NULL ;
     if (isset($id) && is_numeric($id)) {
@@ -8,7 +9,6 @@
         |    |__| ___]  |  
         __________________*/        
         echo '<body class="arc" onload="arcPageLoader()">';
-        require("../Resources/nav.php");
         $filename = "../Archive/arc-".$id.".html";
 
         if(!isset($id)) {
@@ -33,8 +33,6 @@
                 echo '</section><div class="endBreak"></div>';
             //_____________________________________________
         }
-        require("../Resources/footer.php");
-        echo '</body>';
 
     } else {
         /*______________________________
@@ -73,9 +71,8 @@ POST;
         //_________________________________________________
 
         echo '<div class="breakClear"></div>';
-        require "../Resources/footer.php";
-        echo '</body>';
     }
+    require_once "../Resources/footer.php";
 
     function get_arc_meta($filename) {
         $header;
@@ -88,6 +85,7 @@ POST;
         }
         return($header);
     }
+    
 ?>
 
 

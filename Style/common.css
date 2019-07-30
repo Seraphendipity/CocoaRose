@@ -24,7 +24,7 @@ ________________________________________*/
         padding: 0 10%;
     }
 
-    p, a, a:hover, a:visited, ul, ol, li, td {
+    p, a, a:hover, a:visited, ul, ol, li, td, figcaption {
         /* color: #303030; */
         color: #DDD;
         font-size: 16px;
@@ -82,6 +82,10 @@ ________________________________________*/
 
     hr {
         width: 70%;
+    }
+
+    .hide {
+        display: none;
     }
 
 /*________________________________________
@@ -358,6 +362,129 @@ ________________________________________*/
         overflow: hidden;
     }
 
+    /* IMAGE FLIP STYLING */
+
+    .flipper {
+        width: 50%;
+        height: 50vh;
+        background-color: transparent;
+        overflow: hidden;
+        perspective: 1000px;
+    }
+
+    .flipperContainer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        /* background-color: rgba(200,200,200,0.2); */
+        transition: transform 0.5s;
+        transform-style: preserve-3d;
+        transform-origin: center right;
+    }
+
+    .imgFlipped {
+        transform: translateX(-100%) rotateY(-180deg) ; 
+    }
+
+    .flipperFront, .flipperBack {
+        position: absolute;
+         /* top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);       */
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        overflow: hidden;
+    }
+
+    .flipperFront {
+        
+    }
+
+
+    .flipperBack {
+        transform: rotateY(180deg);
+        background-color: #222;
+        /* background-image: linear-gradient(to bottom right, #333, #555); */
+
+    }
+
+    .flipperFront .flipperFrontContent {
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+
+    }
+
+    .flipper button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        
+    } .flipper button:hover {
+        color: red;
+    }
+
+    .flipper li {
+       list-style: none ;
+    }
+
+    .flipper figcaption {
+        display: inline;
+    }
+
+    /* IMAGE MODAL STYLING */
+    .modalWindow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(40,40,40,0.6);
+
+        display: none;
+        z-index: 1;
+    }
+
+    .modalWindowActive {
+        display: block;
+    }
+
+    .modalWindow .centeredBox {
+        width: 80%;
+        margin-top: 10vh;
+
+        overflow: hidden;
+    }
+
+    .modalWindow .modalWindowImg {
+        width: 100%;
+        height:100%;
+        object-fit: contain;
+        object-position: 50% 50%;
+    }
+
+    .modalWindowImgContainer {
+        position: relative;
+    }
+
+    .modalWindowImgContainer button {
+        position: absolute;
+    }
+
+    .modalWindowBtnExt {
+        top: 2%;
+        right: 2%;
+    }
+    .modalWindowBtnBck {
+        top: 50%;
+        left: 2%;
+    }
+    .modalWindowBtnFwd {
+        top: 50%;
+        right: 2%;
+    }
 /*________________________________________
 ____ ____ ____ _  _ ____ 
 |___ |  | |__/ |\/| [__  

@@ -1,8 +1,7 @@
-<!DOCTYPE html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="../Style/common.css">
+<?php require_once('../Resources/head-common.php'); ?>
     <link rel="stylesheet" type="text/css" href="../Style/home.css">
+    <meta name="description" content="Introductory page for CocoaRose site.">
+    <meta name="keywords" content="blog,pictures,flowers,Elijah,Rose,Cocoa">
 </head>
 <body>
     <!-- TODO: add Title stuff onto Picture, optimize img, change pic -->
@@ -18,6 +17,7 @@
     | |\ |  |  |__/ |  | 
     | | \|  |  |  \ |__| 
     ________________________________________________________-->
+    <div class="main">
     <section id="textIntro">
         <!-- This text introduces the user to the site. Nothing fancy. -->
         <h2>Creating Somethingness...</h2>
@@ -97,5 +97,5 @@ POST;
         ?><div class="breakClear"></div></section>
     <!--________________________________________________-->
 
-    <?php require "../Resources/footer.php";?>
-</body>
+</div>
+<?php require "../Resources/footer.php";?>

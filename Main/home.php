@@ -5,13 +5,15 @@
 </head>
 <body>
     <!-- TODO: add Title stuff onto Picture, optimize img, change pic -->
-    <header id="photoIntro">
+    <header class="photoIntro">
         <!-- The Photo intro is the top-most picture that greets the user -->
         <picture>
             <img class="imgHome" src="../Images/img-0000-HQ-FriendsAtTheZoo.jpg" alt="" height="800" width="1000">
         </picture>
+        <h1 class="homePageTitle">CocoaRose</h1>
+        <h2 class="homePageSubtitle">A blogging &amp; picture site for me and my beloved little sis.</h2>
     </header>
-    <?php require "../Resources/nav.php" ?>
+    <?php require_once "../Resources/nav.php" ?>
     <!--_______________________________________________________
     _ _  _ ___ ____ ____ 
     | |\ |  |  |__/ |  | 
@@ -98,4 +100,4 @@ POST;
     <!--________________________________________________-->
 
 </div>
-<?php require "../Resources/footer.php";?>
+<?php require_once "../Resources/foot-common.php";?>

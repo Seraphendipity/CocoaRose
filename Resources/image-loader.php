@@ -5,26 +5,30 @@ function getImg( int $uid = 0, int $groupId = 0 ) {
     //Group ID >=  1: Group with all images of that number.
     //All extra pararms are extra classes to add.
     require_once 'db_functions.php';
-    $classes = '';
+    $classes = ' '; $figClasses = ' ';
 
-    foreach (array_slice(func_get_args(),2) as $class) {
-        $classes .= $class.' ';
-    }
+
     $bSemanticImg = ($groupId >= 0);
-    $classes .= ($bSemanticImg) ? 'modalImg flipperFrontContent' : '';
+    $classes .= ($bSemanticImg) ? 'modalImg flipperFrontContent ' : '';
     $classes .= ($groupId >= 1) ? 'modalImgGroup' : '';
-
-    $imgData = db_selectDataByID('cocoarose', 'images', $uid);
-    $src = '../images/'.$imgData['filenameOpt'];
+    foreach (array_slice(func_get_args(),2) as $class) {
+        if($bSemanticImg) {
+            $figClasses .= $class.' ';
+        } else {
+            $classes .= $class.' ';
+        }
+    }
+    $imgData = db_selectDataByID('images', $uid);
+    $src = '../Images/'.$imgData['id'].'.'.$imgData['filename'];
     $width = $imgData['width']; //TODO: widthOpt and widthHd
     $height = $imgData['height']; //TODO: heightOpt and heightHd
     $alt = $imgData['alt'];
     $title = $imgData['title'];
     $cite = $imgData['cite'];
     $author = $imgData['author'];
-    $date = $imgData['date'];
+    $date = $imgData['dateTaken'];
     echo ($bSemanticImg) ? 
-    "<figure class=\"imgFigure flipper\">
+    "<figure class=\"imgFigure flipper{$figClasses}\">
         <div class=\"flipperContainer\">
             <div class=\"flipperFront\">" : '';
     echo        "<img 
@@ -35,7 +39,10 @@ function getImg( int $uid = 0, int $groupId = 0 ) {
                     height=\"{$height}\"
                     class=\"{$classes}\"
                     data-uid=\"{$uid}\"
-                    data-gid=\"{$groupId}\">
+                    data-gid=\"{$groupId}\"
+                    data-cite=\"{$cite}\"
+                    data-author=\"{$author}\"
+                    data-date=\"{$date}\">
                 ";
     echo ($bSemanticImg) ? "
                 <button class=\"imgBtnMeta\">

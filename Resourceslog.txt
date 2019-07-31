@@ -1,0 +1,8 @@
+string(184) "CREATE TABLE IF NOT EXISTS cocoaroseData ( 
+                id INT AUTO_INCREMENT, 
+                
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+

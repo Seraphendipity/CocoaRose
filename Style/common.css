@@ -353,19 +353,19 @@ _ _  _ ____ ____ ____ ____
 | |\/| |__| | __ |___ [__  
 | |  | |  | |__] |___ ___] 
 ________________________________________*/
+
+    /* IMAGE FLIP STYLING */
     .imgBlock {
         display: block;
         float: left;
         width: 45%;
+        margin: 1%;
         position: relative;
         border-radius: 0.5em;
         overflow: hidden;
     }
-
-    /* IMAGE FLIP STYLING */
-
     .flipper {
-        width: 50%;
+        width: 40%;
         height: 50vh;
         background-color: transparent;
         overflow: hidden;
@@ -423,7 +423,11 @@ ________________________________________*/
         right: 0;
         
     } .flipper button:hover {
-        color: red;
+        
+    }
+
+    .flipperContainer button.imgBtnPic {
+        color: #DDD;
     }
 
     .flipper li {
@@ -469,22 +473,56 @@ ________________________________________*/
         position: relative;
     }
 
+    .toolbar {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+    .toolbar .btnAddImg {
+        font-size: 50px;
+        
+    } .toolbar .btnAddImg:hover {
+        color: rgb(0, 228, 0);
+        opacity: 1;
+    }
+
+    .flipperContainer button, .modalWindow button, .btnAddImg {
+        font-size: 30px;
+        background: none;
+        border-radius: 50%;
+        border: none;
+        color: #222;
+        opacity: 0.6;
+        transition: color 0.5s, opacity 0.5s;
+    } 
+    .flipperContainer button:hover, .modalWindow button:hover {
+        opacity: 0.9;
+    }
+
     .modalWindowImgContainer button {
         position: absolute;
     }
 
-    .modalWindowBtnExt {
+    button.modalWindowBtnExt {
         top: 2%;
         right: 2%;
+        color: red;
     }
     .modalWindowBtnBck {
+        color: rgb(0, 204, 255);
+
         top: 50%;
         left: 2%;
     }
     .modalWindowBtnFwd {
+        color: rgb(0, 204, 255);
+
         top: 50%;
         right: 2%;
     }
+
+
+
 /*________________________________________
 ____ ____ ____ _  _ ____ 
 |___ |  | |__/ |\/| [__  
@@ -518,6 +556,11 @@ ________________________________________*/
     } .formSubmit:hover {
         color: white;
         background-color: rgb(0, 197, 76);
+    }
+
+    label {
+        display: block;
+        width: 100%;
     }
 
 /*________________________________________

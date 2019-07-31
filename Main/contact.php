@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<?php require_once('../Resources/head-common.php'); ?>
+<?php require_once '../Resources/head-common.php'; ?>
 </head>
 <body>
-    <?php 
-    // require "../Resources/head";
-    require "../Resources/nav.php";?>
+    <?php require "../Resources/nav.php";?>
     <div class="breakHeader"></div>
 
 <div class="centeredBox">
@@ -33,7 +30,7 @@
     </form>
 </div>
 
-<?php require "../Resources/footer.php";?>
+<?php require "../Resources/foot-common.php";?>
 
 </body>
 </html>

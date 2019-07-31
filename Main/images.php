@@ -5,44 +5,27 @@
 <body>
     <div class="breakHeader"></div>
 
-    <div class="modalWindow">
-        <div class="centeredBox">
-            <header></header>
-            <div class="modalWindowImgContainer">
-                <img class="modalWindowImg">
-                <button class="modalWindowBtn modalWindowBtnExt">
-                    <i class="glyphicon glyphicon-remove"></i></button>
-                <button class="modalWindowBtn modalWindowBtnDir modalWindowBtnBck">
-                    <i class="glyphicon glyphicon-menu-left"></i></button>
-                <button class="modalWindowBtn modalWindowBtnDir modalWindowBtnFwd">
-                    <i class="glyphicon glyphicon-menu-right"></i></button>
-            </div>
-            <div class="modalWindowMeta">
-            </div>
-        </div>
-    </div>
+    
+
+    <div class="toolbar"><button class="btnAddImg"><i class="glyphicon glyphicon-plus"></i></button></div>
 
     <?php 
     // require "../Resources/head";
     require "../Resources/nav.php";
-    echo '
-    ';
+    $table = 'images';
 
-    $id = 0; //post index/id
-    $postsPerPage = 20;
-    $pics = array_slice(scandir('../Images/'), 2);
-    $j = 0;
-    while ( ($j < sizeof($pics)) && ($id < $postsPerPage) ) {
-        getImg($id);
-/*echo <<<POST
-    
-    <div class='arcBlock imgBlock' style="background-image: url(../Images/{$pics[$id]});">
-       <!-- <img src="../Images/{$pics[$id]}"></img> -->
-    </div>
-POST;*/
-    $id++;$j++;}
+
+
+    // $postsPerPage = 20;
+    $data = db_selectData($table);
+    foreach($data as $row)  {
+        getImg($row[0], 1, 'arcBlock');
+    }
     ?>
     <div class="breakClear"></div></div>
     
-<?php require "../Resources/footer.php";?>
+
+
+    
+<?php require "../Resources/foot-common.php";?>
 <!-- style='background-image: url(../Images/{$file[1]});' -->

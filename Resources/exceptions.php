@@ -104,10 +104,11 @@
         static $bDebug = false;    // Shows dev info
         static $bInfo = true;      // Shows client/users info
 
-        private static function logToFile($msg, $filename='log.txt', $dir = './') {
+        private static function logToFile($msg, $filename='log.txt', $dir = '../Resources/') {
+
             $writeType = self::$bAppend ? 'a' : 'w';
             $fo = fopen($dir.$filename, $writeType);
-            fwrite($fo, $msg."\n");
+            fwrite($fo, $msg."\n---\n");
             fclose($fo);
         }
 
@@ -131,7 +132,6 @@
             $bShow = isset($argv[1]) ? $argv[1] : self::$bLogger;
             $modifier = isset($argv[2]) ? $argv[2] : '';
             $modClass = ' logLevel_'.$modifier;
-
             // Sort of a var_export(), but better.
             ob_start();
             var_dump($var);

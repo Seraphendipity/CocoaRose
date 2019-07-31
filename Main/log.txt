@@ -1,0 +1,232 @@
+string(537) "CREATE TABLE IF NOT EXISTS images ( 
+                id INT AUTO_INCREMENT, 
+                filename VARCHAR(128) DEFAULT NULL, filenameOpt VARCHAR(128) DEFAULT NULL, filenameHd VARCHAR(128) DEFAULT NULL, width INT DEFAULT NULL, height INT DEFAULT NULL, alt VARCHAR(128) DEFAULT NULL, title VARCHAR(128) DEFAULT NULL, cite VARCHAR(2048) DEFAULT NULL, author VARCHAR(128) DEFAULT NULL, dateTaken DATETIME DEFAULT NULL, datePosted DATETIME DEFAULT NULL, 
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+
+string(479) "CREATE TABLE IF NOT EXISTS content ( 
+                id INT AUTO_INCREMENT, 
+                title VARCHAR(128) DEFAULT NULL, subtitle VARCHAR(128) DEFAULT NULL, author VARCHAR(128) DEFAULT NULL, mainImgId INT DEFAULT NULL, scheme VARCHAR(128) DEFAULT NULL, colors VARCHAR(128) DEFAULT NULL, content VARCHAR(MAX) DEFAULT NULL, dateTaken DATETIME DEFAULT NULL, datePosted DATETIME DEFAULT NULL, 
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+
+string(405) "CREATE TABLE IF NOT EXISTS users ( 
+                id INT AUTO_INCREMENT, 
+                username VARCHAR(128) DEFAULT NULL, password VARCHAR(256) DEFAULT NULL, token VARCHAR(1024) DEFAULT NULL, userImgId INT DEFAULT NULL, email INT DEFAULT NULL, phone VARCHAR(128) DEFAULT NULL, messageIds VARCHAR(128) DEFAULT NULL, 
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+
+string(537) "CREATE TABLE IF NOT EXISTS images ( 
+                id INT AUTO_INCREMENT, 
+                filename VARCHAR(128) DEFAULT NULL, filenameOpt VARCHAR(128) DEFAULT NULL, filenameHd VARCHAR(128) DEFAULT NULL, width INT DEFAULT NULL, height INT DEFAULT NULL, alt VARCHAR(128) DEFAULT NULL, title VARCHAR(128) DEFAULT NULL, cite VARCHAR(2048) DEFAULT NULL, author VARCHAR(128) DEFAULT NULL, dateTaken DATETIME DEFAULT NULL, datePosted DATETIME DEFAULT NULL, 
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+
+string(479) "CREATE TABLE IF NOT EXISTS content ( 
+                id INT AUTO_INCREMENT, 
+                title VARCHAR(128) DEFAULT NULL, subtitle VARCHAR(128) DEFAULT NULL, author VARCHAR(128) DEFAULT NULL, mainImgId INT DEFAULT NULL, scheme VARCHAR(128) DEFAULT NULL, colors VARCHAR(128) DEFAULT NULL, content VARCHAR(MAX) DEFAULT NULL, dateTaken DATETIME DEFAULT NULL, datePosted DATETIME DEFAULT NULL, 
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+
+string(405) "CREATE TABLE IF NOT EXISTS users ( 
+                id INT AUTO_INCREMENT, 
+                username VARCHAR(128) DEFAULT NULL, password VARCHAR(256) DEFAULT NULL, token VARCHAR(1024) DEFAULT NULL, userImgId INT DEFAULT NULL, email INT DEFAULT NULL, phone VARCHAR(128) DEFAULT NULL, messageIds VARCHAR(128) DEFAULT NULL, 
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+
+string(537) "CREATE TABLE IF NOT EXISTS images ( 
+                id INT AUTO_INCREMENT, 
+                filename VARCHAR(128) DEFAULT NULL, filenameOpt VARCHAR(128) DEFAULT NULL, filenameHd VARCHAR(128) DEFAULT NULL, width INT DEFAULT NULL, height INT DEFAULT NULL, alt VARCHAR(128) DEFAULT NULL, title VARCHAR(128) DEFAULT NULL, cite VARCHAR(2048) DEFAULT NULL, author VARCHAR(128) DEFAULT NULL, dateTaken DATETIME DEFAULT NULL, datePosted DATETIME DEFAULT NULL, 
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+
+string(479) "CREATE TABLE IF NOT EXISTS content ( 
+                id INT AUTO_INCREMENT, 
+                title VARCHAR(128) DEFAULT NULL, subtitle VARCHAR(128) DEFAULT NULL, author VARCHAR(128) DEFAULT NULL, mainImgId INT DEFAULT NULL, scheme VARCHAR(128) DEFAULT NULL, colors VARCHAR(128) DEFAULT NULL, content VARCHAR(MAX) DEFAULT NULL, dateTaken DATETIME DEFAULT NULL, datePosted DATETIME DEFAULT NULL, 
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+
+string(405) "CREATE TABLE IF NOT EXISTS users ( 
+                id INT AUTO_INCREMENT, 
+                username VARCHAR(128) DEFAULT NULL, password VARCHAR(256) DEFAULT NULL, token VARCHAR(1024) DEFAULT NULL, userImgId INT DEFAULT NULL, email INT DEFAULT NULL, phone VARCHAR(128) DEFAULT NULL, messageIds VARCHAR(128) DEFAULT NULL, 
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+
+string(537) "CREATE TABLE IF NOT EXISTS images ( 
+                id INT AUTO_INCREMENT, 
+                filename VARCHAR(128) DEFAULT NULL, filenameOpt VARCHAR(128) DEFAULT NULL, filenameHd VARCHAR(128) DEFAULT NULL, width INT DEFAULT NULL, height INT DEFAULT NULL, alt VARCHAR(128) DEFAULT NULL, title VARCHAR(128) DEFAULT NULL, cite VARCHAR(2048) DEFAULT NULL, author VARCHAR(128) DEFAULT NULL, dateTaken DATETIME DEFAULT NULL, datePosted DATETIME DEFAULT NULL, 
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+
+string(479) "CREATE TABLE IF NOT EXISTS content ( 
+                id INT AUTO_INCREMENT, 
+                title VARCHAR(128) DEFAULT NULL, subtitle VARCHAR(128) DEFAULT NULL, author VARCHAR(128) DEFAULT NULL, mainImgId INT DEFAULT NULL, scheme VARCHAR(128) DEFAULT NULL, colors VARCHAR(128) DEFAULT NULL, content VARCHAR(MAX) DEFAULT NULL, dateTaken DATETIME DEFAULT NULL, datePosted DATETIME DEFAULT NULL, 
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+
+string(405) "CREATE TABLE IF NOT EXISTS users ( 
+                id INT AUTO_INCREMENT, 
+                username VARCHAR(128) DEFAULT NULL, password VARCHAR(256) DEFAULT NULL, token VARCHAR(1024) DEFAULT NULL, userImgId INT DEFAULT NULL, email INT DEFAULT NULL, phone VARCHAR(128) DEFAULT NULL, messageIds VARCHAR(128) DEFAULT NULL, 
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+
+string(213) "CREATE TABLE IF NOT EXISTS cocoarose ( 
+                id INT AUTO_INCREMENT, 
+                Hello VARCHAR(128) DEFAULT NULL, 
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+
+string(213) "CREATE TABLE IF NOT EXISTS cocoarose ( 
+                id INT AUTO_INCREMENT, 
+                Hello VARCHAR(128) DEFAULT NULL, 
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+
+string(213) "CREATE TABLE IF NOT EXISTS cocoarose ( 
+                id INT AUTO_INCREMENT, 
+                Hello VARCHAR(128) DEFAULT NULL, 
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+
+string(213) "CREATE TABLE IF NOT EXISTS cocoarose ( 
+                id INT AUTO_INCREMENT, 
+                Hello VARCHAR(128) DEFAULT NULL, 
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+
+string(213) "CREATE TABLE IF NOT EXISTS cocoarose ( 
+                id INT AUTO_INCREMENT, 
+                Hello VARCHAR(128) DEFAULT NULL, 
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+
+string(537) "CREATE TABLE IF NOT EXISTS images ( 
+                id INT AUTO_INCREMENT, 
+                filename VARCHAR(128) DEFAULT NULL, filenameOpt VARCHAR(128) DEFAULT NULL, filenameHd VARCHAR(128) DEFAULT NULL, width INT DEFAULT NULL, height INT DEFAULT NULL, alt VARCHAR(128) DEFAULT NULL, title VARCHAR(128) DEFAULT NULL, cite VARCHAR(2048) DEFAULT NULL, author VARCHAR(128) DEFAULT NULL, dateTaken DATETIME DEFAULT NULL, datePosted DATETIME DEFAULT NULL, 
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+
+string(479) "CREATE TABLE IF NOT EXISTS content ( 
+                id INT AUTO_INCREMENT, 
+                title VARCHAR(128) DEFAULT NULL, subtitle VARCHAR(128) DEFAULT NULL, author VARCHAR(128) DEFAULT NULL, mainImgId INT DEFAULT NULL, scheme VARCHAR(128) DEFAULT NULL, colors VARCHAR(128) DEFAULT NULL, content VARCHAR(MAX) DEFAULT NULL, dateTaken DATETIME DEFAULT NULL, datePosted DATETIME DEFAULT NULL, 
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+
+string(405) "CREATE TABLE IF NOT EXISTS users ( 
+                id INT AUTO_INCREMENT, 
+                username VARCHAR(128) DEFAULT NULL, password VARCHAR(256) DEFAULT NULL, token VARCHAR(1024) DEFAULT NULL, userImgId INT DEFAULT NULL, email INT DEFAULT NULL, phone VARCHAR(128) DEFAULT NULL, messageIds VARCHAR(128) DEFAULT NULL, 
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+
+string(537) "CREATE TABLE IF NOT EXISTS images ( 
+                id INT AUTO_INCREMENT, 
+                filename VARCHAR(128) DEFAULT NULL, filenameOpt VARCHAR(128) DEFAULT NULL, filenameHd VARCHAR(128) DEFAULT NULL, width INT DEFAULT NULL, height INT DEFAULT NULL, alt VARCHAR(128) DEFAULT NULL, title VARCHAR(128) DEFAULT NULL, cite VARCHAR(2048) DEFAULT NULL, author VARCHAR(128) DEFAULT NULL, dateTaken DATETIME DEFAULT NULL, datePosted DATETIME DEFAULT NULL, 
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+
+string(479) "CREATE TABLE IF NOT EXISTS content ( 
+                id INT AUTO_INCREMENT, 
+                title VARCHAR(128) DEFAULT NULL, subtitle VARCHAR(128) DEFAULT NULL, author VARCHAR(128) DEFAULT NULL, mainImgId INT DEFAULT NULL, scheme VARCHAR(128) DEFAULT NULL, colors VARCHAR(128) DEFAULT NULL, content VARCHAR(MAX) DEFAULT NULL, dateTaken DATETIME DEFAULT NULL, datePosted DATETIME DEFAULT NULL, 
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+
+string(405) "CREATE TABLE IF NOT EXISTS users ( 
+                id INT AUTO_INCREMENT, 
+                username VARCHAR(128) DEFAULT NULL, password VARCHAR(256) DEFAULT NULL, token VARCHAR(1024) DEFAULT NULL, userImgId INT DEFAULT NULL, email INT DEFAULT NULL, phone VARCHAR(128) DEFAULT NULL, messageIds VARCHAR(128) DEFAULT NULL, 
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+
+string(537) "CREATE TABLE IF NOT EXISTS images ( 
+                id INT AUTO_INCREMENT, 
+                filename VARCHAR(128) DEFAULT NULL, filenameOpt VARCHAR(128) DEFAULT NULL, filenameHd VARCHAR(128) DEFAULT NULL, width INT DEFAULT NULL, height INT DEFAULT NULL, alt VARCHAR(128) DEFAULT NULL, title VARCHAR(128) DEFAULT NULL, cite VARCHAR(2048) DEFAULT NULL, author VARCHAR(128) DEFAULT NULL, dateTaken DATETIME DEFAULT NULL, datePosted DATETIME DEFAULT NULL, 
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+
+string(479) "CREATE TABLE IF NOT EXISTS content ( 
+                id INT AUTO_INCREMENT, 
+                title VARCHAR(128) DEFAULT NULL, subtitle VARCHAR(128) DEFAULT NULL, author VARCHAR(128) DEFAULT NULL, mainImgId INT DEFAULT NULL, scheme VARCHAR(128) DEFAULT NULL, colors VARCHAR(128) DEFAULT NULL, content VARCHAR(MAX) DEFAULT NULL, dateTaken DATETIME DEFAULT NULL, datePosted DATETIME DEFAULT NULL, 
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+
+string(405) "CREATE TABLE IF NOT EXISTS users ( 
+                id INT AUTO_INCREMENT, 
+                username VARCHAR(128) DEFAULT NULL, password VARCHAR(256) DEFAULT NULL, token VARCHAR(1024) DEFAULT NULL, userImgId INT DEFAULT NULL, email INT DEFAULT NULL, phone VARCHAR(128) DEFAULT NULL, messageIds VARCHAR(128) DEFAULT NULL, 
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+
+string(184) "CREATE TABLE IF NOT EXISTS cocoaroseData ( 
+                id INT AUTO_INCREMENT, 
+                
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+
+string(184) "CREATE TABLE IF NOT EXISTS cocoaroseData ( 
+                id INT AUTO_INCREMENT, 
+                
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+
+string(184) "CREATE TABLE IF NOT EXISTS cocoaroseData ( 
+                id INT AUTO_INCREMENT, 
+                
+                PRIMARY KEY (id) ,
+            ) 
+            ENGINE = InnoDB;"
+
+

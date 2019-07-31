@@ -9,6 +9,8 @@ echo '</head>';
         |    |__| ___]  |  
         __________________*/        
         echo '<body class="arc" onload="arcPageLoader()">';
+        require "../Resources/nav.php";
+
         $filename = "../Archive/arc-".$id.".html";
 
         if(!isset($id)) {
@@ -72,7 +74,7 @@ POST;
 
         echo '<div class="breakClear"></div>';
     }
-    require_once "../Resources/footer.php";
+    require_once "../Resources/foot-common.php";
 
     function get_arc_meta($filename) {
         $header;

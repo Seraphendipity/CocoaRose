@@ -12,7 +12,8 @@ $NavArr = Array(
     array("Home","../Main/home", "home", "", false),
     array("Archive","../Main/archive", "folder-open", "", false),
     array("Images","../Main/images", "picture", "", false),
-    array("Contact","../Main/contact", "question-sign", "", true)
+    array("Contact","../Main/contact", "question-sign", "", true),
+    array("DB Control","../Main/db-control", "hdd", "", true)
 );
 
 echo '<nav class="site">';

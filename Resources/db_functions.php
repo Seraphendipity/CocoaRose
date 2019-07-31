@@ -141,12 +141,12 @@ function db_selectDataById(string $table, int $ID) {
 function db_updateDataById(string $table, $namesArr, $valsArr, int $ID) {
     $types = ''; $values = []; $bFirst = true; $i = 0;
     $results = false;
-    foreach($arrVals as $j => $value) {
+    foreach($valsArr as $value) {
         if (!$bFirst) {
-            $$equations .= ', ';
+            $equations .= ', ';
         } else {$bFirst = false;}
         $types .= (gettype($value) == 'integer') ? 'i' : 's';
-        $equations = $namesArr[$i].' = ?';
+        $equations .= $namesArr[$i].'=?';
         if ( gettype($value) == 'array' ) {
             $values[$i] = implode('', $value);
         } else { 
@@ -156,22 +156,19 @@ function db_updateDataById(string $table, $namesArr, $valsArr, int $ID) {
         $i++;
     }
         $conn = db_connect();
-        
-    $sql = $conn->prepare("UPDATE {$table} SET {$equations} WHERE id = $ID");
-    if($sql === false) {/*throw new DatabaseInsertException($conn->error);*/} else{
-            $sql->bind_param("{$types}", ...$values); //Arguement Unpacking
-        }
-    try {
+        $stmt = "UPDATE {$table} SET {$equations} WHERE id={$ID}";
+        $sql = $conn->prepare($stmt);
+        //var_dump($sql);
+    if($sql === false) {throw new DatabaseException($conn->error);} 
+    else{
+        $sql->bind_param("{$types}", ...$values); //Arguement Unpacking
         if( $sql->execute() === false) {
             $results = false;
-            // throw new DatabaseInsertException($conn->error);
+            throw new Exception($conn->error);
         } else {
-            //$results = $conn->insert_id;
-
         }
-    } finally {
-        db_disconnect($conn);
     }
+    db_disconnect($conn);
     // var_dump( $result );
     // echo $conn->error;
     return $results;

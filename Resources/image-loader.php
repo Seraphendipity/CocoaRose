@@ -38,7 +38,7 @@ function getImg( int $uid = 0, int $groupId = 0 ) {
                     width=\"{$width}\"
                     height=\"{$height}\"
                     class=\"{$classes}\"
-                    data-uid=\"{$uid}\"
+                    data-id=\"{$uid}\"
                     data-gid=\"{$groupId}\"
                     data-cite=\"{$cite}\"
                     data-author=\"{$author}\"

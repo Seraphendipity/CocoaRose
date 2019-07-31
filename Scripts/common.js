@@ -136,7 +136,7 @@ function getModalWindow() {
                     <label>AUTHOR: <input type="text" name="author" maxlength="128"></label>
                     <label>CITE: <input type="text" name="cite" maxlength="2048"></label>
                     <label>DATE: <input type="text" name="date" maxlength="128"></label>
-                    <label class="labelID">ID: <input type="number" name="id" min="0" max="16" step="1" disabled></label>
+                    <label class="labelID">ID: <input type="number" name="id" min="0" max="16" step="1" readonly></label>
                     <input type="submit" name="submit" class="submit submitImg formSubmit">
                 </form>
             </div>

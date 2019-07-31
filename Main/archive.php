@@ -1,6 +1,6 @@
 <?php require_once("../Resources/head-js.php"); 
 echo '</head>';
-
+    
     $id = isset($_GET["id"]) ? $_GET["id"] : $id = NULL ;
     if (isset($id) && is_numeric($id)) {
         /*_________________
@@ -45,6 +45,7 @@ echo '</head>';
         echo '<body>';
         require "../Resources/nav.php";
         echo '<div class="breakHeader"></div>';
+        echo '<div class="main">';
     
         $id = 0; //post index/id
         $postsPerPage = 10;
@@ -72,7 +73,7 @@ POST;
         }
         //_________________________________________________
 
-        echo '<div class="breakClear"></div>';
+        echo '<div class="breakClear"></div></div>';
     }
     require_once "../Resources/foot-common.php";
 

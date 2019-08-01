@@ -1,0 +1,30 @@
+<div class="modalWindow">
+    <div class="centeredBox">
+        <div class="modalWindowMain">
+            <img class="modalWindowMainImg">
+            <button class="modalWindowBtn modalWindowBtnExt">
+                <i class="glyphicon glyphicon-remove"></i></button>
+            <button class="modalWindowBtn modalWindowBtnDir modalWindowBtnBck">
+                <i class="glyphicon glyphicon-menu-left"></i></button>
+            <button class="modalWindowBtn modalWindowBtnDir modalWindowBtnFwd">
+                <i class="glyphicon glyphicon-menu-right"></i></button>
+        </div>
+        <div class="modalWindowMeta">
+            <form action="../Resources/image-form-handler.php" method="post" enctype="multipart/form-data" id="img-submit">
+                <label><span>Title:</span><input type="text" name="title" maxlength="128"></label>
+                <label><span>Subtitle:</span><input type="text" name="title" maxlength="128"></label>
+                <label><span>author</span> <input type="text" name="author" maxlength="128"></label>
+                <label><span>Image-ID:</span><input class="inputImg" type="file" name="imgSubmit" accept=".jpg,.png"></label>
+                <a href="../Main/images">Need to upload a new image?</a> 
+                <!-- Consider a landing page that redirects with post data to open the add module-->
+                <label><span>Scheme:</span><input type="text" name="alt" maxlength="128"></label>
+                <label><span>Colors:</span><input type="text" name="cite" maxlength="2048"></label>
+                <label><span>Content:</span>
+                    <textarea name="date" maxlength="20000"></textarea></textarea>
+                </label>
+                <label class="labelID"><span>ID:</span><input type="number" name="id" min="0" max="16" step="1" readonly></label>
+                <input type="submit" name="submit" class="submit submitImg formSubmit">
+            </form>
+        </div>
+    </div>
+</div> 

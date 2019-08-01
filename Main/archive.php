@@ -1,4 +1,5 @@
 <?php require_once("../Resources/head-js.php"); 
+echo '<script src="../Scripts/arcScrollEffects.js"></script>';
 echo '</head>';
     
     $id = isset($_GET["id"]) ? $_GET["id"] : $id = NULL ;

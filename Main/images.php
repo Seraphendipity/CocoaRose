@@ -1,17 +1,19 @@
-<?php require_once("../Resources/head-js.php"); ?>
-<?php require_once("../Resources/image-loader.php"); ?>
-
+<?php require_once "../Resources/head-js.php"; ?>
+<script src="../Scripts/modalWindow.js"></script>
+<script src="../Scripts/flipper.js"></script>
 </head>
 <body>
+    <?php require_once "../Resources/image-loader.php"; 
+          require_once "../Resources/nav.php"; 
+          require_once "../Resources/modalWindow/mW-images.html";
+    ?>
     <div class="breakHeader"></div>
-
-    
+    <div class="main">
 
     <div class="toolbar"><button class="btnAddImg"><i class="glyphicon glyphicon-plus"></i></button></div>
 
     <?php 
     // require "../Resources/head";
-    require "../Resources/nav.php";
     $table = 'images';
 
 
@@ -23,7 +25,7 @@
     }
     ?>
     <div class="breakClear"></div></div>
-    
+    </div>
 
 
     

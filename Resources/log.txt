@@ -1404,3 +1404,183 @@ string(19) "?, ?, ?, ?, ?, ?, ?"
 string(7) "sssssss"
 
 ---
+string(51) "filename,alt,title,cite,author,dateTaken,datePosted"
+
+---
+array(7) {
+  [0]=>
+  string(3) "JPG"
+  [1]=>
+  string(36) "Close-Up of white, fluffy dandelions"
+  [2]=>
+  string(10) "Dandelions"
+  [3]=>
+  string(16) "Original Content"
+  [4]=>
+  string(10) "Cocoa Bean"
+  [5]=>
+  string(0) ""
+  [6]=>
+  string(22) "07/31/2019 09:56:22 pm"
+}
+
+---
+array(7) {
+  [0]=>
+  string(3) "JPG"
+  [1]=>
+  string(36) "Close-Up of white, fluffy dandelions"
+  [2]=>
+  string(10) "Dandelions"
+  [3]=>
+  string(16) "Original Content"
+  [4]=>
+  string(10) "Cocoa Bean"
+  [5]=>
+  string(0) ""
+  [6]=>
+  string(22) "07/31/2019 09:56:22 pm"
+}
+
+---
+string(19) "?, ?, ?, ?, ?, ?, ?"
+
+---
+string(7) "sssssss"
+
+---
+string(51) "filename,alt,title,cite,author,dateTaken,datePosted"
+
+---
+array(7) {
+  [0]=>
+  string(3) "JPG"
+  [1]=>
+  string(11) "A pink rose"
+  [2]=>
+  string(7) "Flowers"
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(0) ""
+  [6]=>
+  string(22) "07/31/2019 11:39:44 pm"
+}
+
+---
+array(7) {
+  [0]=>
+  string(3) "JPG"
+  [1]=>
+  string(11) "A pink rose"
+  [2]=>
+  string(7) "Flowers"
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(0) ""
+  [6]=>
+  string(22) "07/31/2019 11:39:44 pm"
+}
+
+---
+string(19) "?, ?, ?, ?, ?, ?, ?"
+
+---
+string(7) "sssssss"
+
+---
+string(51) "filename,alt,title,cite,author,dateTaken,datePosted"
+
+---
+array(7) {
+  [0]=>
+  string(3) "JPG"
+  [1]=>
+  string(12) "Pink Flowers"
+  [2]=>
+  string(6) "Flower"
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(0) ""
+  [6]=>
+  string(22) "07/31/2019 11:43:51 pm"
+}
+
+---
+array(7) {
+  [0]=>
+  string(3) "JPG"
+  [1]=>
+  string(12) "Pink Flowers"
+  [2]=>
+  string(6) "Flower"
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(0) ""
+  [6]=>
+  string(22) "07/31/2019 11:43:51 pm"
+}
+
+---
+string(19) "?, ?, ?, ?, ?, ?, ?"
+
+---
+string(7) "sssssss"
+
+---
+string(51) "filename,alt,title,cite,author,dateTaken,datePosted"
+
+---
+array(7) {
+  [0]=>
+  string(3) "JPG"
+  [1]=>
+  string(11) "Pink Flower"
+  [2]=>
+  string(7) "Flower "
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(0) ""
+  [6]=>
+  string(22) "07/31/2019 11:50:15 pm"
+}
+
+---
+array(7) {
+  [0]=>
+  string(3) "JPG"
+  [1]=>
+  string(11) "Pink Flower"
+  [2]=>
+  string(7) "Flower "
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(0) ""
+  [6]=>
+  string(22) "07/31/2019 11:50:15 pm"
+}
+
+---
+string(19) "?, ?, ?, ?, ?, ?, ?"
+
+---
+string(7) "sssssss"
+
+---

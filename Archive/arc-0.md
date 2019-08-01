@@ -3,7 +3,7 @@
     "subtitle": "Why do we love flowers...",
     "author": "Elijah T.he Rose",
     "date": "7.11.2019",
-    "bg-img": "img-0001-HQ-SingularRedPinkRose.jpg"} -->
+    "bg-img": "20.jpg"} -->
 Flowers have long been adored as symbols of beauty, love, fettility, innocence, hope, and other such positvely-connotated words.
 They have inspired many a greater and lesser individual to write symbolic and lovely prose. <span class="textHL">This is not that.</span>
 No, while I attempt to be 

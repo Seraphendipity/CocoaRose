@@ -9,8 +9,8 @@ function getImg( int $uid = 0, int $groupId = 0 ) {
 
 
     $bSemanticImg = ($groupId >= 0);
-    $classes .= ($bSemanticImg) ? 'modalImg flipperFrontContent ' : '';
-    $classes .= ($groupId >= 1) ? 'modalImgGroup' : '';
+    $classes .= ($bSemanticImg) ? 'modalElementMain flipperFrontContent ' : '';
+    $classes .= ($groupId >= 1) ? 'modalGroup' : '';
     foreach (array_slice(func_get_args(),2) as $class) {
         if($bSemanticImg) {
             $figClasses .= $class.' ';
@@ -28,7 +28,7 @@ function getImg( int $uid = 0, int $groupId = 0 ) {
     $author = $imgData['author'];
     $date = $imgData['dateTaken'];
     echo ($bSemanticImg) ? 
-    "<figure class=\"imgFigure flipper{$figClasses}\">
+    "<figure class=\"modalElement modalElementImage imgFigure flipper{$figClasses}\">
         <div class=\"flipperContainer\">
             <div class=\"flipperFront\">" : '';
     echo        "<img 

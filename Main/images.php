@@ -1,6 +1,9 @@
 <?php require_once "../Resources/head-js.php"; ?>
 <script src="../Scripts/modalWindow.js"></script>
 <script src="../Scripts/flipper.js"></script>
+<script>$(window).ready( function() {
+   var imgMW = new ImageModalWindow();
+});</script>
 </head>
 <body>
     <?php require_once "../Resources/image-loader.php"; 

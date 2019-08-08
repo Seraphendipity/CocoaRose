@@ -521,6 +521,13 @@ ________________________________________*/
         right: 2%;
     }
 
+    .modalWindowMeta label span {
+        display: inline-block;
+        text-align: right;
+        margin-right: 4px;
+        min-width: 25%;
+        max-width: 50%;
+    }
 
 
 /*________________________________________

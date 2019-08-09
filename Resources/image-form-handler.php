@@ -40,6 +40,7 @@
                 rename($imagesDir.'tmp.'.$fileExt, $imagesDir.strval($idx).'.'.$fileExt );
             }
         } else if ( $postType == 'Edit Image' ) {
+            log::debugDump($namesArr);
             db_updateDataById($table, array_slice($namesArr, 1), array_slice($valsArr, 1), $id);
         }
         header("Location: ".'../Main/images');//$_SERVER['REQUEST_URI']);

@@ -1,6 +1,7 @@
 // $(window).ready( function() {
-//     var mw = new ModalWindow();
+//     var imgMw = new ImageModalWindow();
 // });
+
 function attrGet (elem, attr, value) {
     if (typeof xar !== typeof undefined && xar !== false) {
         elem.attr(attr, value);
@@ -10,17 +11,8 @@ function attrGet (elem, attr, value) {
     }
 }
 
-// function attrAssign (elem, attr, value) {
-//     if (typeof xar !== typeof undefined && xar !== false) {
-//         elem.attr(attr, value);
-//         return true;
-//     } else {
-//         return false;
-//     }
-// }
-
 class ModalWindow {
-    
+
     constructor() {
         this.mw = $('.modalWindow');   //Modal Window
         this.me = {};        //Modal Element (current)
@@ -37,12 +29,12 @@ class ModalWindow {
         });
 
         this.mw.keydown(function(e) {
-            var elem = $(':focus'); 
+            var elem = $(':focus');
             if (
                 elem.is('input[type="text"]') ||
                 elem.is('input[type="number"]') ||
                 elem.is('input[type="radio"]') ||
-                elem.is('textarea') 
+                elem.is('textarea')
             ) {
                 //do nothing
             } else {
@@ -51,7 +43,7 @@ class ModalWindow {
                         that.loadPrevious(1);
                         break;
                     case 38:    //Top
-                        $("html, body").animate({scrollTop: 0}, "slow");
+                        //$("html, body").animate({scrollTop: 0}, "slow");
                         break;
                     case 39:    //Right
                         that.loadNext(1);
@@ -97,10 +89,12 @@ class ModalWindow {
             //Add a New Img
             this.mw.find('.submit').attr('value', 'Add');
             $('.modalWindowBtnDir').addClass('hide');
-            $('.modalWindowMeta .labelID').addClass('hide');
+            $('.modalWindowMeta input[name="id"]').addClass('hide');
         } else if (actionLvl == 3) {
             //Edit an img
             this.mw.find('.submit').attr('value', 'Edit');
+            $('.modalWindowMeta input[name="id"]').attr('readonly', 'true');
+            $('.modalWindowMeta .hideOnEdit').addClass('hide');
             var gid = this.me.find('.modalElementMain').attr('data-gid');
             if( (gid > 0) && (this.getGroupByID(gid).length > 1) ) {
                 // $('.modalWindowBtn.hide').removeClass('hide');
@@ -121,7 +115,8 @@ class ModalWindow {
 
     reset() {
         this.mw.find('.modalWindowMeta input:not([type=submit])').attr('value', '');
-        this.mw.find('hide').removeClass('hide');
+        this.mw.find('.hide').removeClass('hide');
+        this.mw.find('[readonly]').attr('readonly', false);
     }
 
     load() {
@@ -130,15 +125,15 @@ class ModalWindow {
             var attributes = $('.modalWindowMeta form').find('input:not([type="submit"])');
             for(var i=0; i < attributes.length; i++) {
                 var elem = attributes.get(i);
-                var name = $(elem).attr('name'); 
+                var name = $(elem).attr('name');
                 var value = '';
                 if( typeof mainElem.attr(name) !== typeof undefined && mainElem.attr(name) !== false ) {
                     value = mainElem.attr(name);
                 } else if ( typeof mainElem.attr('data-'+name) != typeof undefined && mainElem.attr('data-'+name) != false ) {
                     value = mainElem.attr('data-'+name);
-                } 
+                }
                 this.values[name] = value;
-                $(elem).attr('value', value);  
+                $(elem).attr('value', value);
             }
             this.values['gid'] = mainElem.attr('data-gid');
         } else {
@@ -151,7 +146,7 @@ class ModalWindow {
         var group = this.getGroupByID(this.values.gid);
         if (group.length > 1) {
             var idx = group.index(this.me.find('.modalElementMain'));
-            // selectedImg = $('.modalImg[data-uid="'+modalImg.attr('data-uid')+'"]'); 
+            // selectedImg = $('.modalImg[data-uid="'+modalImg.attr('data-uid')+'"]');
             // modalGroup = getModalGroup(selectedImg.attr('data-gid'));
             var len = group.length
             if(idx+n >= len) {
@@ -161,13 +156,11 @@ class ModalWindow {
             } else {
                 idx += n;
             }
-            console.log(group);
-            console.log(group.get(idx));
             this.me = $(group.get(idx)).parents('.modalElement');
             this.load();
         } else {
             console.log("Invalid ID.");
-        }           
+        }
 
     }
 
@@ -215,11 +208,11 @@ class ImageModalWindow extends ModalWindow {
         // I couldnt figure this out, and still have trouble with the JS FileReader Object
         if (input.files && input.files[0]) {
             var reader = new FileReader();
-            
+
             reader.onload = function (e) {
                 $('.modalWindowMainImg').attr('src', e.target.result);
             }
-            
+
             reader.readAsDataURL(input.files[0]);
         }
     }
@@ -233,7 +226,7 @@ class ImageModalWindow extends ModalWindow {
         // }
     // modalImgNext (n) {
     //     modalImg = $(this).siblings('.modalWindowImg'); //could also $(.modalImgActive)
-    //     selectedImg = $('.modalImg[data-uid="'+modalImg.attr('data-uid')+'"]'); 
+    //     selectedImg = $('.modalImg[data-uid="'+modalImg.attr('data-uid')+'"]');
     //     modalGroup = getModalGroup(selectedImg.attr('data-gid'));
 
     //     idx = modalGroup.findIndex(selectedImg);

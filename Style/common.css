@@ -440,7 +440,7 @@ ________________________________________*/
 
     /* IMAGE MODAL STYLING */
     .modalWindow {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -449,6 +449,7 @@ ________________________________________*/
 
         display: none;
         z-index: 1;
+        overflow: auto;
     }
 
     .modalWindowActive {
@@ -597,7 +598,7 @@ _  _ ____ ___  _ ____    ____ _  _ ____ ____ _   _
 ________________________________________*/
 
 /* Smol Loli Screen */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
     .main {
         padding: 0 2.5%;
     }

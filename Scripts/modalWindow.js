@@ -1,6 +1,23 @@
 // $(window).ready( function() {
 //     var mw = new ModalWindow();
 // });
+function attrGet (elem, attr, value) {
+    if (typeof xar !== typeof undefined && xar !== false) {
+        elem.attr(attr, value);
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// function attrAssign (elem, attr, value) {
+//     if (typeof xar !== typeof undefined && xar !== false) {
+//         elem.attr(attr, value);
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
 
 class ModalWindow {
     
@@ -19,6 +36,36 @@ class ModalWindow {
             that.loadNext(1);
         });
 
+        this.mw.keydown(function(e) {
+            var elem = $(':focus'); 
+            if (
+                elem.is('input[type="text"]') ||
+                elem.is('input[type="number"]') ||
+                elem.is('input[type="radio"]') ||
+                elem.is('textarea') 
+            ) {
+                //do nothing
+            } else {
+                switch (e.which) {
+                    case 37:    //Left
+                        that.loadPrevious(1);
+                        break;
+                    case 38:    //Top
+                        $("html, body").animate({scrollTop: 0}, "slow");
+                        break;
+                    case 39:    //Right
+                        that.loadNext(1);
+                        break;
+                    case 40:    //Down
+                        that.close();
+                        break;
+                    default: return;
+                }
+                e.preventDefault();
+
+            }
+        });
+
         $('.modalWindowBtnBck').click(function() {
             that.loadPrevious(1);
         });
@@ -32,7 +79,7 @@ class ModalWindow {
         });
 
         $('.btnEditMw').click(function() {
-            that.open(3, this);
+            that.open(3, $(this).parents('.modalElement'));
         });
     }
 
@@ -41,6 +88,7 @@ class ModalWindow {
     open(actionLvl, caller = '') {
         this.me = $(caller);
         this.mw.addClass("modalWindowActive");
+        this.mw.find('.modalWindowBtnExt').focus();
 
         if (actionLvl == 1) {
             //Only View Img
@@ -66,6 +114,7 @@ class ModalWindow {
     }
 
     close() {
+        // this.mw.children('.centeredBox').animate({left: "-40%"}, "slow");
         this.mw.removeClass("modalWindowActive");
         this.reset();
     }
@@ -76,7 +125,7 @@ class ModalWindow {
     }
 
     load() {
-        var mainElem = this.me.find('.modalElementMain')
+        var mainElem = this.me.find('.modalElementMain');
         if (mainElem.length > 0) {
             var attributes = $('.modalWindowMeta form').find('input:not([type="submit"])');
             for(var i=0; i < attributes.length; i++) {
@@ -100,26 +149,26 @@ class ModalWindow {
 
     loadNext(n = 1) {
         var group = this.getGroupByID(this.values.gid);
-        console.log(group);
-        console.log(group.index(this.me.find('.modalElementMain')));
-        var idx = group.index(this.me.find('.modalElementMain'));
-        if (idx == -1) {
-            console.log('Programming Error, could not find this ('+
-            this.me+') in its group ('+group+')');
-        } else {
+        if (group.length > 1) {
+            var idx = group.index(this.me.find('.modalElementMain'));
             // selectedImg = $('.modalImg[data-uid="'+modalImg.attr('data-uid')+'"]'); 
             // modalGroup = getModalGroup(selectedImg.attr('data-gid'));
             var len = group.length
             if(idx+n >= len) {
                 idx += n-len;
             } else if (idx+n < 0) {
-                idx += len;
+                idx += len+n;
             } else {
                 idx += n;
             }
-            this.me = $(group.get(idx));
+            console.log(group);
+            console.log(group.get(idx));
+            this.me = $(group.get(idx)).parents('.modalElement');
             this.load();
-        }
+        } else {
+            console.log("Invalid ID.");
+        }           
+
     }
 
     loadPrevious(n = 1) {
@@ -136,15 +185,52 @@ class ImageModalWindow extends ModalWindow {
 
     constructor() {
         super();
+        this.mwImg = this.mw.find('.modalWindowMainImg');
+        this.mwFileInput = this.mw.find('form [type="file"]');
     }
 
-    initialize(that) {
+    initialize() {
         super.initialize();
-        
-        $('.modalElementImage').click(function() {
-            that.open(3, this);
+        var that = this;
+        this.mw.find('form [type="file"]').change(function() {
+            that.readURL(this);
         });
     }
+
+    reset () {
+        super.reset();
+        this.mwImg.attr('src', '');
+        this.mwFileInput.attr('src', '');
+    }
+
+    load() {
+        super.load();
+        if (this.values.src !== false) {
+            this.mwImg.attr('src', this.values.src);
+        }
+    }
+
+    readURL(input) {
+        // CREDIT: https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded
+        // I couldnt figure this out, and still have trouble with the JS FileReader Object
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                $('.modalWindowMainImg').attr('src', e.target.result);
+            }
+            
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+}
+
+        // super.load();
+        // this.values.fileSrc = attrGet(this.me.find('.modalElementMain'), 'src');
+        // if (this.values.fileSrc !== false) {
+        //     this.mwImg = this.mw.find('.modalWindowImage');
+        //     mwImg.attr('src', this.values.fileSrc);
+        // }
     // modalImgNext (n) {
     //     modalImg = $(this).siblings('.modalWindowImg'); //could also $(.modalImgActive)
     //     selectedImg = $('.modalImg[data-uid="'+modalImg.attr('data-uid')+'"]'); 
@@ -162,7 +248,6 @@ class ImageModalWindow extends ModalWindow {
     //     modalImg.attr('src', modalGroup[idx].attr('src'));
     //     //selectedImg.parents('.imgFigure').nex;
     // }
-}
 
 // class BlogModalWindow extends ModalWindow {
 
@@ -173,19 +258,6 @@ class ImageModalWindow extends ModalWindow {
 // $('.modalWindowImage').attr('src', $(caller).attr('src'));
 // modalImg.attr('src', modalGroup[idx].attr('src'));
 
-// readURL(input) {
-//     // CREDIT: https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded
-//     // I couldnt figure this out, and still have trouble with the JS FileReader Object
-//     if (input.files && input.files[0]) {
-//         var reader = new FileReader();
-        
-//         reader.onload = function (e) {
-//             $('.modalWindowImg').attr('src', e.target.result);
-//         }
-        
-//         reader.readAsDataURL(input.files[0]);
-//     }
-// }
 
 // $(".inputImg").change(function(){
 //     readURL(this);

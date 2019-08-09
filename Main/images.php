@@ -13,7 +13,7 @@
     <div class="breakHeader"></div>
     <div class="main">
 
-    <div class="toolbar"><button class="btnAddImg"><i class="glyphicon glyphicon-plus"></i></button></div>
+    <div class="toolbar"><button class="btnAddImg btnAddMw"><i class="glyphicon glyphicon-plus"></i></button></div>
 
     <?php 
     // require "../Resources/head";

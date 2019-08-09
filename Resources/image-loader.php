@@ -9,7 +9,7 @@ function getImg( int $uid = 0, int $groupId = 0 ) {
 
 
     $bSemanticImg = ($groupId >= 0);
-    $classes .= ($bSemanticImg) ? 'modalElementMain flipperFrontContent ' : '';
+    $classes .= ($bSemanticImg) ? 'modalElementMain flipperFrontContent btnEditMw ' : '';
     $classes .= ($groupId >= 1) ? 'modalGroup' : '';
     foreach (array_slice(func_get_args(),2) as $class) {
         if($bSemanticImg) {
@@ -31,7 +31,7 @@ function getImg( int $uid = 0, int $groupId = 0 ) {
     "<figure class=\"modalElement modalElementImage imgFigure flipper{$figClasses}\">
         <div class=\"flipperContainer\">
             <div class=\"flipperFront\">" : '';
-    echo        "<img 
+    echo        "<input type=\"image\" 
                     src=\"{$src}\" 
                     alt=\"{$alt}\"  
                     title=\"{$title}\"  
@@ -42,7 +42,8 @@ function getImg( int $uid = 0, int $groupId = 0 ) {
                     data-gid=\"{$groupId}\"
                     data-cite=\"{$cite}\"
                     data-author=\"{$author}\"
-                    data-date=\"{$date}\">
+                    data-date=\"{$date}\"
+                    tabindex=\"0\">
                 ";
     echo ($bSemanticImg) ? "
                 <button class=\"imgBtnMeta\">
@@ -54,7 +55,7 @@ function getImg( int $uid = 0, int $groupId = 0 ) {
                     <i class=\"glyphicon glyphicon-picture\"></i>
                 </button>
                 <ul>
-                    <li>CITE: <a href=\"{$cite}\">{$author}</a></li>
+                    <li>CITE: <a tabindex=\"-1\" href=\"{$cite}\">{$author}</a></li>
                     <li>DATE: <time datetime=\"{$date}\">{$date}</time></li>
                     <li>DESC: <figcaption>{$title}</figcaption></li>
                 </ul>

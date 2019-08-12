@@ -365,9 +365,10 @@ ________________________________________*/
         overflow: hidden;
     }
     .flipper {
-        width: 40%;
+        width: 45%;
+        margin: 2.5%;
         height: 50vh;
-        background-color: transparent;
+        background-color: black;
         overflow: hidden;
         perspective: 1000px;
     }
@@ -376,7 +377,6 @@ ________________________________________*/
         position: relative;
         width: 100%;
         height: 100%;
-        /* background-color: rgba(200,200,200,0.2); */
         transition: transform 0.5s;
         transform-style: preserve-3d;
         transform-origin: center right;
@@ -472,12 +472,14 @@ ________________________________________*/
 
 
     .toolbar {
-        position: fixed;
+        position: sticky;
+        z-index: 5;
         bottom: 0;
         right: 0;
     }
     .toolbar .btnAddImg {
         font-size: 50px;
+        float: right;
         
     } .toolbar .btnAddImg:hover {
         color: rgb(0, 228, 0);
@@ -547,6 +549,8 @@ ________________________________________*/
     }
 
 
+    
+
 /*________________________________________
 ____ ____ ____ _  _ ____ 
 |___ |  | |__/ |\/| [__  
@@ -589,6 +593,23 @@ ________________________________________*/
 
     input, input[type="file"] {
         display: inline-block;
+    }
+
+    .modalWindowMeta .submit {
+        margin-right: 9.5%;
+        margin-left: 9.5%;
+    }
+
+    .submitDelete {
+        color: red;
+    } .submitDelete:hover {
+        background-color: red;
+    }
+
+    .modalWindow .modalWindowMeta .submitOneBtn {
+        width: 50%;
+        margin-right: 25%;
+        margin-left: 25%;
     }
 
 /*________________________________________

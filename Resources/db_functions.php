@@ -125,6 +125,7 @@ function db_selectDataById(string $table, int $ID) {
     $sql = $conn->prepare("SELECT * FROM {$table} WHERE id = ?;");
     if($sql == false) {
        // throw new DatabaseSelectionException($conn->error);
+       return false;
     } else {
 
         $sql->bind_param('i', $ID);
@@ -158,7 +159,7 @@ function db_updateDataById(string $table, $namesArr, $valsArr, int $ID) {
         $conn = db_connect();
         $stmt = "UPDATE {$table} SET {$equations} WHERE id={$ID}";
         $sql = $conn->prepare($stmt);
-        //var_dump($sql);
+        var_dump($sql);
     if($sql === false) {throw new DatabaseException($conn->error);} 
     else{
         $sql->bind_param("{$types}", ...$values); //Arguement Unpacking
@@ -169,8 +170,8 @@ function db_updateDataById(string $table, $namesArr, $valsArr, int $ID) {
         }
     }
     db_disconnect($conn);
-    // var_dump( $result );
-    // echo $conn->error;
+     var_dump( $result );
+     echo $conn->error;
     return $results;
 }
 

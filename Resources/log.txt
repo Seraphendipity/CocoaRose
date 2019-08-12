@@ -1584,3 +1584,272 @@ string(19) "?, ?, ?, ?, ?, ?, ?"
 string(7) "sssssss"
 
 ---
+array(7) {
+  [0]=>
+  string(8) "filename"
+  [1]=>
+  string(3) "alt"
+  [2]=>
+  string(5) "title"
+  [3]=>
+  string(4) "cite"
+  [4]=>
+  string(6) "author"
+  [5]=>
+  string(9) "dateTaken"
+  [6]=>
+  string(10) "datePosted"
+}
+
+---
+array(7) {
+  [0]=>
+  string(8) "filename"
+  [1]=>
+  string(3) "alt"
+  [2]=>
+  string(5) "title"
+  [3]=>
+  string(4) "cite"
+  [4]=>
+  string(6) "author"
+  [5]=>
+  string(9) "dateTaken"
+  [6]=>
+  string(10) "datePosted"
+}
+
+---
+Could not upload file; .
+---
+string(51) "filename,alt,title,cite,author,dateTaken,datePosted"
+
+---
+array(7) {
+  [0]=>
+  string(0) ""
+  [1]=>
+  string(50) "Two full-plate knights charge together into battle"
+  [2]=>
+  string(11) "Two Knights"
+  [3]=>
+  string(61) "https://www.bigbadtoystore.com/Product/VariationDetails/93049"
+  [4]=>
+  string(12) "Big Bad Toys"
+  [5]=>
+  string(10) "08-12-2019"
+  [6]=>
+  string(22) "08/12/2019 06:58:51 pm"
+}
+
+---
+array(7) {
+  [0]=>
+  string(0) ""
+  [1]=>
+  string(50) "Two full-plate knights charge together into battle"
+  [2]=>
+  string(11) "Two Knights"
+  [3]=>
+  string(61) "https://www.bigbadtoystore.com/Product/VariationDetails/93049"
+  [4]=>
+  string(12) "Big Bad Toys"
+  [5]=>
+  string(10) "08-12-2019"
+  [6]=>
+  string(22) "08/12/2019 06:58:51 pm"
+}
+
+---
+string(19) "?, ?, ?, ?, ?, ?, ?"
+
+---
+string(7) "sssssss"
+
+---
+Could not upload file; .
+---
+string(51) "filename,alt,title,cite,author,dateTaken,datePosted"
+
+---
+array(7) {
+  [0]=>
+  string(0) ""
+  [1]=>
+  string(47) "Two heavily-armoured knights charge into battle"
+  [2]=>
+  string(11) "Dos Knights"
+  [3]=>
+  string(61) "https://www.bigbadtoystore.com/Product/VariationDetails/93049"
+  [4]=>
+  string(12) "Big Bad Toys"
+  [5]=>
+  string(9) "8-12-2019"
+  [6]=>
+  string(22) "08/12/2019 07:05:10 pm"
+}
+
+---
+array(7) {
+  [0]=>
+  string(0) ""
+  [1]=>
+  string(47) "Two heavily-armoured knights charge into battle"
+  [2]=>
+  string(11) "Dos Knights"
+  [3]=>
+  string(61) "https://www.bigbadtoystore.com/Product/VariationDetails/93049"
+  [4]=>
+  string(12) "Big Bad Toys"
+  [5]=>
+  string(9) "8-12-2019"
+  [6]=>
+  string(22) "08/12/2019 07:05:10 pm"
+}
+
+---
+string(19) "?, ?, ?, ?, ?, ?, ?"
+
+---
+string(7) "sssssss"
+
+---
+Could not upload file; .
+---
+string(51) "filename,alt,title,cite,author,dateTaken,datePosted"
+
+---
+array(7) {
+  [0]=>
+  string(0) ""
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(0) ""
+  [6]=>
+  string(22) "08/12/2019 07:05:25 pm"
+}
+
+---
+array(7) {
+  [0]=>
+  string(0) ""
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(0) ""
+  [6]=>
+  string(22) "08/12/2019 07:05:25 pm"
+}
+
+---
+string(19) "?, ?, ?, ?, ?, ?, ?"
+
+---
+string(7) "sssssss"
+
+---
+string(51) "filename,alt,title,cite,author,dateTaken,datePosted"
+
+---
+array(7) {
+  [0]=>
+  string(3) "jpg"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(0) ""
+  [6]=>
+  string(22) "08/12/2019 07:06:25 pm"
+}
+
+---
+array(7) {
+  [0]=>
+  string(3) "jpg"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(0) ""
+  [6]=>
+  string(22) "08/12/2019 07:06:25 pm"
+}
+
+---
+string(19) "?, ?, ?, ?, ?, ?, ?"
+
+---
+string(7) "sssssss"
+
+---
+Could not upload file; 4.
+---
+string(51) "filename,alt,title,cite,author,dateTaken,datePosted"
+
+---
+array(7) {
+  [0]=>
+  string(0) ""
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(9) "2019-8-15"
+  [6]=>
+  string(10) "2019-08-12"
+}
+
+---
+array(7) {
+  [0]=>
+  string(0) ""
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(9) "2019-8-15"
+  [6]=>
+  string(10) "2019-08-12"
+}
+
+---
+string(19) "?, ?, ?, ?, ?, ?, ?"
+
+---
+string(7) "sssssss"
+
+---

@@ -84,15 +84,19 @@ class ModalWindow {
 
         if (actionLvl == 1) {
             //Only View Img
-            this.mw.find('.submit').addClass('hide');
+            this.mw.find('.submitChange').addClass('hide');
+            this.mw.find('.submitDelete').addClass('hide');
         } else if (actionLvl == 2) {
             //Add a New Img
-            this.mw.find('.submit').attr('value', 'Add');
+            this.mw.find('.submitChange').attr('value', 'Add');
+            this.mw.find('.submitChange').addClass('submitOneBtn');
+            this.mw.find('.submitDelete').addClass('hide');
             $('.modalWindowBtnDir').addClass('hide');
-            $('.modalWindowMeta input[name="id"]').addClass('hide');
+            $('.modalWindowMeta .labelID').addClass('hide');
         } else if (actionLvl == 3) {
             //Edit an img
-            this.mw.find('.submit').attr('value', 'Edit');
+            this.mw.find('.submitChange').attr('value', 'Edit');
+            this.mw.find('.submitDelete').attr('value', 'Delete');
             $('.modalWindowMeta input[name="id"]').attr('readonly', 'true');
             $('.modalWindowMeta .hideOnEdit').addClass('hide');
             var gid = this.me.find('.modalElementMain').attr('data-gid');
@@ -117,6 +121,8 @@ class ModalWindow {
         this.mw.find('.modalWindowMeta input:not([type=submit])').attr('value', '');
         this.mw.find('.hide').removeClass('hide');
         this.mw.find('[readonly]').attr('readonly', false);
+        this.mw.find('.submitOneBtn').removeClass('submitOneBtn');
+
     }
 
     load() {
@@ -171,7 +177,6 @@ class ModalWindow {
     getGroupByID(gid) {
         return $('.modalElement .modalElementMain[data-gid="'+gid+'"]');
     }
-
 }
 
 class ImageModalWindow extends ModalWindow {
@@ -188,6 +193,20 @@ class ImageModalWindow extends ModalWindow {
         this.mw.find('form [type="file"]').change(function() {
             that.readURL(this);
         });
+    }
+
+    open(actionLvl, caller = '') {
+        super.open(actionLvl, caller);
+        if (actionLvl == 1) {
+            //Only View Img
+        } else if (actionLvl == 2) {
+            //Add a New Img
+            this.mw.find('.submitChange').attr('value', 'Add Image');
+        } else if (actionLvl == 3) {
+            //Edit an img
+            this.mw.find('.submitChange').attr('value', 'Edit Image');
+            this.mw.find('.submitDelete').attr('value', 'Delete Image');
+        }
     }
 
     reset () {

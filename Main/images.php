@@ -6,7 +6,7 @@
 });</script>
 </head>
 <body>
-    <?php require_once "../Resources/image-loader.php"; 
+    <?php require_once "../Resources/elementLoader.php"; 
           require_once "../Resources/nav.php"; 
           require_once "../Resources/modalWindow/mW-images.html";
     ?>

@@ -44,10 +44,20 @@ echo '</head>';
         |___ | ___]  |  | | \| |__] ___] 
         _______________________________*/
         echo '<body>';
-        require "../Resources/nav.php";
+        require_once "../Resources/ElementLoader/elementLoader.html";
+        require_once "../Resources/nav.php";
+        require_once '../Resources/modalWindow/mW-archive.html';
         echo '<div class="breakHeader"></div>';
         echo '<div class="main">';
     
+        
+        foreach( db_selectData($table) as $row ) {
+            createArticleElement($row, 1, 'articleCard'); 
+            // INACCURACY: makes 2 sql calls, one is unnecessary
+            // Possible Fix: pass $row to function, grab associative array
+            //  with db_selectData
+        }
+
         $id = 0; //post index/id
         $postsPerPage = 10;
         $filename = "../Archive/arc-".$id.".html";

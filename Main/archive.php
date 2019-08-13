@@ -44,7 +44,7 @@ echo '</head>';
         |___ | ___]  |  | | \| |__] ___] 
         _______________________________*/
         echo '<body>';
-        require_once "../Resources/ElementLoader/elementLoader.html";
+        require_once "../Resources/elementLoader.html";
         require_once "../Resources/nav.php";
         require_once '../Resources/modalWindow/mW-archive.html';
         echo '<div class="breakHeader"></div>';

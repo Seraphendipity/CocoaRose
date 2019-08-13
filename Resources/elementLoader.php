@@ -48,7 +48,6 @@ function getImg( int $uid = 0, int $groupId = 0 ) {
     require_once("../Resources/db_functions.php");
     $classes = ' '; $figClasses = ' ';
 
-
     $bSemanticImg = ($groupId >= 0);
     $classes .= ($bSemanticImg) ? 'modalElementMain flipperFrontContent btnEditMw ' : '';
     $classes .= ($groupId >= 1) ? 'modalGroup' : '';
@@ -211,8 +210,9 @@ function createArticleElement( $arcData, int $groupId = 0, $figClasses = '' ) {
         $colors = $arcData['colors'];
         $contentMd = $arcData['contentMd'];
         $contentHtml = $arcData['contentHtml'];
-        $date = $arcData['dateTaken'];
-        "<figure class=\"modalElement modalElementArticle imgFigure flipper{$figClasses}\">
+        $dateTaken = $arcData['dateTaken'];
+        $datePosted = $arcData['datePosted'];
+        "<article class=\"modalElement modalElementArticle flipper{$figClasses}\">
             <div class=\"flipperContainer\">
                 <div class=\"flipperFront\">";
                     getImgById($mainImgId, true);
@@ -220,8 +220,10 @@ function createArticleElement( $arcData, int $groupId = 0, $figClasses = '' ) {
         echo "
                     <article>
                         <header>
-                            <title class=\"\"></title>
+                            <h2 class=\"\">{$title}</h2>
+                            <h3 class=\"\">{$subtitle}</h3>
                         </header>
+                        <div class=\"articleContent\">{$contentHtml}</div>
                     </article>
                     <button class=\"modalElementFrontBtn\" disabled=\"false\">
                         <i class=\"glyphicon glyphicon-question-sign\"></i>
@@ -237,11 +239,12 @@ function createArticleElement( $arcData, int $groupId = 0, $figClasses = '' ) {
                         <li>Scheme: <p>{$scheme}</p></li>
                         <li>Colors: <p>{$colors}</p></li>
                         <li>Cite: <a tabindex=\"-1\" href=\"{$cite}\">{$author}</a></li>
-                        <li>Date: <time datetime=\"{$date}\">{$date}</time></li>
+                        <li>Date Created: <time datetime=\"{$dateTaken}\">{$dateTaken}</time></li>
+                        <li>Date Posted: <time datetime=\"{$datePosted}\">{$datePosted}</time></li>
                     </ul>
                 </div>
             </div>
-        </figure>";
+        </article>";
     }
     }
 

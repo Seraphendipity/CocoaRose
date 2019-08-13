@@ -261,22 +261,75 @@ class ImageModalWindow extends ModalWindow {
     //     //selectedImg.parents('.imgFigure').nex;
     // }
 
-// class BlogModalWindow extends ModalWindow {
+class BlogModalWindow extends ModalWindow {
+    constructor() {
+        super();
+        this.mwImg = this.mw.find('.modalWindowMainImg');
+        this.mwFileInput = this.mw.find('form [type="file"]');
+    }
 
-// // }
+    initialize() {
+        super.initialize();
+        var that = this;
+        this.mw.find('form [type="file"]').change(function() {
+            that.readURL(this);
+        });
+    }
 
-// // $('.modalWindowImg').attr('src', '');
-// // $('.inputImg').val(null);
-// $('.modalWindowImage').attr('src', $(caller).attr('src'));
-// modalImg.attr('src', modalGroup[idx].attr('src'));
+    open(actionLvl, caller = '') {
+        super.open(actionLvl, caller);
+        if (actionLvl == 1) {
+            //Only View Img
+        } else if (actionLvl == 2) {
+            //Add a New Img
+            this.mw.find('.submitChange').attr('value', 'Add Article');
+        } else if (actionLvl == 3) {
+            //Edit an img
+            this.mw.find('.submitChange').attr('value', 'Edit Article');
+            this.mw.find('.submitDelete').attr('value', 'Delete Article');
+        }
+    }
+
+    reset () {
+        super.reset();
+        this.mwImg.attr('src', '');
+        this.mwFileInput.attr('src', '');
+    }
+
+    load() {
+        super.load();
+        if (this.values.src !== false) {
+            this.mwImg.attr('src', this.values.src);
+        }
+    }
+
+    readURL(input) {
+        // CREDIT: https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded
+        // I couldnt figure this out, and still have trouble with the JS FileReader Object
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('.modalWindowMainImg').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+}
+
+$('.modalWindowImg').attr('src', '');
+$('.inputImg').val(null);
+$('.modalWindowImage').attr('src', $(caller).attr('src'));
+modalImg.attr('src', modalGroup[idx].attr('src'));
 
 
-// $(".inputImg").change(function(){
-//     readURL(this);
-// });
+$(".inputImg").change(function(){
+    readURL(this);
+});
 
-// $('img.modalImg').click(function() {
-//     //$('.modalImgActive').removeClass('modalImgActive');
-//     //$(this).addClass('modalImgActive');
-//     mwOpen(this, 2);
-// });
+$('img.modalImg').click(function() {
+    $('.modalImgActive').removeClass('modalImgActive');
+    $(this).addClass('modalImgActive');
+    mwOpen(this, 2);
+});

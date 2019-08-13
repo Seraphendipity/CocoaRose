@@ -1,7 +1,11 @@
-<?php require_once("../Resources/head-js.php"); 
-echo '<script src="../Scripts/arcScrollEffects.js"></script>';
-echo '</head>';
-    
+<?php require_once("../Resources/head-js.php"); ?>
+<script src="../Scripts/modalWindow.js"></script>
+<script>$(window).ready( function() {
+    var imgMW = new ArticleModalWindow();
+ });</script>
+<!-- <script src="../Scripts/arcScrollEffects.js"></script> -->
+</head>
+    <?php
     $id = isset($_GET["id"]) ? $_GET["id"] : $id = NULL ;
     if (isset($id) && is_numeric($id)) {
         /*_________________
@@ -44,61 +48,29 @@ echo '</head>';
         |___ | ___]  |  | | \| |__] ___] 
         _______________________________*/
         echo '<body>';
-        require_once "../Resources/elementLoader.html";
+        require_once "../Resources/elementLoader.php";
         require_once "../Resources/nav.php";
         require_once '../Resources/modalWindow/mW-archive.html';
         echo '<div class="breakHeader"></div>';
         echo '<div class="main">';
-    
-        
-        foreach( db_selectData($table) as $row ) {
-            createArticleElement($row, 1, 'articleCard'); 
+        $table = 'articles';
+        $data = db_selectData($table);
+        foreach( $data as $row ) {
+            echo createArticleElement($row, 1, 'articleCard'); 
             // INACCURACY: makes 2 sql calls, one is unnecessary
             // Possible Fix: pass $row to function, grab associative array
             //  with db_selectData
         }
 
-        $id = 0; //post index/id
-        $postsPerPage = 10;
-        $filename = "../Archive/arc-".$id.".html";
-
-        //ARCHIVE BLOCK____________________________________
-        while ( file_exists($filename) && ($id < $postsPerPage) ) {
-            $header = get_arc_meta($filename);
-            
-            echo <<<POST
-            <div class='arcBlock' style='background-image: url(../Images/{$header["bg-img"]});'>
-                <a class='arcBlockLink' href="../Main/archive?id={$id}">
-                <header class="arcBlockHeader">
-                    <h2 class="arcBlockHeaderTitle">{$header["title"]}</h2>
-                    <!--<p class="arcBlockHeaderSubtitle">{$header["subtitle"]}
-                        <span class="arcBlockHeaderSubtitleDate"></span>
-                    </p>-->
-                </header>
-                </a>
-            </div>
-POST;
-
-            $id++;
-            $filename = "../Archive/arc-".$id.".html";
-        }
-        //_________________________________________________
-
         echo '<div class="breakClear"></div></div>';
     }
+    echo '
+    <div class="toolbar"><button class="btnAddArticle btnAddMw"><i class="glyphicon glyphicon-plus"></i></button>
+    <div class="breakClear"></div></div>
+    ';
     require_once "../Resources/foot-common.php";
 
-    function get_arc_meta($filename) {
-        $header;
-        $content = file_get_contents($filename);
-        $BOC = strpos($content, "<!-- var arcMeta"); // Beginning of Comment
-        $EOC = strpos($content, "-->");              // End of Comment
-        if ( ($BOC !== false) && ($EOC !== false) ) {
-            $x = substr($content, $BOC+16, $EOC-16 ); //TODO: WHY -16?? Soft-code
-            $header = json_decode($x, true);
-        }
-        return($header);
-    }
+
     
 ?>
 
@@ -153,3 +125,42 @@ POST;
          require "../Resources/footer.php";
          echo '</body>';
      } -->
+
+<!-- 
+     $id = 0; //post index/id
+        $postsPerPage = 10;
+        $filename = "../Archive/arc-".$id.".html";
+
+        //ARCHIVE BLOCK____________________________________
+        while ( file_exists($filename) && ($id < $postsPerPage) ) {
+            $header = get_arc_meta($filename);
+            
+            echo <<<POST
+            <div class='arcBlock' style='background-image: url(../Images/{$header["bg-img"]});'>
+                <a class='arcBlockLink' href="../Main/archive?id={$id}">
+                <header class="arcBlockHeader">
+                    <h2 class="arcBlockHeaderTitle">{$header["title"]}</h2>
+                    <!--<p class="arcBlockHeaderSubtitle">{$header["subtitle"]}
+                        <span class="arcBlockHeaderSubtitleDate"></span>
+                    </p> ->
+                </header>
+                </a>
+            </div>
+POST;
+
+            $id++;
+            $filename = "../Archive/arc-".$id.".html";
+        }
+        //_________________________________________________ -->
+
+        <!-- function get_arc_meta($filename) {
+        $header;
+        $content = file_get_contents($filename);
+        $BOC = strpos($content, "<!- var arcMeta"); // Beginning of Comment
+        $EOC = strpos($content, "->");              // End of Comment
+        if ( ($BOC !== false) && ($EOC !== false) ) {
+            $x = substr($content, $BOC+16, $EOC-16 ); //TODO: WHY -16?? Soft-code
+            $header = json_decode($x, true);
+        }
+        return($header);
+    } -->

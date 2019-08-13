@@ -113,8 +113,13 @@ function db_selectData($table) {
     $conn = db_connect();
     $sql = "SELECT * FROM {$table};";
     $result = $conn->query($sql);
+    $data = [];
     while($row = $result->fetch_assoc()) {
         $data[] = $row;
+    }
+    if (empty($data)) {
+        log::debugDump($conn->connect_error);
+        log::debugDump($data);
     }
     db_disconnect($conn);
     return $data;

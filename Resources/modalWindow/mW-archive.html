@@ -11,18 +11,21 @@
         </div>
         <div class="modalWindowMeta">
             <form action="../Resources/image-form-handler.php" method="post" enctype="multipart/form-data" id="img-submit">
-                <label><span>Title:</span><input type="text" name="title" maxlength="128"></label>
-                <label><span>Subtitle:</span><input type="text" name="title" maxlength="128"></label>
-                <label><span>Author:</span> <input type="text" name="author" maxlength="128"></label>
-                <label><span>Image-ID:</span><input class="inputImg" type="file" name="imgSubmit" accept=".jpg,.png"></label>
+                <label><span>Title</span><input type="text" name="title" maxlength="128"></label>
+                <label><span>Subtitle</span><input type="text" name="subtitle" maxlength="128"></label>
+                <label><span>Author</span> <input type="text" name="author" maxlength="128"></label>
+                <!-- <label><span>Cite</span> <input type="text" name="author" maxlength="128"></label> -->
+                <label><span>Image-ID</span><input type="number" name="mainImgId" min="0"></label>
                 <a href="../Main/images">Need to upload a new image?</a> 
                 <!-- Consider a landing page that redirects with post data to open the add module-->
-                <label><span>Scheme:</span><input type="text" name="alt" maxlength="128"></label>
-                <label><span>Colors:</span><input type="text" name="cite" maxlength="2048"></label>
-                <label><span>Content:</span>
-                    <textarea name="date" maxlength="20000"></textarea></textarea>
+                <label><span>Scheme</span><input type="text" name="scheme" maxlength="128"></label>
+                <!-- Ideally scheme will be a dropdown list of options, from a SQL table -->
+                <label><span>Colors</span><input type="color" name="colors" maxlength="2048"></label>
+                <label><span>Content</span>
+                    <textarea name="contentMd" maxlength="20000"></textarea></textarea>
                 </label>
-                <label class="labelID"><span>ID:</span><input type="number" name="id" min="0" max="16" step="1" readonly></label>
+                <label class="labelID"><span>ID:</span><input type="number" name="id" min="0" step="1" readonly></label>
+                <input type="submit" name="submit" class="submit submitDelete formSubmit">
                 <input type="submit" name="submit" class="submit submitImg formSubmit">
             </form>
         </div>

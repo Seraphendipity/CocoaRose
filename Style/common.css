@@ -477,16 +477,16 @@ ________________________________________*/
         bottom: 0;
         right: 0;
     }
-    .toolbar .btnAddImg {
+    .toolbar .btnAddMw {
         font-size: 50px;
         float: right;
         
-    } .toolbar .btnAddImg:hover {
+    } .toolbar .btnAddMw:hover {
         color: rgb(0, 228, 0);
         opacity: 1;
     }
 
-    .flipperContainer button, .modalWindow button, .btnAddImg {
+    .flipperContainer button, .modalWindow button, .btnAddMw {
         font-size: 30px;
         background: none;
         border-radius: 50%;

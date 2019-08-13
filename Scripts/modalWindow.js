@@ -261,18 +261,17 @@ class ImageModalWindow extends ModalWindow {
     //     //selectedImg.parents('.imgFigure').nex;
     // }
 
-class BlogModalWindow extends ModalWindow {
+class ArticleModalWindow extends ModalWindow {
     constructor() {
         super();
-        this.mwImg = this.mw.find('.modalWindowMainImg');
-        this.mwFileInput = this.mw.find('form [type="file"]');
+        this.mwImg = this.mw.find('.mainImgShow');
     }
 
     initialize() {
         super.initialize();
         var that = this;
-        this.mw.find('form [type="file"]').change(function() {
-            that.readURL(this);
+        this.mw.find('form [name="mainImgId"]').change(function() {
+            that.loadImageById(this.val(), '.mainImgShow');
         });
     }
 
@@ -293,13 +292,16 @@ class BlogModalWindow extends ModalWindow {
     reset () {
         super.reset();
         this.mwImg.attr('src', '');
-        this.mwFileInput.attr('src', '');
+        this.mwImg.attr('alt', '');
+        this.mwImg.attr('title', '');
+        this.mwImg.attr('width', '');
+        this.mwImg.attr('height', '');
     }
 
     load() {
         super.load();
-        if (this.values.src !== false) {
-            this.mwImg.attr('src', this.values.src);
+        if (this.values.mainImgId !== false) {
+            this.mwImg.attr('src', this.values.mainImgId);
         }
     }
 
@@ -316,20 +318,32 @@ class BlogModalWindow extends ModalWindow {
             reader.readAsDataURL(input.files[0]);
         }
     }
+
+    loadImageById($imgId, $imgDisplayLocation) {
+        // Checks if Image exists in local copy first...
+
+        // Or retrieves image from server by $imgId, if it exists...
+
+
+        // Then displays it in $imgDisplayLocation
+        $imgTag = `
+
+        `;
+    }
 }
 
-$('.modalWindowImg').attr('src', '');
-$('.inputImg').val(null);
-$('.modalWindowImage').attr('src', $(caller).attr('src'));
-modalImg.attr('src', modalGroup[idx].attr('src'));
+// $('.modalWindowImg').attr('src', '');
+// $('.inputImg').val(null);
+// $('.modalWindowImage').attr('src', $(caller).attr('src'));
+// modalImg.attr('src', modalGroup[idx].attr('src'));
 
 
-$(".inputImg").change(function(){
-    readURL(this);
-});
+// $(".inputImg").change(function(){
+//     readURL(this);
+// });
 
-$('img.modalImg').click(function() {
-    $('.modalImgActive').removeClass('modalImgActive');
-    $(this).addClass('modalImgActive');
-    mwOpen(this, 2);
-});
+// $('img.modalImg').click(function() {
+//     $('.modalImgActive').removeClass('modalImgActive');
+//     $(this).addClass('modalImgActive');
+//     mwOpen(this, 2);
+// });

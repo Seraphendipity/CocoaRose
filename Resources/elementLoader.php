@@ -7,8 +7,9 @@
 // CONSIDER
 //  1. Making Generic Get function
 //  2. Asking for SQL row instead of ID
+require_once("../Resources/db_functions.php");
 
-getImgById ($id, $bClickable=false) {
+function getImgById ($id, $bClickable=false) {
     $imgData = db_selectDataByID('images', $uid);
     if($imgData !== false) {
 
@@ -22,8 +23,8 @@ getImgById ($id, $bClickable=false) {
         $cite = $imgData['cite'];
         $author = $imgData['author'];
         $date = $imgData['dateTaken'];
-    echo ($bClickable ? '<input type="image"' : '<img ' );    
-    echo "
+    $result = ($bClickable ? '<input type="image"' : '<img ' );    
+    $result .= "
         src=\"{$src}\" 
         alt=\"{$alt}\"  
         title=\"{$title}\"
@@ -37,6 +38,9 @@ getImgById ($id, $bClickable=false) {
         data-date=\"{$date}\"
         tabindex=\"0\">
         ";
+        return $result;
+    }
+    }
 }
 
 function getImg( int $uid = 0, int $groupId = 0 ) {
@@ -45,7 +49,6 @@ function getImg( int $uid = 0, int $groupId = 0 ) {
     //Group ID >=  1: Group with all images of that number.
     //All extra pararms are extra classes to add.
 
-    require_once("../Resources/db_functions.php");
     $classes = ' '; $figClasses = ' ';
 
     $bSemanticImg = ($groupId >= 0);
@@ -119,7 +122,6 @@ function createImageElement( int $uid = 0, int $groupId = 0 ) {
     //Group ID >=  1: Group with all images of that number.
     //All extra pararms are extra classes to add.
 
-    require_once("../Resources/db_functions.php");
     $classes = ' '; $figClasses = ' ';
 
 
@@ -212,12 +214,12 @@ function createArticleElement( $arcData, int $groupId = 0, $figClasses = '' ) {
         $contentHtml = $arcData['contentHtml'];
         $dateTaken = $arcData['dateTaken'];
         $datePosted = $arcData['datePosted'];
-        "<article class=\"modalElement modalElementArticle flipper{$figClasses}\">
+        $result = "<article class=\"modalElement modalElementArticle flipper{$figClasses}\">
             <div class=\"flipperContainer\">
                 <div class=\"flipperFront\">";
-                    getImgById($mainImgId, true);
+                $result .=    getImgById($mainImgId, true);
 
-        echo "
+        $result .= "
                     <article>
                         <header>
                             <h2 class=\"\">{$title}</h2>
@@ -234,7 +236,7 @@ function createArticleElement( $arcData, int $groupId = 0, $figClasses = '' ) {
                         <i class=\"glyphicon glyphicon-file\"></i>
                     </button>
                     <ul>
-                        <li>Title: <figcaption>{$title}</figcaption></li>
+                        <li>Title: <p>{$title}</p></li>
                         <li>Subtitle: <p>{$subtitle}</p></li>
                         <li>Scheme: <p>{$scheme}</p></li>
                         <li>Colors: <p>{$colors}</p></li>
@@ -247,9 +249,7 @@ function createArticleElement( $arcData, int $groupId = 0, $figClasses = '' ) {
         </article>";
     }
     }
-
+    return $result;
 }
-
-
 
 ?>

@@ -286,7 +286,7 @@ ________________________________________*/
     }
 
     /* ArcBlocks */
-    .arcBlock, .imgBlock {
+    .arcBlock, .imgBlock, .modalElement {
         overflow: hidden;
         position: relative;
         display: block;
@@ -448,7 +448,7 @@ ________________________________________*/
         background-color: rgba(40,40,40,0.6);
 
         display: none;
-        z-index: 1;
+        z-index: 10;
         overflow: auto;
     }
 
@@ -547,7 +547,6 @@ ________________________________________*/
         min-width: 25%;
         max-width: 50%;
     }
-
 
     
 

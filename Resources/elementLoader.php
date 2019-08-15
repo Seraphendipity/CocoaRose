@@ -10,7 +10,8 @@
 require_once("../Resources/db_functions.php");
 
 function getImgById ($id, $bClickable=false) {
-    $imgData = db_selectDataByID('images', $uid);
+    $imgData = db_selectDataByID('images', $id);
+    $classes = '';
     if($imgData !== false) {
 
     $bActive = $imgData['bActive'];
@@ -20,6 +21,7 @@ function getImgById ($id, $bClickable=false) {
         $height = $imgData['height']; //TODO: heightOpt and heightHd
         $alt = $imgData['alt'];
         $title = $imgData['title'];
+        $groupId = 0;
         $cite = $imgData['cite'];
         $author = $imgData['author'];
         $date = $imgData['dateTaken'];
@@ -31,7 +33,7 @@ function getImgById ($id, $bClickable=false) {
         width=\"{$width}\"
         height=\"{$height}\"
         class=\"{$classes}\"
-        data-id=\"{$uid}\"
+        data-id=\"{$id}\"
         data-gid=\"{$groupId}\"
         data-cite=\"{$cite}\"
         data-author=\"{$author}\"
@@ -116,31 +118,21 @@ function getImg( int $uid = 0, int $groupId = 0 ) {
 }
 
 
-function createImageElement( int $uid = 0, int $groupId = 0 ) {
+function createImageElement( $imgData, int $groupId = 0, $figClasses = '' ) {
     //Group ID <= -1: decorative image, non-modal
     //Group ID == 0: no meaningful group
     //Group ID >=  1: Group with all images of that number.
     //All extra pararms are extra classes to add.
 
-    $classes = ' '; $figClasses = ' ';
+    $result = '';
+    $bSemanticImg = true;
+    $classes = ''; 
+    $classes .= 'modalElementMain flipperFrontContent btnEditMw';
+    $classes .= ($groupId >= 1) ? ' modalGroup' : '';
 
-
-    $bSemanticImg = ($groupId >= 0);
-    $classes .= ($bSemanticImg) ? 'modalElementMain flipperFrontContent btnEditMw ' : '';
-    $classes .= ($groupId >= 1) ? 'modalGroup' : '';
-    foreach (array_slice(func_get_args(),2) as $class) {
-        if($bSemanticImg) {
-            $figClasses .= $class.' ';
-        } else {
-            $classes .= $class.' ';
-        }
-    }
-    $imgData = db_selectDataByID('images', $uid);
-    if($imgData !== false) {
-
-    $bActive = $imgData['bActive'];
-    if ($bActive == '1') {
+    if( ($imgData !== false) && ($imgData['bActive'] == 1) ) {
         $src = '../Images/'.$imgData['id'].'.'.$imgData['filename'];
+        $uid = $imgData['id'];
         $width = $imgData['width']; //TODO: widthOpt and widthHd
         $height = $imgData['height']; //TODO: heightOpt and heightHd
         $alt = $imgData['alt'];
@@ -148,11 +140,11 @@ function createImageElement( int $uid = 0, int $groupId = 0 ) {
         $cite = $imgData['cite'];
         $author = $imgData['author'];
         $date = $imgData['dateTaken'];
-        echo ($bSemanticImg) ? 
+        $result .= ($bSemanticImg) ? 
         "<figure class=\"modalElement modalElementImage imgFigure flipper{$figClasses}\">
             <div class=\"flipperContainer\">
                 <div class=\"flipperFront\">" : '';
-        echo        "<input type=\"image\" 
+        $result .=        "<input type=\"image\" 
                         src=\"{$src}\" 
                         alt=\"{$alt}\"  
                         title=\"{$title}\"  
@@ -166,7 +158,7 @@ function createImageElement( int $uid = 0, int $groupId = 0 ) {
                         data-date=\"{$date}\"
                         tabindex=\"0\">
                     ";
-        echo ($bSemanticImg) ? "
+        $result .= ($bSemanticImg) ? "
                     <button class=\"imgBtnMeta\">
                         <i class=\"glyphicon glyphicon-question-sign\" disabled=\"false\"></i>
                     </button>
@@ -185,9 +177,9 @@ function createImageElement( int $uid = 0, int $groupId = 0 ) {
         </figure>" 
             : '';
     }
-    }
-
+    return $result;
 }
+
 
 
 function createArticleElement( $arcData, int $groupId = 0, $figClasses = '' ) {
@@ -207,12 +199,12 @@ function createArticleElement( $arcData, int $groupId = 0, $figClasses = '' ) {
         $title = $arcData['title'];
         $subtitle = $arcData['subtitle'];
         $author = $arcData['author'];
+        $cite = ''; // TODO: placeholder
         $mainImgId = $arcData['mainImgId'];
         $scheme = $arcData['scheme'];
         $colors = $arcData['colors'];
         $contentMd = $arcData['contentMd'];
         $contentHtml = $arcData['contentHtml'];
-        $dateTaken = $arcData['dateTaken'];
         $datePosted = $arcData['datePosted'];
         $result = "<article class=\"modalElement modalElementArticle flipper{$figClasses}\">
             <div class=\"flipperContainer\">
@@ -241,7 +233,6 @@ function createArticleElement( $arcData, int $groupId = 0, $figClasses = '' ) {
                         <li>Scheme: <p>{$scheme}</p></li>
                         <li>Colors: <p>{$colors}</p></li>
                         <li>Cite: <a tabindex=\"-1\" href=\"{$cite}\">{$author}</a></li>
-                        <li>Date Created: <time datetime=\"{$dateTaken}\">{$dateTaken}</time></li>
                         <li>Date Posted: <time datetime=\"{$datePosted}\">{$datePosted}</time></li>
                     </ul>
                 </div>

@@ -23,7 +23,7 @@
     // $postsPerPage = 20;
     $data = db_selectData($table);
     foreach($data as $row)  {
-        getImg($row[0], 1, 'arcBlock');
+        echo createImageElement($row, 1, 'arcBlock');
     }
     ?>
     <div class="breakClear"></div></div>

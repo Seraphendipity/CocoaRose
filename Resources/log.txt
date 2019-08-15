@@ -1947,3 +1947,1377 @@ array(0) {
 }
 
 ---
+NULL
+
+---
+array(0) {
+}
+
+---
+NULL
+
+---
+array(0) {
+}
+
+---
+NULL
+
+---
+array(0) {
+}
+
+---
+NULL
+
+---
+array(0) {
+}
+
+---
+NULL
+
+---
+array(0) {
+}
+
+---
+NULL
+
+---
+array(0) {
+}
+
+---
+Unknown submit type, check image-form-handler conditionals.
+---
+NULL
+
+---
+array(0) {
+}
+
+---
+Unknown submit type, check image-form-handler conditionals.
+---
+NULL
+
+---
+array(0) {
+}
+
+---
+NULL
+
+---
+array(0) {
+}
+
+---
+string(80) "title,subtitle,author,mainImageId,scheme,colors,contentMd,contentHtml,datePosted"
+
+---
+array(9) {
+  [0]=>
+  string(16) "How to edit data"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  NULL
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(17) "Hello
+
+*Elijah*"
+  [7]=>
+  bool(false)
+  [8]=>
+  string(10) "2019-08-15"
+}
+
+---
+array(9) {
+  [0]=>
+  string(16) "How to edit data"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  NULL
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(17) "Hello
+
+*Elijah*"
+  [7]=>
+  bool(false)
+  [8]=>
+  string(10) "2019-08-15"
+}
+
+---
+string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
+
+---
+string(9) "sssssssss"
+
+---
+string(78) "title,subtitle,author,mainImgId,scheme,colors,contentMd,contentHtml,datePosted"
+
+---
+array(9) {
+  [0]=>
+  string(16) "How to edit data"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(17) "Hello
+
+*Elijah*"
+  [7]=>
+  bool(false)
+  [8]=>
+  string(10) "2019-08-15"
+}
+
+---
+array(9) {
+  [0]=>
+  string(16) "How to edit data"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(17) "Hello
+
+*Elijah*"
+  [7]=>
+  bool(false)
+  [8]=>
+  string(10) "2019-08-15"
+}
+
+---
+string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
+
+---
+string(9) "sssssssss"
+
+---
+string(78) "title,subtitle,author,mainImgId,scheme,colors,contentMd,contentHtml,datePosted"
+
+---
+array(9) {
+  [0]=>
+  string(8) "Test 123"
+  [1]=>
+  string(17) "The best of tests"
+  [2]=>
+  string(6) "Elijah"
+  [3]=>
+  string(2) "20"
+  [4]=>
+  string(7) "Default"
+  [5]=>
+  string(7) "#ff0000"
+  [6]=>
+  string(76) "This is cool content, right?
+
+*no??!* How dare thee!
+
+---
+
+also potato"
+  [7]=>
+  bool(false)
+  [8]=>
+  string(10) "2019-08-15"
+}
+
+---
+array(9) {
+  [0]=>
+  string(8) "Test 123"
+  [1]=>
+  string(17) "The best of tests"
+  [2]=>
+  string(6) "Elijah"
+  [3]=>
+  string(2) "20"
+  [4]=>
+  string(7) "Default"
+  [5]=>
+  string(7) "#ff0000"
+  [6]=>
+  string(76) "This is cool content, right?
+
+*no??!* How dare thee!
+
+---
+
+also potato"
+  [7]=>
+  bool(false)
+  [8]=>
+  string(10) "2019-08-15"
+}
+
+---
+string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
+
+---
+string(9) "sssssssss"
+
+---
+string(78) "title,subtitle,author,mainImgId,scheme,colors,contentMd,contentHtml,datePosted"
+
+---
+array(9) {
+  [0]=>
+  string(13) "Senko is Cute"
+  [1]=>
+  string(2) "No"
+  [2]=>
+  string(6) "Elijah"
+  [3]=>
+  string(2) "20"
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(26) "MOAR CONTENT
+
+**REEEEE**"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-15"
+}
+
+---
+array(9) {
+  [0]=>
+  string(13) "Senko is Cute"
+  [1]=>
+  string(2) "No"
+  [2]=>
+  string(6) "Elijah"
+  [3]=>
+  string(2) "20"
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(26) "MOAR CONTENT
+
+**REEEEE**"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-15"
+}
+
+---
+string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
+
+---
+string(9) "sssssssss"
+
+---
+string(78) "title,subtitle,author,mainImgId,scheme,colors,contentMd,contentHtml,datePosted"
+
+---
+array(9) {
+  [0]=>
+  string(6) "Flower"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(12) "MOAR CONTENT"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-15"
+}
+
+---
+array(9) {
+  [0]=>
+  string(6) "Flower"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(12) "MOAR CONTENT"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-15"
+}
+
+---
+string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
+
+---
+string(9) "sssssssss"
+
+---
+string(78) "title,subtitle,author,mainImgId,scheme,colors,contentMd,contentHtml,datePosted"
+
+---
+array(9) {
+  [0]=>
+  string(1) "a"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(3) "awe"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-15"
+}
+
+---
+array(9) {
+  [0]=>
+  string(1) "a"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(3) "awe"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-15"
+}
+
+---
+string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
+
+---
+string(9) "sssssssss"
+
+---
+string(78) "title,subtitle,author,mainImgId,scheme,colors,contentMd,contentHtml,datePosted"
+
+---
+array(9) {
+  [0]=>
+  string(16) "How to edit data"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(3) "wew"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-15"
+}
+
+---
+array(9) {
+  [0]=>
+  string(16) "How to edit data"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(3) "wew"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-15"
+}
+
+---
+string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
+
+---
+string(9) "sssssssss"
+
+---
+string(78) "title,subtitle,author,mainImgId,scheme,colors,contentMd,contentHtml,datePosted"
+
+---
+array(9) {
+  [0]=>
+  string(16) "How to edit data"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(3) "wew"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-15"
+}
+
+---
+array(9) {
+  [0]=>
+  string(16) "How to edit data"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(3) "wew"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-15"
+}
+
+---
+string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
+
+---
+string(9) "sssssssss"
+
+---
+string(78) "title,subtitle,author,mainImgId,scheme,colors,contentMd,contentHtml,datePosted"
+
+---
+array(9) {
+  [0]=>
+  string(16) "How to edit data"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(11) "wewqwee*po*"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-15"
+}
+
+---
+array(9) {
+  [0]=>
+  string(16) "How to edit data"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(11) "wewqwee*po*"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-15"
+}
+
+---
+string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
+
+---
+string(9) "sssssssss"
+
+---
+string(78) "title,subtitle,author,mainImgId,scheme,colors,contentMd,contentHtml,datePosted"
+
+---
+array(9) {
+  [0]=>
+  string(16) "How to edit data"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(11) "wewqwee*po*"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+array(9) {
+  [0]=>
+  string(16) "How to edit data"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(11) "wewqwee*po*"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
+
+---
+string(9) "sssssssss"
+
+---
+string(78) "title,subtitle,author,mainImgId,scheme,colors,contentMd,contentHtml,datePosted"
+
+---
+array(9) {
+  [0]=>
+  string(16) "How to edit data"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(11) "wewqwee*po*"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+array(9) {
+  [0]=>
+  string(16) "How to edit data"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(11) "wewqwee*po*"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
+
+---
+string(9) "sssssssss"
+
+---
+string(78) "title,subtitle,author,mainImgId,scheme,colors,contentMd,contentHtml,datePosted"
+
+---
+array(9) {
+  [0]=>
+  string(16) "How to edit data"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(11) "wewqwee*po*"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+array(9) {
+  [0]=>
+  string(16) "How to edit data"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(11) "wewqwee*po*"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
+
+---
+string(9) "sssssssss"
+
+---
+string(78) "title,subtitle,author,mainImgId,scheme,colors,contentMd,contentHtml,datePosted"
+
+---
+array(9) {
+  [0]=>
+  string(16) "How to edit data"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(11) "wewqwee*po*"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+array(9) {
+  [0]=>
+  string(16) "How to edit data"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(11) "wewqwee*po*"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
+
+---
+string(9) "sssssssss"
+
+---
+string(78) "title,subtitle,author,mainImgId,scheme,colors,contentMd,contentHtml,datePosted"
+
+---
+array(9) {
+  [0]=>
+  string(16) "How to edit data"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(11) "wewqwee*po*"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+array(9) {
+  [0]=>
+  string(16) "How to edit data"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(11) "wewqwee*po*"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
+
+---
+string(9) "sssssssss"
+
+---
+string(78) "title,subtitle,author,mainImgId,scheme,colors,contentMd,contentHtml,datePosted"
+
+---
+array(9) {
+  [0]=>
+  string(16) "How to edit data"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(11) "wewqwee*po*"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+array(9) {
+  [0]=>
+  string(16) "How to edit data"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(11) "wewqwee*po*"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
+
+---
+string(9) "sssssssss"
+
+---
+string(78) "title,subtitle,author,mainImgId,scheme,colors,contentMd,contentHtml,datePosted"
+
+---
+array(9) {
+  [0]=>
+  string(17) "Moar Data iz cool"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(51) "awesome ma dude
+
+*bloody heck*
+
+--- 
+
+goodbye"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+array(9) {
+  [0]=>
+  string(17) "Moar Data iz cool"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(51) "awesome ma dude
+
+*bloody heck*
+
+--- 
+
+goodbye"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
+
+---
+string(9) "sssssssss"
+
+---
+string(78) "title,subtitle,author,mainImgId,scheme,colors,contentMd,contentHtml,datePosted"
+
+---
+array(9) {
+  [0]=>
+  string(17) "Moar Data iz cool"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(51) "awesome ma dude
+
+*bloody heck*
+
+--- 
+
+goodbye"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+array(9) {
+  [0]=>
+  string(17) "Moar Data iz cool"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(51) "awesome ma dude
+
+*bloody heck*
+
+--- 
+
+goodbye"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
+
+---
+string(9) "sssssssss"
+
+---
+string(78) "title,subtitle,author,mainImgId,scheme,colors,contentMd,contentHtml,datePosted"
+
+---
+array(9) {
+  [0]=>
+  string(17) "Moar Data iz cool"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(51) "awesome ma dude
+
+*bloody heck*
+
+--- 
+
+goodbye"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+array(9) {
+  [0]=>
+  string(17) "Moar Data iz cool"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(51) "awesome ma dude
+
+*bloody heck*
+
+--- 
+
+goodbye"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
+
+---
+string(9) "sssssssss"
+
+---
+string(78) "title,subtitle,author,mainImgId,scheme,colors,contentMd,contentHtml,datePosted"
+
+---
+array(9) {
+  [0]=>
+  string(17) "Moar Data iz cool"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(51) "awesome ma dude
+
+*bloody heck*
+
+--- 
+
+goodbye"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+array(9) {
+  [0]=>
+  string(17) "Moar Data iz cool"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(51) "awesome ma dude
+
+*bloody heck*
+
+--- 
+
+goodbye"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
+
+---
+string(9) "sssssssss"
+
+---
+string(78) "title,subtitle,author,mainImgId,scheme,colors,contentMd,contentHtml,datePosted"
+
+---
+array(9) {
+  [0]=>
+  string(17) "Moar Data iz cool"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(51) "awesome ma dude
+
+*bloody heck*
+
+--- 
+
+goodbye"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+array(9) {
+  [0]=>
+  string(17) "Moar Data iz cool"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(51) "awesome ma dude
+
+*bloody heck*
+
+--- 
+
+goodbye"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
+
+---
+string(9) "sssssssss"
+
+---
+string(78) "title,subtitle,author,mainImgId,scheme,colors,contentMd,contentHtml,datePosted"
+
+---
+array(9) {
+  [0]=>
+  string(6) "Flower"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(12) "qweqweqweqwe"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+array(9) {
+  [0]=>
+  string(6) "Flower"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(12) "qweqweqweqwe"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
+
+---
+string(9) "sssssssss"
+
+---
+string(78) "title,subtitle,author,mainImgId,scheme,colors,contentMd,contentHtml,datePosted"
+
+---
+array(9) {
+  [0]=>
+  string(16) "How to edit data"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(6) "wdawda"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+array(9) {
+  [0]=>
+  string(16) "How to edit data"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(6) "wdawda"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
+
+---
+string(9) "sssssssss"
+
+---
+string(78) "title,subtitle,author,mainImgId,scheme,colors,contentMd,contentHtml,datePosted"
+
+---
+array(9) {
+  [0]=>
+  string(6) "Flower"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(18) "we5rw3523
+
+tyuty"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+array(9) {
+  [0]=>
+  string(6) "Flower"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(18) "we5rw3523
+
+tyuty"
+  [7]=>
+  string(0) ""
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
+
+---
+string(9) "sssssssss"
+
+---

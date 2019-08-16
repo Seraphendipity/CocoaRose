@@ -50,7 +50,7 @@
         echo '<body>';
         require_once "../Resources/elementLoader.php";
         require_once "../Resources/nav.php";
-        require_once '../Resources/modalWindow/mW-archive.html';
+        require_once '../Resources/modalWindow/mW-article.html';
         echo '<div class="breakHeader"></div>';
         echo '<div class="main">';
         $table = 'articles';

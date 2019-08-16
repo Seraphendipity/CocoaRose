@@ -118,7 +118,7 @@ class ModalWindow {
     }
 
     reset() {
-        this.mw.find('.modalWindowMeta input:not([type=submit])').val('');
+        this.mw.find('.modalWindowMeta input:not([type=submit])').attr('value', '');
         this.mw.find('.hide').removeClass('hide');
         this.mw.find('[readonly]').attr('readonly', false);
         this.mw.find('.submitOneBtn').removeClass('submitOneBtn');
@@ -264,7 +264,7 @@ class ImageModalWindow extends ModalWindow {
 class ArticleModalWindow extends ModalWindow {
     constructor() {
         super();
-        this.mwImg = this.mw.find('.mainImgShow');
+        this.mwImg = this.mw.find('.mainArticleImg');
     }
 
     initialize() {

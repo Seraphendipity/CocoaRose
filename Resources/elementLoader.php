@@ -9,9 +9,9 @@
 //  2. Asking for SQL row instead of ID
 require_once("../Resources/db_functions.php");
 
-function getImgById ($id, $bClickable=false) {
+function getImgById ($id, $bClickable=false, $classes='') {
+        
     $imgData = db_selectDataByID('images', $id);
-    $classes = '';
     if($imgData !== false) {
 
     $bActive = $imgData['bActive'];
@@ -189,6 +189,7 @@ function createArticleElement( $arcData, int $groupId = 0, $figClasses = '' ) {
     //All extra pararms are extra classes to add.
 
     $classes = '';
+    $result='';
 
     $classes .= 'modalElementMain flipperFrontContent btnEditMw';
     $classes .= ($groupId >= 1) ? ' modalGroup' : '';
@@ -206,12 +207,23 @@ function createArticleElement( $arcData, int $groupId = 0, $figClasses = '' ) {
         $contentMd = $arcData['contentMd'];
         $contentHtml = $arcData['contentHtml'];
         $datePosted = $arcData['datePosted'];
-        $result = "<article class=\"modalElement modalElementArticle flipper{$figClasses}\">
+        $id = $arcData['id'];
+        $result = "<figure class=\"modalElement modalElementArticle flipper{$figClasses}\">
             <div class=\"flipperContainer\">
-                <div class=\"flipperFront\">";
-                $result .=    getImgById($mainImgId, true);
-
-        $result .= "
+                <div class=\"flipperFront\">
+                <button class=\"{$classes}\"
+                data-title=\"{$title}\"
+                data-subtitle=\"{$subtitle}\"
+                data-scheme=\"{$scheme}\"
+                data-colors=\"{$colors}\"
+                data-cite=\"{$cite}\"
+                data-author=\"{$author}\"
+                data-datePosted=\"{$datePosted}\"
+                data-id=\"{$id}\">";
+                
+                $result .=    getImgById($mainImgId, false, 'mainArticleImg');
+                
+                $result .= "
                     <article>
                         <header>
                             <h2 class=\"\">{$title}</h2>
@@ -219,6 +231,7 @@ function createArticleElement( $arcData, int $groupId = 0, $figClasses = '' ) {
                         </header>
                         <div class=\"articleContent\">{$contentHtml}</div>
                     </article>
+                </button>
                     <button class=\"modalElementFrontBtn\" disabled=\"false\">
                         <i class=\"glyphicon glyphicon-question-sign\"></i>
                     </button>
@@ -237,7 +250,7 @@ function createArticleElement( $arcData, int $groupId = 0, $figClasses = '' ) {
                     </ul>
                 </div>
             </div>
-        </article>";
+        </figure>";
     }
     }
     return $result;

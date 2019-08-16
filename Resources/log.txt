@@ -3321,3 +3321,119 @@ string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
 string(9) "sssssssss"
 
 ---
+string(78) "title,subtitle,author,mainImgId,scheme,colors,contentMd,contentHtml,datePosted"
+
+---
+array(9) {
+  [0]=>
+  string(16) "How to edit data"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(13) "*hello there*"
+  [7]=>
+  string(29) "<p><em>hello there</em></p>
+"
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+array(9) {
+  [0]=>
+  string(16) "How to edit data"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(13) "*hello there*"
+  [7]=>
+  string(29) "<p><em>hello there</em></p>
+"
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
+
+---
+string(9) "sssssssss"
+
+---
+string(78) "title,subtitle,author,mainImgId,scheme,colors,contentMd,contentHtml,datePosted"
+
+---
+array(9) {
+  [0]=>
+  string(16) "How to edit data"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(13) "**no**
+
+yes"
+  [7]=>
+  string(40) "<p><strong>no</strong></p>
+<p>yes</p>
+"
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+array(9) {
+  [0]=>
+  string(16) "How to edit data"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(13) "**no**
+
+yes"
+  [7]=>
+  string(40) "<p><strong>no</strong></p>
+<p>yes</p>
+"
+  [8]=>
+  string(10) "2019-08-16"
+}
+
+---
+string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
+
+---
+string(9) "sssssssss"
+
+---

@@ -1,3 +1,8 @@
+/*________________________________________
+_ _  _ ____ ____ ____
+| |\/| |__| | __ |___
+| |  | |  | |__] |___
+________________________________________*/
 /*=============================================================================
  _______  _____  _______ _______  _____  __   _
  |       |     | |  |  | |  |  | |     | | \  |
@@ -656,5 +661,209 @@ ________________________________________*/
     margin: 1%;
   }
 }
+/*________________________________________
+_  _ ____ ___  ____ _    _ _ _ _ _  _ ___  ____ _ _ _ 
+|\/| |  | |  \ |__| |    | | | | |\ | |  \ |  | | | | 
+|  | |__| |__/ |  | |___ |_|_| | | \| |__/ |__| |_|_| 
+________________________________________*/
+.modalWindow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(40, 40, 40, 0.6);
+  display: none;
+  z-index: 10;
+  overflow: auto;
+}
+.modalWindow.modalWindowActive {
+  display: block;
+}
+.modalWindow .centeredBox {
+  width: 80%;
+  margin-top: 10vh;
+  overflow: hidden;
+}
+.modalWindow .modalWindowMainImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: 50% 50%;
+}
+.modalWindow .modalWindowBtn {
+  font-size: 30px;
+  background: none;
+  border-radius: 50%;
+  border: none;
+  color: #222;
+  opacity: 0.6;
+  transition: color 0.5s, opacity 0.5s;
+}
+.modalWindow .modalWindowBtn:hover {
+  opacity: 0.9;
+}
+.modalWindow .modalWindowMain {
+  position: relative;
+}
+.modalWindow .modalWindowMain button {
+  position: absolute;
+  width: 10%;
+  /* 100%:80% = 1.25 ratio, invisible "top" is -25%, 1.25*50% - 25% = 37.5%*/
+}
+.modalWindow .modalWindowMain button.modalWindowBtnExt {
+  top: 0%;
+  right: 0%;
+  height: 20%;
+  color: red;
+}
+.modalWindow .modalWindowMain button.modalWindowBtnDir {
+  top: 0%;
+  height: 100%;
+}
+.modalWindow .modalWindowMain button.modalWindowBtnDir i {
+  position: absolute;
+  transform: translateY(-50%);
+}
+.modalWindow .modalWindowMain button.modalWindowBtnFwd {
+  right: 0%;
+  top: 20%;
+  height: 80%;
+}
+.modalWindow .modalWindowMain button.modalWindowBtnFwd i {
+  /*see below*/
+  top: 37.5%;
+  right: 20%;
+}
+.modalWindow .modalWindowMain button.modalWindowBtnBck {
+  left: 0%;
+}
+.modalWindow .modalWindowMain button.modalWindowBtnBck i {
+  top: 50%;
+  left: 20%;
+}
+.modalWindow .modalWindowMeta label span {
+  display: inline-block;
+  text-align: right;
+  margin-right: 4px;
+  min-width: 25%;
+  max-width: 50%;
+}
+.modalWindow .modalWindowMeta .submit {
+  margin-right: 9.5%;
+  margin-left: 9.5%;
+}
+.modalWindow .modalWindowMeta .submitOneBtn {
+  width: 50%;
+  margin-right: 25%;
+  margin-left: 25%;
+}
 
-/*# sourceMappingURL=common.css.map */
+.toolbar {
+  position: sticky;
+  z-index: 5;
+  bottom: 0;
+  right: 0;
+}
+.toolbar .btnAddMw {
+  font-size: 30px;
+  background: none;
+  border-radius: 50%;
+  border: none;
+  color: #222;
+  opacity: 0.6;
+  transition: color 0.5s, opacity 0.5s;
+  font-size: 50px;
+  float: right;
+}
+.toolbar .btnAddMw:hover {
+  opacity: 0.9;
+}
+.toolbar .btnAddMw:hover {
+  color: #00e400;
+  opacity: 1;
+}
+
+/*________________________________________
+____ _    _ ___  ___  ____ ____ 
+|___ |    | |__] |__] |___ |__/ 
+|    |___ | |    |    |___ |  \ 
+________________________________________*/
+.flipper {
+  width: 45%;
+  margin: 2.5%;
+  height: 50vh;
+  background-color: black;
+  overflow: hidden;
+  perspective: 1000px;
+}
+.flipper button.flipperBtn {
+  font-size: 30px;
+  background: none;
+  border-radius: 50%;
+  border: none;
+  color: #222;
+  opacity: 0.6;
+  transition: color 0.5s, opacity 0.5s;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.flipper button.flipperBtn:hover {
+  opacity: 0.9;
+}
+.flipper button.flipperBtnImg {
+  color: #DDD;
+}
+.flipper li {
+  list-style: none;
+}
+.flipper figcaption {
+  display: inline;
+}
+.flipper .flipperContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+}
+.flipper .flipperContainer button:hover {
+  opacity: 0.9;
+}
+.flipper .flipperFront, .flipper .flipperBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+.flipper .flipperFront .flipperFrontContent {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+.flipper .flipperBack {
+  transform: rotateY(180deg);
+  background-color: #222;
+  /* background-image: linear-gradient(to bottom right, #333, #555); */
+}
+
+.imgFlipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+/* IMAGE FLIP STYLING */
+.imgBlock {
+  display: block;
+  float: left;
+  width: 45%;
+  margin: 1%;
+  position: relative;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=image.css.map */

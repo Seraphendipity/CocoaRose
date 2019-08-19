@@ -1,0 +1,31 @@
+/*________________________________________
+____ ____ ____ ___ ____ ____ 
+|___ |  | |  |  |  |___ |__/ 
+|    |__| |__|  |  |___ |  \ 
+________________________________________*/
+.mainFooter {
+    position: absolute;
+    bottom: 0;
+    float:left;
+    background-color: #1B1B1B;
+    width: 100%;
+    /* height: 50px; */
+    color: #CCC;
+    padding: 5px;
+    nav {
+        display: right; 
+        float: left;
+    } p {
+        display: block;
+        float: right;
+        margin: 0;
+    } a {
+        color: #CCC;
+        transition: color 1s;
+        background-color: transparent;
+    } a:hover {
+        text-decoration: none;
+        color: #EEE;
+        background-color: #EEE;
+    }
+}

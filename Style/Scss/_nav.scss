@@ -1,3 +1,78 @@
-nav {
-    color: red; height: 16px;
+/*________________________________________
+_  _ ____ _  _ 
+|\ | |__| |  | 
+| \| |  |  \/  
+________________________________________*/
+nav.site {
+    /* background-color: rgb(80, 80, 80); */
+    background-image: linear-gradient( to top left, #222, #1B1B1B);
+    border-width: 0;
+    display: block;
+    margin: 0;
+    opacity: 0.8;
+    overflow: hidden;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+
+    /* Nav Link Block */
+    a {
+        color: #CCC;
+        display: block;
+        float: left;
+        height: 2.4em;
+        width: 3.4em;
+        padding: 0.12em 0; /*T LR D*/
+        text-align: center;
+        text-decoration: none;
+        transition: color 1s, background-color 1s, padding 1s, height 1s, width 1s;
+
+        &:hover { 
+            /* hover color select */
+            background-color: #333; /*30AAAA*/
+            width: 6em;
+            color: #F0F0F0;
+        } 
+    
+        &:active {
+            /* link - clicked/selected */
+            background-color: #000;
+            color: #FFF;
+        }  
+
+        &.NavFloatRight {
+            float: right;
+        } 
+
+
+        &.currSite {
+            background-color: #111;
+            color: #F0F0F0;
+        }
+
+        i {
+            font-size: 2em;
+        } 
+
+        p {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.75s 0.25s, visibility 1s;
+        } 
+    } 
+
+    &:hover>a {
+        /* hover expand */
+        height: 3.8em;
+        width: 4em;
+        
+        p {
+            opacity: 100;
+            visibility: visible;
+        }
+    }    
+
 }
+

@@ -7,7 +7,7 @@
         //2: glyph name (only the part after glyphicon glyphicon-)
         //3: Calculated, is it the current site (in hindsight not necessary at all, oh well; TODO: optimize;)
         //4: Boolean, does it need to be right adjusted
-$URI =  $_SERVER['REQUEST_URI'];
+$URI =  '../Main/'.explode('.', basename($_SERVER['SCRIPT_FILENAME']))[0];
 $NavArr = Array(
     array("Home","../Main/home", "home", "", false),
     array("Archive","../Main/archive", "folder-open", "", false),

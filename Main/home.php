@@ -1,5 +1,5 @@
 <?php require_once('../Resources/head-common.php'); ?>
-    <link rel="stylesheet" type="text/css" href="../Style/home.css">
+    <link rel="stylesheet" type="text/css" href="../Style/CSS/home.css">
     <meta name="description" content="Introductory page for CocoaRose site.">
     <meta name="keywords" content="blog,pictures,flowers,Elijah,Rose,Cocoa">
 </head>

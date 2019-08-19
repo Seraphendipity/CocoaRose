@@ -1,0 +1,74 @@
+/*________________________________________
+____ _    _ ___  ___  ____ ____ 
+|___ |    | |__] |__] |___ |__/ 
+|    |___ | |    |    |___ |  \ 
+________________________________________*/
+.flipper {
+    width: 45%;
+    margin: 2.5%;
+    height: 50vh;
+    background-color: black;
+    overflow: hidden;
+    perspective: 1000px;
+
+    button.flipperBtn {
+        @include MinimalBtn();
+        position: absolute;
+        top: 0;
+        right: 0;
+        
+    } 
+    
+    button.flipperBtnImg {
+        color: #DDD;
+    }
+    
+    li {
+       list-style: none ;
+    }
+    
+    figcaption {
+        display: inline;
+    }
+
+    .flipperContainer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s;
+        transform-style: preserve-3d;
+        transform-origin: center right;
+
+        button:hover {
+            opacity: 0.9;
+        }
+    }
+
+    .flipperFront, .flipperBack {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        overflow: hidden;
+    }
+
+    .flipperFront {
+
+        .flipperFrontContent {
+            width: 100%;
+            height:100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        
+        }
+    }
+    .flipperBack {
+        transform: rotateY(180deg);
+        background-color: #222;
+        /* background-image: linear-gradient(to bottom right, #333, #555); */
+    }
+}
+
+.imgFlipped {
+    transform: translateX(-100%) rotateY(-180deg) ; 
+}

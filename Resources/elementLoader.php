@@ -141,7 +141,7 @@ function createImageElement( $imgData, int $groupId = 0, $figClasses = '' ) {
         $author = $imgData['author'];
         $date = $imgData['dateTaken'];
         $result .= ($bSemanticImg) ? 
-        "<figure class=\"modalElement modalElementImage imgFigure flipper{$figClasses}\">
+        "<figure class=\"modalElement modalElementImage imgFigure flipper {$figClasses}\">
             <div class=\"flipperContainer\">
                 <div class=\"flipperFront\">" : '';
         $result .=        "<input type=\"image\" 
@@ -159,12 +159,12 @@ function createImageElement( $imgData, int $groupId = 0, $figClasses = '' ) {
                         tabindex=\"0\">
                     ";
         $result .= ($bSemanticImg) ? "
-                    <button class=\"imgBtnMeta\">
+                    <button class=\"flipperBtn flipperBtnMeta\">
                         <i class=\"glyphicon glyphicon-question-sign\" disabled=\"false\"></i>
                     </button>
                 </div>
                 <div class=\"flipperBack\">
-                    <button class=\"imgBtnPic\" disabled=\"true\">
+                    <button class=\"flipperBtn flipperBtnImg\" disabled=\"true\">
                         <i class=\"glyphicon glyphicon-picture\"></i>
                     </button>
                     <ul>

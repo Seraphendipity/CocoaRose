@@ -1,0 +1,52 @@
+/*________________________________________
+____ ____ ____ _  _ ____ 
+|___ |  | |__/ |\/| [__  
+|    |__| |  \ |  | ___] 
+________________________________________*/
+    .centeredBox {
+        width: 80%;
+        margin: 0 auto;
+        background-color: #fff; 
+        padding: 2em;
+        border-radius: 2em;
+        opacity: 0.95;
+    }
+
+    .formTextarea {
+        resize: vertical;
+        width: 100%;
+        /* color: rgb(250, 102, 57);rgb(250, 57, 99) */
+    }
+
+    .formSubmit {
+        border: 1px solid #555;
+        width: 30%;
+        height: 3em;
+        color: rgb(0, 207, 52);
+        background-color: inherit;
+        transition: color 0.5s, background-color 0.5s;
+        border-radius: 0.5em;
+        /* float: right; */
+        opacity: 0.9;
+    } .formSubmit:hover {
+        color: white;
+        background-color: rgb(0, 197, 76);
+    }
+
+    label {
+        display: block;
+        width: 100%;
+    }
+
+    input, input[type="file"] {
+        display: inline-block;
+    }
+
+
+    .submitDelete {
+        color: red;
+
+        &:hover {
+            background-color: red;
+        }
+    }

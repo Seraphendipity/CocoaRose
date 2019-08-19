@@ -1,0 +1,109 @@
+/*________________________________________
+_  _ ____ _  _ ____ 
+|__| |  | |\/| |___ 
+|  | |__| |  | |___ 
+________________________________________*/
+h2 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.photoIntro {
+  position: relative;
+  height: 100vw;
+  height: 100vh;
+}
+
+.imgHome {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(40%);
+}
+
+.homePageTitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 128px;
+  position: absolute;
+  text-align: left;
+  top: 20%;
+  left: 10%;
+  transform: translate(0, -50%);
+}
+
+.homePageSubtitle {
+  font-size: 64px;
+  color: rgba(255, 255, 255, 0.664);
+  position: absolute;
+  text-align: left;
+  text-decoration: none;
+  top: 60%;
+  left: 10%;
+  max-width: 50%;
+  transform: translate(0, -50%);
+}
+
+.homeArcBlock {
+  display: block;
+  width: 100%;
+  height: 15em;
+  overflow: hidden;
+  transition: filter 0.5s, box-shadow 0.5s;
+}
+
+.homeArcBlock:hover {
+  box-shadow: 5px 5px 10px #1B1B1B inset;
+  filter: brightness(90%);
+}
+
+.homeArcBlock:first-child {
+  border-radius: 15px 15px 0 0;
+}
+
+.homeArcBlock:last-child {
+  border-radius: 0 0 15px 15px;
+}
+
+.homeArcBlockLink {
+  display: block;
+  width: 30%;
+  height: 75%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: left;
+  box-shadow: inherit;
+  border-radius: 0 0 8px 0;
+}
+
+.homeArcBlockHeader {
+  display: block;
+  float: left;
+  width: 70%;
+}
+
+.homeArcBlockHeader h3 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.homeArcBlock:nth-child(odd) {
+  /* background-color: rgba(255,255,255,0.2); */
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.homeArcBlock:nth-child(even) > a {
+  float: right;
+  border-radius: 0 0 0 8px;
+}
+
+.homeArcBlock:nth-child(even) header {
+  float: right;
+  text-align: right;
+}
+
+.homeArcBlock:nth-child(even):hover {
+  box-shadow: -5px 5px 10px #1B1B1B inset;
+}
+
+/*# sourceMappingURL=home.css.map */

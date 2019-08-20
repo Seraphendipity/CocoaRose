@@ -4,6 +4,7 @@ $(window).ready( function() {
 
 function flipperInit() {
     $('.flipper .flipperBtnMeta').click(function() {
+        console.log("hello");
         var container = $(this).parent().parent();
         container.find('.flipperBack [tabindex="-1"]').attr('tabindex', '0');
         container.find('.flipperFront [tabindex="0"]').attr('tabindex', '-1');

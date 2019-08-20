@@ -3,6 +3,20 @@ _  _ ____ ___  ____ _    _ _ _ _ _  _ ___  ____ _ _ _
 |\/| |  | |  \ |__| |    | | | | |\ | |  \ |  | | | | 
 |  | |__| |__/ |  | |___ |_|_| | | \| |__/ |__| |_|_| 
 ________________________________________*/
+@mixin MinimalBtn {
+    font-size: 30px;
+    background: none;
+    border-radius: 50%;
+    border: none;
+    color: #222;
+    opacity: 0.6;
+    transition: color 0.5s, opacity 0.5s;
+
+    &:hover {
+        opacity: 0.9;
+    }     
+}
+
 .modalWindow {
     position: fixed;
     top: 0;
@@ -118,5 +132,45 @@ ________________________________________*/
     .btnAddMw:hover {
         color: #00e400;
         opacity: 1;
+    }
+}
+
+.modalElement {
+    position: relative;
+    .btnEditMw {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    .modalElementMain~button.btnEditMw {
+        position: absolute;
+        top: 30px;
+    }
+
+    &.modalElementArticle {
+        article {
+            position: absolute;
+            min-height: 100%;
+            max-width: 85%;
+            top: 82%;
+            background: rgba(40, 40, 40, 0.75);
+            border-radius: 0 15px 0 0;
+            transition: top 0.5s ease-in-out 0.5s, border-radius 0.5s;
+            overflow: auto;
+            &:hover {
+                top: 0%;
+                border-radius: 0;
+            }
+        }
+        h2 {
+           // height: 20%;
+            text-align: left;
+            margin-top: 0;
+            padding: 0 2%;
+            color: rgba(255, 255, 255, 0.9);
+
+
+        }
     }
 }

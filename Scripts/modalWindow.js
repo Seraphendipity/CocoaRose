@@ -129,6 +129,7 @@ class ModalWindow {
         var mainElem = this.me.find('.modalElementMain');
         if (mainElem.length > 0) {
             var attributes = $('.modalWindowMeta form').find('input:not([type="submit"])');
+            console.log(attributes);
             for(var i=0; i < attributes.length; i++) {
                 var elem = attributes.get(i);
                 var name = $(elem).attr('name');
@@ -143,7 +144,7 @@ class ModalWindow {
             }
             this.values['gid'] = mainElem.attr('data-gid');
         } else {
-            console.log("Modal Element with uid"+id+"cannot be found.");
+            console.log("Modal Element with uid "+id+" cannot be found.");
             console.log(this.me);
         }
     }
@@ -271,7 +272,10 @@ class ArticleModalWindow extends ModalWindow {
         super.initialize();
         var that = this;
         this.mw.find('form [name="mainImgId"]').change(function() {
-            that.loadImageById(this.val(), '.mainImgShow');
+            that.loadImageById($(this).attr('value'), '.mainImgShow');
+        });
+        $('button.modalElementMain').click(function() {
+            $(this).parents('.modalElement').toggleClass('articleExpanded');
         });
     }
 
@@ -300,8 +304,12 @@ class ArticleModalWindow extends ModalWindow {
 
     load() {
         super.load();
+
         if (this.values.mainImgId !== false) {
-            this.mwImg.attr('src', this.values.mainImgId);
+          //  this.mwImg.attr('mainImgId', this.values.mainImgId);
+        }
+        if (this.values.contentMd !== false) {
+         //   $('.modalWindow textarea[name="contentMd"]').attr('contentMd', this.values.);
         }
     }
 

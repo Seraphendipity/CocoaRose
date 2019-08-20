@@ -443,6 +443,21 @@ hr {
   display: none;
 }
 
+.imgCenteredContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.imgCentered {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
 /*________________________________________
 _  _ ____ _  _ 
 |\ | |__| |  | 

@@ -1,5 +1,7 @@
 <?php require_once("../Resources/head-js.php"); ?>
+<link rel="stylesheet" type="text/css" href="../Style/CSS/article.css">
 <script src="../Scripts/modalWindow.js"></script>
+<script src="../Scripts/flipper.js"></script>
 <script>$(window).ready( function() {
     var imgMW = new ArticleModalWindow();
  });</script>

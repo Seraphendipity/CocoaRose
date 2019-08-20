@@ -127,7 +127,7 @@ function createImageElement( $imgData, int $groupId = 0, $figClasses = '' ) {
     $result = '';
     $bSemanticImg = true;
     $classes = ''; 
-    $classes .= 'modalElementMain flipperFrontContent btnEditMw';
+    $classes .= 'modalElementMain flipperFrontContent btnEditMw imgCentered';
     $classes .= ($groupId >= 1) ? ' modalGroup' : '';
 
     if( ($imgData !== false) && ($imgData['bActive'] == 1) ) {
@@ -143,7 +143,7 @@ function createImageElement( $imgData, int $groupId = 0, $figClasses = '' ) {
         $result .= ($bSemanticImg) ? 
         "<figure class=\"modalElement modalElementImage imgFigure flipper {$figClasses}\">
             <div class=\"flipperContainer\">
-                <div class=\"flipperFront\">" : '';
+                <div class=\"flipperFront imgCenteredContainer\">" : '';
         $result .=        "<input type=\"image\" 
                         src=\"{$src}\" 
                         alt=\"{$alt}\"  
@@ -160,11 +160,11 @@ function createImageElement( $imgData, int $groupId = 0, $figClasses = '' ) {
                     ";
         $result .= ($bSemanticImg) ? "
                     <button class=\"flipperBtn flipperBtnMeta\">
-                        <i class=\"glyphicon glyphicon-question-sign\" disabled=\"false\"></i>
+                        <i class=\"glyphicon glyphicon-question-sign\"></i>
                     </button>
                 </div>
                 <div class=\"flipperBack\">
-                    <button class=\"flipperBtn flipperBtnImg\" disabled=\"true\">
+                    <button class=\"flipperBtn flipperBtnImg\" disabled=\"disabled\">
                         <i class=\"glyphicon glyphicon-picture\"></i>
                     </button>
                     <ul>
@@ -191,7 +191,7 @@ function createArticleElement( $arcData, int $groupId = 0, $figClasses = '' ) {
     $classes = '';
     $result='';
 
-    $classes .= 'modalElementMain flipperFrontContent btnEditMw';
+    $classes .= 'modalElementMain flipperFrontContent imgCenteredContainer';
     $classes .= ($groupId >= 1) ? ' modalGroup' : '';
     if($arcData !== false) {
         
@@ -208,20 +208,24 @@ function createArticleElement( $arcData, int $groupId = 0, $figClasses = '' ) {
         $contentHtml = $arcData['contentHtml'];
         $datePosted = $arcData['datePosted'];
         $id = $arcData['id'];
-        $result = "<figure class=\"modalElement modalElementArticle flipper{$figClasses}\">
+        $gid = $groupId;
+        $result = "<figure class=\"modalElement modalElementArticle flipper {$figClasses}\">
             <div class=\"flipperContainer\">
                 <div class=\"flipperFront\">
                 <button class=\"{$classes}\"
-                data-title=\"{$title}\"
-                data-subtitle=\"{$subtitle}\"
-                data-scheme=\"{$scheme}\"
-                data-colors=\"{$colors}\"
-                data-cite=\"{$cite}\"
-                data-author=\"{$author}\"
-                data-datePosted=\"{$datePosted}\"
-                data-id=\"{$id}\">";
+                    data-title=\"{$title}\"
+                    data-subtitle=\"{$subtitle}\"
+                    data-contentMd=\"{$contentMd}\"
+                    data-mainImgId=\"{$mainImgId}\"
+                    data-scheme=\"{$scheme}\"
+                    data-colors=\"{$colors}\"
+                    data-cite=\"{$cite}\"
+                    data-author=\"{$author}\"
+                    data-datePosted=\"{$datePosted}\"
+                    data-id=\"{$id}\"
+                    data-gid=\"{$gid}\">";
                 
-                $result .=    getImgById($mainImgId, false, 'mainArticleImg');
+                $result .=    getImgById($mainImgId, false, 'mainArticleImg imgCentered');
                 
                 $result .= "
                     <article>
@@ -232,12 +236,15 @@ function createArticleElement( $arcData, int $groupId = 0, $figClasses = '' ) {
                         <div class=\"articleContent\">{$contentHtml}</div>
                     </article>
                 </button>
-                    <button class=\"modalElementFrontBtn\" disabled=\"false\">
+                    <button class=\"flipperBtn flipperBtnMeta\">
                         <i class=\"glyphicon glyphicon-question-sign\"></i>
+                    </button>
+                    <button class=\"flipperBtn btnEditMw\">
+                        <i class=\"glyphicon glyphicon-pencil\"></i>
                     </button>
                 </div>
                 <div class=\"flipperBack\">
-                    <button class=\"modalElementBackBtn\" disabled=\"true\">
+                    <button class=\"flipperBtn flipperBtnImg\" disabled=\"disabled\">
                         <i class=\"glyphicon glyphicon-file\"></i>
                     </button>
                     <ul>

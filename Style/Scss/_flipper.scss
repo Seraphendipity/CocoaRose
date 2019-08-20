@@ -44,7 +44,7 @@ ________________________________________*/
         }
     }
 
-    .flipperFront, .flipperBack {
+    .flipperBack {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -52,16 +52,14 @@ ________________________________________*/
         overflow: hidden;
     }
 
-    .flipperFront {
 
-        .flipperFrontContent {
-            width: 100%;
-            height:100%;
-            object-fit: cover;
-            object-position: 50% 50%;
-        
-        }
-    }
+    // .flipperFrontContent {
+    //     width: 100%;
+    //     height:100%;
+    //     object-fit: cover;
+    //     object-position: 50% 50%;
+    // }
+
     .flipperBack {
         transform: rotateY(180deg);
         background-color: #222;

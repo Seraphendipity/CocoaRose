@@ -1,4 +1,7 @@
 <?php require_once "../Resources/head-js.php"; ?>
+<link rel="stylesheet" type="text/css" href="../Style/CSS/image.css">
+<link rel="stylesheet" type="text/css" href="../Style/CSS/article.css">
+
 <script src="../Scripts/modalWindow.js"></script>
 <script src="../Scripts/flipper.js"></script>
 <script>$(window).ready( function() {
@@ -18,8 +21,6 @@
     // require "../Resources/head";
     $table = 'images';
 
-
-
     // $postsPerPage = 20;
     $data = db_selectData($table);
     foreach($data as $row)  {
@@ -31,7 +32,6 @@
 
     <div class="toolbar"><button class="btnAddImg btnAddMw"><i class="glyphicon glyphicon-plus"></i></button>
         <div class="breakClear"></div></div>
-
     
 <?php require "../Resources/foot-common.php";?>
 <!-- style='background-image: url(../Images/{$file[1]});' -->

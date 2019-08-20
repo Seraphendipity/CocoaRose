@@ -1,14 +1,14 @@
-
+@import 'modalWindow';  
+@import 'flipper';   
+   
 /*________________________________________
 ____ ____ ___ _ ____ _    ____ 
 |__| |__/  |  | |    |    |___ 
 |  | |  \  |  | |___ |___ |___ 
 ________________________________________*/
-@import 'common';
-@import 'modalWindow';  
-@import 'flipper';      
 
 /* Archive Posts */
+
     body.arc {
         background-image: linear-gradient(to left bottom, #222, #555);
     }
@@ -138,3 +138,17 @@ ________________________________________*/
         height: 5em;
         border-radius: 0.4em;
     } 
+
+    .modalWindowBtnFwd {
+        left: 10%;
+    }
+
+    .modalElementArticle {
+        transition: width 0.5s, height 0.5s; 
+
+    }
+
+    .articleExpanded {
+        width: 100%;
+        height: 90vh;
+    }

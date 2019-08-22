@@ -33,9 +33,11 @@ ________________________________________*/
   background: none;
   border-radius: 50%;
   border: none;
-  color: #222;
+  color: #DDD;
   opacity: 0.6;
   transition: color 0.5s, opacity 0.5s;
+  background-color: #222;
+  border-radius: 0;
 }
 .modalWindow .modalWindowBtn:hover {
   opacity: 0.9;
@@ -45,7 +47,7 @@ ________________________________________*/
 }
 .modalWindow .modalWindowMain button {
   position: absolute;
-  width: 10%;
+  width: 5%;
   /* 100%:80% = 1.25 ratio, invisible "top" is -25%, 1.25*50% - 25% = 37.5%*/
 }
 .modalWindow .modalWindowMain button.modalWindowBtnExt {
@@ -63,7 +65,7 @@ ________________________________________*/
   transform: translateY(-50%);
 }
 .modalWindow .modalWindowMain button.modalWindowBtnFwd {
-  right: 0%;
+  left: 95%;
   top: 20%;
   height: 80%;
 }
@@ -95,6 +97,11 @@ ________________________________________*/
   margin-right: 25%;
   margin-left: 25%;
 }
+.modalWindow .modalWindowMeta textarea {
+  width: 100%;
+  max-width: 100%;
+  height: 40vh;
+}
 
 .toolbar {
   position: sticky;
@@ -107,7 +114,7 @@ ________________________________________*/
   background: none;
   border-radius: 50%;
   border: none;
-  color: #222;
+  color: #DDD;
   opacity: 0.6;
   transition: color 0.5s, opacity 0.5s;
   font-size: 50px;
@@ -129,29 +136,54 @@ ________________________________________*/
   padding: 0;
   border: 0;
 }
+.modalElement .modalElementMain {
+  padding: 0;
+  border: 0;
+}
 .modalElement .modalElementMain ~ button.btnEditMw {
-  position: absolute;
-  top: 30px;
+  float: right;
 }
 .modalElement.modalElementArticle article {
   position: absolute;
   min-height: 100%;
-  max-width: 85%;
+  width: 60%;
   top: 82%;
   background: rgba(40, 40, 40, 0.75);
   border-radius: 0 15px 0 0;
-  transition: top 0.5s ease-in-out 0.5s, border-radius 0.5s;
+  transition: top 0.5s ease-in-out 0.5s, border-radius 0.5s, width 0.5s, max-width 0.5s;
   overflow: auto;
 }
 .modalElement.modalElementArticle article:hover {
   top: 0%;
   border-radius: 0;
+  width: 100%;
+  height: 100%;
+}
+.modalElement.modalElementArticle article:hover header {
+  height: 20%;
+  overflow: auto;
+}
+.modalElement.modalElementArticle article:hover .articleContent {
+  height: 80%;
 }
 .modalElement.modalElementArticle h2 {
   text-align: left;
   margin-top: 0;
   padding: 0 2%;
   color: rgba(255, 255, 255, 0.9);
+}
+.modalElement.articleExpanded.modalElementArticle article {
+  top: 0%;
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+}
+.modalElement.articleExpanded.modalElementArticle article header {
+  height: 20%;
+  overflow: auto;
+}
+.modalElement.articleExpanded.modalElementArticle article .articleContent {
+  height: 80%;
 }
 
 /*________________________________________
@@ -167,23 +199,26 @@ ________________________________________*/
   overflow: hidden;
   perspective: 1000px;
 }
+.flipper .flipperBtnMenu {
+  position: absolute;
+  background-color: rgba(34, 34, 34, 0.808);
+  top: 0;
+  right: 0;
+  border-radius: 0 0 0 20px;
+  padding-left: 7px;
+}
 .flipper button.flipperBtn {
   font-size: 30px;
   background: none;
   border-radius: 50%;
   border: none;
-  color: #222;
+  color: #DDD;
   opacity: 0.6;
   transition: color 0.5s, opacity 0.5s;
-  position: absolute;
-  top: 0;
-  right: 0;
+  position: relative;
 }
 .flipper button.flipperBtn:hover {
   opacity: 0.9;
-}
-.flipper button.flipperBtnImg {
-  color: #DDD;
 }
 .flipper li {
   list-style: none;

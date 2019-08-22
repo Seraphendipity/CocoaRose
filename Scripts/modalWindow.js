@@ -304,13 +304,8 @@ class ArticleModalWindow extends ModalWindow {
 
     load() {
         super.load();
-
-        if (this.values.mainImgId !== false) {
-          //  this.mwImg.attr('mainImgId', this.values.mainImgId);
-        }
-        if (this.values.contentMd !== false) {
-         //   $('.modalWindow textarea[name="contentMd"]').attr('contentMd', this.values.);
-        }
+        var md = this.me.find('.articleMarkdown').text();
+        this.mw.find('textarea[name="contentMd"]').text(md);
     }
 
     readURL(input) {

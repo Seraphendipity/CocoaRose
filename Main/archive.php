@@ -1,6 +1,7 @@
 <?php require_once("../Resources/head-js.php"); ?>
 <link rel="stylesheet" type="text/css" href="../Style/CSS/article.css">
 <script src="../Scripts/modalWindow.js"></script>
+<!-- <script src="../Scripts/articleData.js"></script> TODO: Implement JSON Data Storage -->
 <script src="../Scripts/flipper.js"></script>
 <script>$(window).ready( function() {
     var imgMW = new ArticleModalWindow();
@@ -28,7 +29,7 @@
             elijahtrose@gmail.com.</p>";
         } else {
             //PRINT PAGE___________________________________
-                $header = get_arc_meta($filename);    //Grabs Header and Pic Info
+                $header = get_arc_meta($filename);    //Grabs Header and Pic Infoh
                 $content = file_get_contents($filename);
 
                 echo '<header>',

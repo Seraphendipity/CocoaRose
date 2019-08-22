@@ -11,17 +11,21 @@ ________________________________________*/
     overflow: hidden;
     perspective: 1000px;
 
-    button.flipperBtn {
-        @include MinimalBtn();
+    .flipperBtnMenu {
         position: absolute;
+        background-color: rgba(34, 34, 34, 0.808);
         top: 0;
         right: 0;
+        border-radius: 0 0 0 20px;
+        padding-left: 7px;
+
+    }
+
+    button.flipperBtn {
+        @include MinimalBtn();
+        position: relative;
         
     } 
-    
-    button.flipperBtnImg {
-        color: #DDD;
-    }
     
     li {
        list-style: none ;

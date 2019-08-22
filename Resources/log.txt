@@ -3437,3 +3437,613 @@ string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
 string(9) "sssssssss"
 
 ---
+string(78) "title,subtitle,author,mainImgId,scheme,colors,contentMd,contentHtml,datePosted"
+
+---
+array(9) {
+  [0]=>
+  string(6) "Flower"
+  [1]=>
+  string(25) "Why do we love flowers..."
+  [2]=>
+  string(16) "Elijah T.he Rose"
+  [3]=>
+  string(2) "34"
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(6727) "Flowers have long been adored as symbols of beauty, love, fettility, innocence, hope, and other such positvely-connotated words.
+They have inspired many a greater and lesser individual to write symbolic and lovely prose. <span class="textHL">This is not that.</span>
+No, while I attempt to be 
+<span class="textToolTipWord">wordy
+<span class="textToolTipDefinition">sesquipedalian adj. characterized by long words; long-winded</span></span>
+such that I present myself as well-versed, I am myself not that great at the literary arts. I find it dificult to
+quantitate and very abstrast, both its strength as well as its weakness. The ambiguity allows interoperability, like
+a very vague root class or function that serves to create others down the road, which enables literary fans to discuss and 
+develop ideas from the novel at length. 
+ But the cost is the lack of structure. That is not to say poetry and novels, as well as their analyses, do not have structure --
+far from it, developing structured arguements is an essential art to developing well-designed pieces. Simply put, though,
+the lack of specificty removes the pointedness that more direct approaches may have.
+
+Let us take the Bible, for instance. One of <em>the</em> most alluded to works of all time and the cornerstone of the 
+<a href="https://www.worldatlas.com/articles/largest-religions-in-the-world.html">the world's largest religion.</a> However, the same heavy use of symbolism and morals that allowed it to survive through
+numerous centuries also lends itself to the rampant issue of religious sects and denominations: baptist, catholic, methodist, lutheran, etc.
+Each sect believes in a different interpretation of parts of the Bible and preaching that its view is the correct meaning meant for us.
+These differences in oppinion can range from nuances on what we are allowed to eat to having slave-owners and the enslaved alike to use the book as the core for their platforms. 1984 has a similar issue: it is a terrific dystopian novel that warns of an overpowering government, but is that government born out of the far right or far left (or both)? 
+
+That is why ambiguity can be dangerous, for the freedom it leaves in interpretation by the readers
+can be abused easily. With mathematics, you can rarely "fluff" a proof or twist words into some axiom. There must be foundation, evidence, and reasoning
+that definitively proves your claims on the basis of given assumptions. With programming, even random functions are only pseudo-random, 
+everything hinging on the way a programmer writes their software into existence based on defined rules and principles.
+I thusly appreciate these subjects more. I know that, if I work hard enough, I can find a definitive answer and truth behind any 
+solution (at least in the capacity of anything to be definitive built off of our understanding and assumptions). There is an air of
+honesty, of skill. You do not have to decipher between truly great poets and those who are merely good at fluff. Not entirely, but 
+it is more black and white, a high-contrast, as opposed to the grey ambiguity of words.
+
+Yet this speaks moreover to my ineptitude more than a universal truth. As a child I adored the concepts of justice -- mercy and retribution, punishment
+and reward. There was a victor, and there was a victim. I was a "tattle-tale" or "snitch" to others, but to myself I was enacting deliverance. When you grow-up, 
+though, you are supposed to shed the "illusion" of a black and white world and don on adulthood with all of its mixed shades.
+
+ Indeed, many famous works that are built on the transition (or lack thereof in some cases) from childhood to adulthood use the cracking of the barrier as a major theme: 
+Catcher in the Rye, To Kill a Mockingbird, Tom Sawyer/Huckleberry Finn, Great Expectations, and the rest of the Highschool Reading checklist. The black and white spilling
+onto a singular canvas, producing a more nuanced and messy picture but one that, supposedly, reflects a truer reality.
+
+Yet, while like most I have of course come to recognize the amiguity of the world, I still like to hold onto the old black and white. It's soothing, like reliving childhood
+fantasies. Mind you, I'm not one to hold nolstagia at my core and proclaim daily that the grass was greener yesterday. That said, I still feel child-ish at my core. I still
+like to enact fantasy adventures, hold to firm rules, and delve into mathematics and programming more than the arts. I suppose most everyone does, though, to some extent.
+        
+Which, to vainly try to remain on-topic, I suppose is the reason I do not appreciate flowers that much, or fauna in general for that matter. Yes, they are beautiful (or can be at least),
+but also messy. They mix and match, varying in color and output. They are dificult to quantify and seperate into sections -- where does the root end and the stem begin? How can one wade into
+an underbrush and count every leaf there? This is not even delving into their literary use. Is a flower only meant to be defiled; does the white petal exist only so that it may be corrupted for 
+whatever moral is needed? The leaves of a stem: all contributing to one goal or competing for resources; competitive cooperation or cooperative competition?
+        
+And even with these simple questions you see my dilemna:  while offering that these are the "greys," I still imply a dichotomy. Yes or no, this or that. Maybe this and that but at a ratio.
+I do not consider instead some more enlightened question free of the built-in assumptions, relating to my refusal to address such open-ended problems. I dislike it, I am not mature
+or intelligent enough to tackle these problems, and thus incetead of leaving them messily about I deny them conception in the first place. A self-delusion.
+        
+It is said that 'tis better to die than be killed. That's why, I suppose, I deceive myself. I will not have my very way of thinking and foundation shaken by such an innocuous plant. Nay; should I have to drown in the amiguity it will be by my own hand and choosing. The mask of complexity and isolation shall be
+forged by myself and myself alone to hide the dread of the Grey. I would rather be my own executioner and outwardly prefer black and white for a persona instead of being
+challenged out in the open by the color of the flower. 
+        
+Afterall, the deadliest sin is pride. I cannot get over myself enough to even address such core concerns, or perhaps I am simply unwilling. Whatever the case, it makes me hesitant to sit there too long
+with these colored and silent sirens.
+        
+Thank you for stopping and smelling the Roses with me."
+  [7]=>
+  string(6728) "<p>Flowers have long been adored as symbols of beauty, love, fettility, innocence, hope, and other such positvely-connotated words. They have inspired many a greater and lesser individual to write symbolic and lovely prose. <span class="textHL">This is not that.</span> No, while I attempt to be <span class="textToolTipWord">wordy <span class="textToolTipDefinition">sesquipedalian adj. characterized by long words; long-winded</span></span> such that I present myself as well-versed, I am myself not that great at the literary arts. I find it dificult to quantitate and very abstrast, both its strength as well as its weakness. The ambiguity allows interoperability, like a very vague root class or function that serves to create others down the road, which enables literary fans to discuss and develop ideas from the novel at length. But the cost is the lack of structure. That is not to say poetry and novels, as well as their analyses, do not have structure – far from it, developing structured arguements is an essential art to developing well-designed pieces. Simply put, though, the lack of specificty removes the pointedness that more direct approaches may have.</p>
+<p>Let us take the Bible, for instance. One of <em>the</em> most alluded to works of all time and the cornerstone of the <a href="https://www.worldatlas.com/articles/largest-religions-in-the-world.html">the world’s largest religion.</a> However, the same heavy use of symbolism and morals that allowed it to survive through numerous centuries also lends itself to the rampant issue of religious sects and denominations: baptist, catholic, methodist, lutheran, etc. Each sect believes in a different interpretation of parts of the Bible and preaching that its view is the correct meaning meant for us. These differences in oppinion can range from nuances on what we are allowed to eat to having slave-owners and the enslaved alike to use the book as the core for their platforms. 1984 has a similar issue: it is a terrific dystopian novel that warns of an overpowering government, but is that government born out of the far right or far left (or both)?</p>
+<p>That is why ambiguity can be dangerous, for the freedom it leaves in interpretation by the readers can be abused easily. With mathematics, you can rarely “fluff” a proof or twist words into some axiom. There must be foundation, evidence, and reasoning that definitively proves your claims on the basis of given assumptions. With programming, even random functions are only pseudo-random, everything hinging on the way a programmer writes their software into existence based on defined rules and principles. I thusly appreciate these subjects more. I know that, if I work hard enough, I can find a definitive answer and truth behind any solution (at least in the capacity of anything to be definitive built off of our understanding and assumptions). There is an air of honesty, of skill. You do not have to decipher between truly great poets and those who are merely good at fluff. Not entirely, but it is more black and white, a high-contrast, as opposed to the grey ambiguity of words.</p>
+<p>Yet this speaks moreover to my ineptitude more than a universal truth. As a child I adored the concepts of justice – mercy and retribution, punishment and reward. There was a victor, and there was a victim. I was a “tattle-tale” or “snitch” to others, but to myself I was enacting deliverance. When you grow-up, though, you are supposed to shed the “illusion” of a black and white world and don on adulthood with all of its mixed shades.</p>
+<p>Indeed, many famous works that are built on the transition (or lack thereof in some cases) from childhood to adulthood use the cracking of the barrier as a major theme: Catcher in the Rye, To Kill a Mockingbird, Tom Sawyer/Huckleberry Finn, Great Expectations, and the rest of the Highschool Reading checklist. The black and white spilling onto a singular canvas, producing a more nuanced and messy picture but one that, supposedly, reflects a truer reality.</p>
+<p>Yet, while like most I have of course come to recognize the amiguity of the world, I still like to hold onto the old black and white. It’s soothing, like reliving childhood fantasies. Mind you, I’m not one to hold nolstagia at my core and proclaim daily that the grass was greener yesterday. That said, I still feel child-ish at my core. I still like to enact fantasy adventures, hold to firm rules, and delve into mathematics and programming more than the arts. I suppose most everyone does, though, to some extent.</p>
+<p>Which, to vainly try to remain on-topic, I suppose is the reason I do not appreciate flowers that much, or fauna in general for that matter. Yes, they are beautiful (or can be at least), but also messy. They mix and match, varying in color and output. They are dificult to quantify and seperate into sections – where does the root end and the stem begin? How can one wade into an underbrush and count every leaf there? This is not even delving into their literary use. Is a flower only meant to be defiled; does the white petal exist only so that it may be corrupted for whatever moral is needed? The leaves of a stem: all contributing to one goal or competing for resources; competitive cooperation or cooperative competition?</p>
+<p>And even with these simple questions you see my dilemna: while offering that these are the “greys,” I still imply a dichotomy. Yes or no, this or that. Maybe this and that but at a ratio. I do not consider instead some more enlightened question free of the built-in assumptions, relating to my refusal to address such open-ended problems. I dislike it, I am not mature or intelligent enough to tackle these problems, and thus incetead of leaving them messily about I deny them conception in the first place. A self-delusion.</p>
+<p>It is said that ’tis better to die than be killed. That’s why, I suppose, I deceive myself. I will not have my very way of thinking and foundation shaken by such an innocuous plant. Nay; should I have to drown in the amiguity it will be by my own hand and choosing. The mask of complexity and isolation shall be forged by myself and myself alone to hide the dread of the Grey. I would rather be my own executioner and outwardly prefer black and white for a persona instead of being challenged out in the open by the color of the flower.</p>
+<p>Afterall, the deadliest sin is pride. I cannot get over myself enough to even address such core concerns, or perhaps I am simply unwilling. Whatever the case, it makes me hesitant to sit there too long with these colored and silent sirens.</p>
+<p>Thank you for stopping and smelling the Roses with me.</p>
+"
+  [8]=>
+  string(10) "2019-08-22"
+}
+
+---
+array(9) {
+  [0]=>
+  string(6) "Flower"
+  [1]=>
+  string(25) "Why do we love flowers..."
+  [2]=>
+  string(16) "Elijah T.he Rose"
+  [3]=>
+  string(2) "34"
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(6727) "Flowers have long been adored as symbols of beauty, love, fettility, innocence, hope, and other such positvely-connotated words.
+They have inspired many a greater and lesser individual to write symbolic and lovely prose. <span class="textHL">This is not that.</span>
+No, while I attempt to be 
+<span class="textToolTipWord">wordy
+<span class="textToolTipDefinition">sesquipedalian adj. characterized by long words; long-winded</span></span>
+such that I present myself as well-versed, I am myself not that great at the literary arts. I find it dificult to
+quantitate and very abstrast, both its strength as well as its weakness. The ambiguity allows interoperability, like
+a very vague root class or function that serves to create others down the road, which enables literary fans to discuss and 
+develop ideas from the novel at length. 
+ But the cost is the lack of structure. That is not to say poetry and novels, as well as their analyses, do not have structure --
+far from it, developing structured arguements is an essential art to developing well-designed pieces. Simply put, though,
+the lack of specificty removes the pointedness that more direct approaches may have.
+
+Let us take the Bible, for instance. One of <em>the</em> most alluded to works of all time and the cornerstone of the 
+<a href="https://www.worldatlas.com/articles/largest-religions-in-the-world.html">the world's largest religion.</a> However, the same heavy use of symbolism and morals that allowed it to survive through
+numerous centuries also lends itself to the rampant issue of religious sects and denominations: baptist, catholic, methodist, lutheran, etc.
+Each sect believes in a different interpretation of parts of the Bible and preaching that its view is the correct meaning meant for us.
+These differences in oppinion can range from nuances on what we are allowed to eat to having slave-owners and the enslaved alike to use the book as the core for their platforms. 1984 has a similar issue: it is a terrific dystopian novel that warns of an overpowering government, but is that government born out of the far right or far left (or both)? 
+
+That is why ambiguity can be dangerous, for the freedom it leaves in interpretation by the readers
+can be abused easily. With mathematics, you can rarely "fluff" a proof or twist words into some axiom. There must be foundation, evidence, and reasoning
+that definitively proves your claims on the basis of given assumptions. With programming, even random functions are only pseudo-random, 
+everything hinging on the way a programmer writes their software into existence based on defined rules and principles.
+I thusly appreciate these subjects more. I know that, if I work hard enough, I can find a definitive answer and truth behind any 
+solution (at least in the capacity of anything to be definitive built off of our understanding and assumptions). There is an air of
+honesty, of skill. You do not have to decipher between truly great poets and those who are merely good at fluff. Not entirely, but 
+it is more black and white, a high-contrast, as opposed to the grey ambiguity of words.
+
+Yet this speaks moreover to my ineptitude more than a universal truth. As a child I adored the concepts of justice -- mercy and retribution, punishment
+and reward. There was a victor, and there was a victim. I was a "tattle-tale" or "snitch" to others, but to myself I was enacting deliverance. When you grow-up, 
+though, you are supposed to shed the "illusion" of a black and white world and don on adulthood with all of its mixed shades.
+
+ Indeed, many famous works that are built on the transition (or lack thereof in some cases) from childhood to adulthood use the cracking of the barrier as a major theme: 
+Catcher in the Rye, To Kill a Mockingbird, Tom Sawyer/Huckleberry Finn, Great Expectations, and the rest of the Highschool Reading checklist. The black and white spilling
+onto a singular canvas, producing a more nuanced and messy picture but one that, supposedly, reflects a truer reality.
+
+Yet, while like most I have of course come to recognize the amiguity of the world, I still like to hold onto the old black and white. It's soothing, like reliving childhood
+fantasies. Mind you, I'm not one to hold nolstagia at my core and proclaim daily that the grass was greener yesterday. That said, I still feel child-ish at my core. I still
+like to enact fantasy adventures, hold to firm rules, and delve into mathematics and programming more than the arts. I suppose most everyone does, though, to some extent.
+        
+Which, to vainly try to remain on-topic, I suppose is the reason I do not appreciate flowers that much, or fauna in general for that matter. Yes, they are beautiful (or can be at least),
+but also messy. They mix and match, varying in color and output. They are dificult to quantify and seperate into sections -- where does the root end and the stem begin? How can one wade into
+an underbrush and count every leaf there? This is not even delving into their literary use. Is a flower only meant to be defiled; does the white petal exist only so that it may be corrupted for 
+whatever moral is needed? The leaves of a stem: all contributing to one goal or competing for resources; competitive cooperation or cooperative competition?
+        
+And even with these simple questions you see my dilemna:  while offering that these are the "greys," I still imply a dichotomy. Yes or no, this or that. Maybe this and that but at a ratio.
+I do not consider instead some more enlightened question free of the built-in assumptions, relating to my refusal to address such open-ended problems. I dislike it, I am not mature
+or intelligent enough to tackle these problems, and thus incetead of leaving them messily about I deny them conception in the first place. A self-delusion.
+        
+It is said that 'tis better to die than be killed. That's why, I suppose, I deceive myself. I will not have my very way of thinking and foundation shaken by such an innocuous plant. Nay; should I have to drown in the amiguity it will be by my own hand and choosing. The mask of complexity and isolation shall be
+forged by myself and myself alone to hide the dread of the Grey. I would rather be my own executioner and outwardly prefer black and white for a persona instead of being
+challenged out in the open by the color of the flower. 
+        
+Afterall, the deadliest sin is pride. I cannot get over myself enough to even address such core concerns, or perhaps I am simply unwilling. Whatever the case, it makes me hesitant to sit there too long
+with these colored and silent sirens.
+        
+Thank you for stopping and smelling the Roses with me."
+  [7]=>
+  string(6728) "<p>Flowers have long been adored as symbols of beauty, love, fettility, innocence, hope, and other such positvely-connotated words. They have inspired many a greater and lesser individual to write symbolic and lovely prose. <span class="textHL">This is not that.</span> No, while I attempt to be <span class="textToolTipWord">wordy <span class="textToolTipDefinition">sesquipedalian adj. characterized by long words; long-winded</span></span> such that I present myself as well-versed, I am myself not that great at the literary arts. I find it dificult to quantitate and very abstrast, both its strength as well as its weakness. The ambiguity allows interoperability, like a very vague root class or function that serves to create others down the road, which enables literary fans to discuss and develop ideas from the novel at length. But the cost is the lack of structure. That is not to say poetry and novels, as well as their analyses, do not have structure – far from it, developing structured arguements is an essential art to developing well-designed pieces. Simply put, though, the lack of specificty removes the pointedness that more direct approaches may have.</p>
+<p>Let us take the Bible, for instance. One of <em>the</em> most alluded to works of all time and the cornerstone of the <a href="https://www.worldatlas.com/articles/largest-religions-in-the-world.html">the world’s largest religion.</a> However, the same heavy use of symbolism and morals that allowed it to survive through numerous centuries also lends itself to the rampant issue of religious sects and denominations: baptist, catholic, methodist, lutheran, etc. Each sect believes in a different interpretation of parts of the Bible and preaching that its view is the correct meaning meant for us. These differences in oppinion can range from nuances on what we are allowed to eat to having slave-owners and the enslaved alike to use the book as the core for their platforms. 1984 has a similar issue: it is a terrific dystopian novel that warns of an overpowering government, but is that government born out of the far right or far left (or both)?</p>
+<p>That is why ambiguity can be dangerous, for the freedom it leaves in interpretation by the readers can be abused easily. With mathematics, you can rarely “fluff” a proof or twist words into some axiom. There must be foundation, evidence, and reasoning that definitively proves your claims on the basis of given assumptions. With programming, even random functions are only pseudo-random, everything hinging on the way a programmer writes their software into existence based on defined rules and principles. I thusly appreciate these subjects more. I know that, if I work hard enough, I can find a definitive answer and truth behind any solution (at least in the capacity of anything to be definitive built off of our understanding and assumptions). There is an air of honesty, of skill. You do not have to decipher between truly great poets and those who are merely good at fluff. Not entirely, but it is more black and white, a high-contrast, as opposed to the grey ambiguity of words.</p>
+<p>Yet this speaks moreover to my ineptitude more than a universal truth. As a child I adored the concepts of justice – mercy and retribution, punishment and reward. There was a victor, and there was a victim. I was a “tattle-tale” or “snitch” to others, but to myself I was enacting deliverance. When you grow-up, though, you are supposed to shed the “illusion” of a black and white world and don on adulthood with all of its mixed shades.</p>
+<p>Indeed, many famous works that are built on the transition (or lack thereof in some cases) from childhood to adulthood use the cracking of the barrier as a major theme: Catcher in the Rye, To Kill a Mockingbird, Tom Sawyer/Huckleberry Finn, Great Expectations, and the rest of the Highschool Reading checklist. The black and white spilling onto a singular canvas, producing a more nuanced and messy picture but one that, supposedly, reflects a truer reality.</p>
+<p>Yet, while like most I have of course come to recognize the amiguity of the world, I still like to hold onto the old black and white. It’s soothing, like reliving childhood fantasies. Mind you, I’m not one to hold nolstagia at my core and proclaim daily that the grass was greener yesterday. That said, I still feel child-ish at my core. I still like to enact fantasy adventures, hold to firm rules, and delve into mathematics and programming more than the arts. I suppose most everyone does, though, to some extent.</p>
+<p>Which, to vainly try to remain on-topic, I suppose is the reason I do not appreciate flowers that much, or fauna in general for that matter. Yes, they are beautiful (or can be at least), but also messy. They mix and match, varying in color and output. They are dificult to quantify and seperate into sections – where does the root end and the stem begin? How can one wade into an underbrush and count every leaf there? This is not even delving into their literary use. Is a flower only meant to be defiled; does the white petal exist only so that it may be corrupted for whatever moral is needed? The leaves of a stem: all contributing to one goal or competing for resources; competitive cooperation or cooperative competition?</p>
+<p>And even with these simple questions you see my dilemna: while offering that these are the “greys,” I still imply a dichotomy. Yes or no, this or that. Maybe this and that but at a ratio. I do not consider instead some more enlightened question free of the built-in assumptions, relating to my refusal to address such open-ended problems. I dislike it, I am not mature or intelligent enough to tackle these problems, and thus incetead of leaving them messily about I deny them conception in the first place. A self-delusion.</p>
+<p>It is said that ’tis better to die than be killed. That’s why, I suppose, I deceive myself. I will not have my very way of thinking and foundation shaken by such an innocuous plant. Nay; should I have to drown in the amiguity it will be by my own hand and choosing. The mask of complexity and isolation shall be forged by myself and myself alone to hide the dread of the Grey. I would rather be my own executioner and outwardly prefer black and white for a persona instead of being challenged out in the open by the color of the flower.</p>
+<p>Afterall, the deadliest sin is pride. I cannot get over myself enough to even address such core concerns, or perhaps I am simply unwilling. Whatever the case, it makes me hesitant to sit there too long with these colored and silent sirens.</p>
+<p>Thank you for stopping and smelling the Roses with me.</p>
+"
+  [8]=>
+  string(10) "2019-08-22"
+}
+
+---
+string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
+
+---
+string(9) "sssssssss"
+
+---
+string(51) "filename,alt,title,cite,author,dateTaken,datePosted"
+
+---
+array(7) {
+  [0]=>
+  string(3) "jpg"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(14) "Spongebob Meme"
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(6) "Elijah"
+  [5]=>
+  string(0) ""
+  [6]=>
+  string(10) "2019-08-22"
+}
+
+---
+array(7) {
+  [0]=>
+  string(3) "jpg"
+  [1]=>
+  string(0) ""
+  [2]=>
+  string(14) "Spongebob Meme"
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(6) "Elijah"
+  [5]=>
+  string(0) ""
+  [6]=>
+  string(10) "2019-08-22"
+}
+
+---
+string(19) "?, ?, ?, ?, ?, ?, ?"
+
+---
+string(7) "sssssss"
+
+---
+string(51) "filename,alt,title,cite,author,dateTaken,datePosted"
+
+---
+array(7) {
+  [0]=>
+  string(3) "JPG"
+  [1]=>
+  string(38) "A sugar glider hangs from a grape vine"
+  [2]=>
+  string(12) "Sugar Glider"
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(16) "Elijah T.he Rose"
+  [5]=>
+  string(10) "2016-08-18"
+  [6]=>
+  string(10) "2019-08-22"
+}
+
+---
+array(7) {
+  [0]=>
+  string(3) "JPG"
+  [1]=>
+  string(38) "A sugar glider hangs from a grape vine"
+  [2]=>
+  string(12) "Sugar Glider"
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(16) "Elijah T.he Rose"
+  [5]=>
+  string(10) "2016-08-18"
+  [6]=>
+  string(10) "2019-08-22"
+}
+
+---
+string(19) "?, ?, ?, ?, ?, ?, ?"
+
+---
+string(7) "sssssss"
+
+---
+string(78) "title,subtitle,author,mainImgId,scheme,colors,contentMd,contentHtml,datePosted"
+
+---
+array(9) {
+  [0]=>
+  string(6) "Gaming"
+  [1]=>
+  string(26) "The thrill of the fight..."
+  [2]=>
+  string(16) "Elijah T.he Rose"
+  [3]=>
+  string(2) "41"
+  [4]=>
+  string(7) "Default"
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(4164) "Gaming has been a part of my life since I was a kid. Snuggled up with my dad as
+he shot one demon in the face after another, or beating down aliens in Halo, 
+I have always been invested in the action. That is not to say I have played
+exclusively action games, as <a href="https://en.wikipedia.org/wiki/Real-time_strategy">RTS</a>'s are one of
+my favorite genres. I appreciate all manner of videogames and the tropes they
+utilize to craft a narrative.
+
+I believe it has become more and more apparent to even non-gamers that 
+videogames are not the "rot your brain dumb shooter fest" that they are
+sometimes stereotyped as. Games represent more, and have become a hobby, 
+medium, and art form in their own right.
+
+Consider fightings games like <a href="https://en.wikipedia.org/wiki/Tekken"></a> or the
+<a href="https://en.wikipedia.org/wiki/Super_Smash_Bros">Super Smash Bros. series</a>
+, franchises that have brought millions of players together
+to compete in a mindgame relatively devoid of typical biases and limitations: man or woman, 
+deaf or weak, paralyzed or strong, few things stop you from becoming the best except your own
+willpower, determination, and S tier broken tomfoolery like whatever Meta Knight was supposed to be (no
+Im not salty at all why do you ask).
+
+Or take <a href="">Undertale</a> or Hollow Knight, which are undeniable masterpieces with
+excellent story-telling, trope subversions, and enjoyable characters. Minecraft, a seemingly
+simple and mundane game that inspired many to creative enterprises as well as pushing several
+thousands of kids of age 10 or younger to try coding and modding (which can lead to valuable
+real life skills).
+
+Games also have the ability that no movie can fully emulate, which is the extent of viewer
+participation. Spec Ops: The Line would have been a good action movie, deconstructing the "USA
+Solider Good, Foreigners Bad" tropes running rampant through many works, but it is all the more
+powerful when you, the player, (spoilers) press the button that chemically tortures and kills
+hundreds of innocents, or pull the trigger to murder a former marine officer. Farcry 3 with a similar
+deconstruction would have not been the same if you simply watched Jason become an inhuman slaughterer,
+as you are detached from him and would likely empathize with his friends and write him off as crazy; 
+it is more convincing, however, when you are performing bad-to-the-bone feats like slitting the throat
+of a pirate before tomahawking his friend and burning the rest of them to the ground whilst paragliding --
+the first-person PoV and typical "upgrade on lvl up and be good-er" expectation of games contrasts and masks
+with the increasingly violent and animalistic brutality of Jason as he exceeds even the antagonists in raw
+ferocity, and it is not till the end that the player is shown the logical conclusion of his journey,
+eventually becoming worst than those he killed and losing his initial motives by gaining power.
+(Note: I know these two are contraversial in regards to these plot elements and how effective
+they were in their roles, and there are better examples, but I personally like these two).
+
+And now, we are going further. With the growing power, reliability, and prevelence of not
+only AR but also VR, new ideas and stories can be told in ways never before (though, sadly,
+I have yet to see such a story emerge yet). I can walk into a pub as an animated little girl
+to sit with my friend residing in China who appears as Garfield the cat while Abraham Lincoln
+from India sings Megalovania with his animate little girl pet (there are a lot of animated little girls,
+ along wtih Ugandan knuckles). Never before could people be so easily and fully immersed into worlds that
+are not he result of natural creation, but rather completely digital information and calculations.
+
+What is my point in saying all of this? Nothing. Absolutely nothing. I just needed content and wanted to
+rave on videogames. If you want an actually meaningful post: first, remove the link at the top,
+second, type in literally anything else except this site's name. Bye now."
+  [7]=>
+  string(4175) "<p>Gaming has been a part of my life since I was a kid. Snuggled up with my dad as he shot one demon in the face after another, or beating down aliens in Halo, I have always been invested in the action. That is not to say I have played exclusively action games, as <a href="https://en.wikipedia.org/wiki/Real-time_strategy">RTS</a>’s are one of my favorite genres. I appreciate all manner of videogames and the tropes they utilize to craft a narrative.</p>
+<p>I believe it has become more and more apparent to even non-gamers that videogames are not the “rot your brain dumb shooter fest” that they are sometimes stereotyped as. Games represent more, and have become a hobby, medium, and art form in their own right.</p>
+<p>Consider fightings games like <a href="https://en.wikipedia.org/wiki/Tekken"></a> or the <a href="https://en.wikipedia.org/wiki/Super_Smash_Bros">Super Smash Bros. series</a> , franchises that have brought millions of players together to compete in a mindgame relatively devoid of typical biases and limitations: man or woman, deaf or weak, paralyzed or strong, few things stop you from becoming the best except your own willpower, determination, and S tier broken tomfoolery like whatever Meta Knight was supposed to be (no Im not salty at all why do you ask).</p>
+<p>Or take <a href="">Undertale</a> or Hollow Knight, which are undeniable masterpieces with excellent story-telling, trope subversions, and enjoyable characters. Minecraft, a seemingly simple and mundane game that inspired many to creative enterprises as well as pushing several thousands of kids of age 10 or younger to try coding and modding (which can lead to valuable real life skills).</p>
+<p>Games also have the ability that no movie can fully emulate, which is the extent of viewer participation. Spec Ops: The Line would have been a good action movie, deconstructing the “USA Solider Good, Foreigners Bad” tropes running rampant through many works, but it is all the more powerful when you, the player, (spoilers) press the button that chemically tortures and kills hundreds of innocents, or pull the trigger to murder a former marine officer. Farcry 3 with a similar deconstruction would have not been the same if you simply watched Jason become an inhuman slaughterer, as you are detached from him and would likely empathize with his friends and write him off as crazy; it is more convincing, however, when you are performing bad-to-the-bone feats like slitting the throat of a pirate before tomahawking his friend and burning the rest of them to the ground whilst paragliding – the first-person PoV and typical “upgrade on lvl up and be good-er” expectation of games contrasts and masks with the increasingly violent and animalistic brutality of Jason as he exceeds even the antagonists in raw ferocity, and it is not till the end that the player is shown the logical conclusion of his journey, eventually becoming worst than those he killed and losing his initial motives by gaining power. (Note: I know these two are contraversial in regards to these plot elements and how effective they were in their roles, and there are better examples, but I personally like these two).</p>
+<p>And now, we are going further. With the growing power, reliability, and prevelence of not only AR but also VR, new ideas and stories can be told in ways never before (though, sadly, I have yet to see such a story emerge yet). I can walk into a pub as an animated little girl to sit with my friend residing in China who appears as Garfield the cat while Abraham Lincoln from India sings Megalovania with his animate little girl pet (there are a lot of animated little girls, along wtih Ugandan knuckles). Never before could people be so easily and fully immersed into worlds that are not he result of natural creation, but rather completely digital information and calculations.</p>
+<p>What is my point in saying all of this? Nothing. Absolutely nothing. I just needed content and wanted to rave on videogames. If you want an actually meaningful post: first, remove the link at the top, second, type in literally anything else except this site’s name. Bye now.</p>
+"
+  [8]=>
+  string(10) "2019-08-22"
+}
+
+---
+array(9) {
+  [0]=>
+  string(6) "Gaming"
+  [1]=>
+  string(26) "The thrill of the fight..."
+  [2]=>
+  string(16) "Elijah T.he Rose"
+  [3]=>
+  string(2) "41"
+  [4]=>
+  string(7) "Default"
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(4164) "Gaming has been a part of my life since I was a kid. Snuggled up with my dad as
+he shot one demon in the face after another, or beating down aliens in Halo, 
+I have always been invested in the action. That is not to say I have played
+exclusively action games, as <a href="https://en.wikipedia.org/wiki/Real-time_strategy">RTS</a>'s are one of
+my favorite genres. I appreciate all manner of videogames and the tropes they
+utilize to craft a narrative.
+
+I believe it has become more and more apparent to even non-gamers that 
+videogames are not the "rot your brain dumb shooter fest" that they are
+sometimes stereotyped as. Games represent more, and have become a hobby, 
+medium, and art form in their own right.
+
+Consider fightings games like <a href="https://en.wikipedia.org/wiki/Tekken"></a> or the
+<a href="https://en.wikipedia.org/wiki/Super_Smash_Bros">Super Smash Bros. series</a>
+, franchises that have brought millions of players together
+to compete in a mindgame relatively devoid of typical biases and limitations: man or woman, 
+deaf or weak, paralyzed or strong, few things stop you from becoming the best except your own
+willpower, determination, and S tier broken tomfoolery like whatever Meta Knight was supposed to be (no
+Im not salty at all why do you ask).
+
+Or take <a href="">Undertale</a> or Hollow Knight, which are undeniable masterpieces with
+excellent story-telling, trope subversions, and enjoyable characters. Minecraft, a seemingly
+simple and mundane game that inspired many to creative enterprises as well as pushing several
+thousands of kids of age 10 or younger to try coding and modding (which can lead to valuable
+real life skills).
+
+Games also have the ability that no movie can fully emulate, which is the extent of viewer
+participation. Spec Ops: The Line would have been a good action movie, deconstructing the "USA
+Solider Good, Foreigners Bad" tropes running rampant through many works, but it is all the more
+powerful when you, the player, (spoilers) press the button that chemically tortures and kills
+hundreds of innocents, or pull the trigger to murder a former marine officer. Farcry 3 with a similar
+deconstruction would have not been the same if you simply watched Jason become an inhuman slaughterer,
+as you are detached from him and would likely empathize with his friends and write him off as crazy; 
+it is more convincing, however, when you are performing bad-to-the-bone feats like slitting the throat
+of a pirate before tomahawking his friend and burning the rest of them to the ground whilst paragliding --
+the first-person PoV and typical "upgrade on lvl up and be good-er" expectation of games contrasts and masks
+with the increasingly violent and animalistic brutality of Jason as he exceeds even the antagonists in raw
+ferocity, and it is not till the end that the player is shown the logical conclusion of his journey,
+eventually becoming worst than those he killed and losing his initial motives by gaining power.
+(Note: I know these two are contraversial in regards to these plot elements and how effective
+they were in their roles, and there are better examples, but I personally like these two).
+
+And now, we are going further. With the growing power, reliability, and prevelence of not
+only AR but also VR, new ideas and stories can be told in ways never before (though, sadly,
+I have yet to see such a story emerge yet). I can walk into a pub as an animated little girl
+to sit with my friend residing in China who appears as Garfield the cat while Abraham Lincoln
+from India sings Megalovania with his animate little girl pet (there are a lot of animated little girls,
+ along wtih Ugandan knuckles). Never before could people be so easily and fully immersed into worlds that
+are not he result of natural creation, but rather completely digital information and calculations.
+
+What is my point in saying all of this? Nothing. Absolutely nothing. I just needed content and wanted to
+rave on videogames. If you want an actually meaningful post: first, remove the link at the top,
+second, type in literally anything else except this site's name. Bye now."
+  [7]=>
+  string(4175) "<p>Gaming has been a part of my life since I was a kid. Snuggled up with my dad as he shot one demon in the face after another, or beating down aliens in Halo, I have always been invested in the action. That is not to say I have played exclusively action games, as <a href="https://en.wikipedia.org/wiki/Real-time_strategy">RTS</a>’s are one of my favorite genres. I appreciate all manner of videogames and the tropes they utilize to craft a narrative.</p>
+<p>I believe it has become more and more apparent to even non-gamers that videogames are not the “rot your brain dumb shooter fest” that they are sometimes stereotyped as. Games represent more, and have become a hobby, medium, and art form in their own right.</p>
+<p>Consider fightings games like <a href="https://en.wikipedia.org/wiki/Tekken"></a> or the <a href="https://en.wikipedia.org/wiki/Super_Smash_Bros">Super Smash Bros. series</a> , franchises that have brought millions of players together to compete in a mindgame relatively devoid of typical biases and limitations: man or woman, deaf or weak, paralyzed or strong, few things stop you from becoming the best except your own willpower, determination, and S tier broken tomfoolery like whatever Meta Knight was supposed to be (no Im not salty at all why do you ask).</p>
+<p>Or take <a href="">Undertale</a> or Hollow Knight, which are undeniable masterpieces with excellent story-telling, trope subversions, and enjoyable characters. Minecraft, a seemingly simple and mundane game that inspired many to creative enterprises as well as pushing several thousands of kids of age 10 or younger to try coding and modding (which can lead to valuable real life skills).</p>
+<p>Games also have the ability that no movie can fully emulate, which is the extent of viewer participation. Spec Ops: The Line would have been a good action movie, deconstructing the “USA Solider Good, Foreigners Bad” tropes running rampant through many works, but it is all the more powerful when you, the player, (spoilers) press the button that chemically tortures and kills hundreds of innocents, or pull the trigger to murder a former marine officer. Farcry 3 with a similar deconstruction would have not been the same if you simply watched Jason become an inhuman slaughterer, as you are detached from him and would likely empathize with his friends and write him off as crazy; it is more convincing, however, when you are performing bad-to-the-bone feats like slitting the throat of a pirate before tomahawking his friend and burning the rest of them to the ground whilst paragliding – the first-person PoV and typical “upgrade on lvl up and be good-er” expectation of games contrasts and masks with the increasingly violent and animalistic brutality of Jason as he exceeds even the antagonists in raw ferocity, and it is not till the end that the player is shown the logical conclusion of his journey, eventually becoming worst than those he killed and losing his initial motives by gaining power. (Note: I know these two are contraversial in regards to these plot elements and how effective they were in their roles, and there are better examples, but I personally like these two).</p>
+<p>And now, we are going further. With the growing power, reliability, and prevelence of not only AR but also VR, new ideas and stories can be told in ways never before (though, sadly, I have yet to see such a story emerge yet). I can walk into a pub as an animated little girl to sit with my friend residing in China who appears as Garfield the cat while Abraham Lincoln from India sings Megalovania with his animate little girl pet (there are a lot of animated little girls, along wtih Ugandan knuckles). Never before could people be so easily and fully immersed into worlds that are not he result of natural creation, but rather completely digital information and calculations.</p>
+<p>What is my point in saying all of this? Nothing. Absolutely nothing. I just needed content and wanted to rave on videogames. If you want an actually meaningful post: first, remove the link at the top, second, type in literally anything else except this site’s name. Bye now.</p>
+"
+  [8]=>
+  string(10) "2019-08-22"
+}
+
+---
+string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
+
+---
+string(9) "sssssssss"
+
+---
+string(51) "filename,alt,title,cite,author,dateTaken,datePosted"
+
+---
+array(7) {
+  [0]=>
+  string(3) "JPG"
+  [1]=>
+  string(47) "A girl ponders her next move in a game of chess"
+  [2]=>
+  string(14) "A Bout of Wits"
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(16) "Elijah T.he Rose"
+  [5]=>
+  string(10) "2019-05-15"
+  [6]=>
+  string(10) "2019-08-23"
+}
+
+---
+array(7) {
+  [0]=>
+  string(3) "JPG"
+  [1]=>
+  string(47) "A girl ponders her next move in a game of chess"
+  [2]=>
+  string(14) "A Bout of Wits"
+  [3]=>
+  string(0) ""
+  [4]=>
+  string(16) "Elijah T.he Rose"
+  [5]=>
+  string(10) "2019-05-15"
+  [6]=>
+  string(10) "2019-08-23"
+}
+
+---
+string(19) "?, ?, ?, ?, ?, ?, ?"
+
+---
+string(7) "sssssss"
+
+---
+string(78) "title,subtitle,author,mainImgId,scheme,colors,contentMd,contentHtml,datePosted"
+
+---
+array(9) {
+  [0]=>
+  string(13) "Sugar Gliders"
+  [1]=>
+  string(26) "Tiny little fluff balls..."
+  [2]=>
+  string(16) "Elijah T.he Rose"
+  [3]=>
+  string(2) "41"
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(2776) "Sugar gliders are quite adorable, if you have ever seen one. They hail from Australia, and being marsupials
+are related to kangaroos, koalas, and the like. Their most distinctive feature, perhaps, is their webbed together
+limbs that form a glider of sorts, allowing them to soften their landings and jump between branches and such.
+
+Gliders are somewhat exotic pets, but not anymore than, say, foxes are. They live long lives (15+ years) and are very
+social animals that bond to humans and their own. They can become very emotionally attached, to the extent of becoming
+depressed and even suicidal in isolation. They ae also quite intelligent, capable of learning their name and some tricks,
+not unlike a small dog or cat. Their biggest pro -- or con, depending on what type of person you are -- is that they are
+nocturnal (hence the big black eyes and typically dull fur-color). This means that they sleep during the day, and as such,
+are great "pocket pets", riding in a pouch or pocket throughout the day while occasionally waking up to eat or
+potty or eat. However, this also means that at night they go absolutely bat-out-of-heck crazy, jumping to and fro
+and running about. For some this can be a huge drawback, hindering the sleep of the owner, however certain nocturnal
+professions (i.e. engineering and gamers) enjoy these hours of excitement and play as well. For some brief info 
+about them, I created this dossier (parodying <a href="">Ark: Survival Evolved</a>'s style):
+<img class="arcImg" src="../Images/img-0016-HQ-SugarGliderDossier.png"></img>
+Don't be fooled: the "drawings" are merely images of real gliders with a fair bit of editing. I think. It's been some years...
+
+Regarding my personal possession of these critters, I had two during highschool, after my parents decided to get me these instead
+of a cat. Although at first hesitant, I grew to love my two girls very much. Unfortunately, like everything
+under my care, they died a few years later. 
+
+I have recently (6.30.2019) acquired two new gliders, though, and plan
+to make them good pets. I am a big fan of cute things (which some see as creepy but that's for another day), and as such
+gliders bring me good deal of joy -- they're extremely soft and they make a purring-esque vibration when they are cold
+or happy and snuggling up to you. Plus, there are few things in the world more adorable than handing
+a half-grape or apple slice and watching the little ones chew on it merrily. In my experience, they also like to curl up
+on your belly, or sit on your shoulder and watch you play games or work, occasionally "kissing" your nose/cheek or
+stick their heads in or around your ear to tickle. That's why I love them -- so small, yet such dense fluffiness and
+cuteness."
+  [7]=>
+  string(2805) "<p>Sugar gliders are quite adorable, if you have ever seen one. They hail from Australia, and being marsupials are related to kangaroos, koalas, and the like. Their most distinctive feature, perhaps, is their webbed together limbs that form a glider of sorts, allowing them to soften their landings and jump between branches and such.</p>
+<p>Gliders are somewhat exotic pets, but not anymore than, say, foxes are. They live long lives (15+ years) and are very social animals that bond to humans and their own. They can become very emotionally attached, to the extent of becoming depressed and even suicidal in isolation. They ae also quite intelligent, capable of learning their name and some tricks, not unlike a small dog or cat. Their biggest pro – or con, depending on what type of person you are – is that they are nocturnal (hence the big black eyes and typically dull fur-color). This means that they sleep during the day, and as such, are great “pocket pets”, riding in a pouch or pocket throughout the day while occasionally waking up to eat or potty or eat. However, this also means that at night they go absolutely bat-out-of-heck crazy, jumping to and fro and running about. For some this can be a huge drawback, hindering the sleep of the owner, however certain nocturnal professions (i.e. engineering and gamers) enjoy these hours of excitement and play as well. For some brief info about them, I created this dossier (parodying <a href="">Ark: Survival Evolved</a>’s style): <img class="arcImg" src="../Images/img-0016-HQ-SugarGliderDossier.png"></img> Don’t be fooled: the “drawings” are merely images of real gliders with a fair bit of editing. I think. It’s been some years…</p>
+<p>Regarding my personal possession of these critters, I had two during highschool, after my parents decided to get me these instead of a cat. Although at first hesitant, I grew to love my two girls very much. Unfortunately, like everything under my care, they died a few years later.</p>
+<p>I have recently (6.30.2019) acquired two new gliders, though, and plan to make them good pets. I am a big fan of cute things (which some see as creepy but that’s for another day), and as such gliders bring me good deal of joy – they’re extremely soft and they make a purring-esque vibration when they are cold or happy and snuggling up to you. Plus, there are few things in the world more adorable than handing a half-grape or apple slice and watching the little ones chew on it merrily. In my experience, they also like to curl up on your belly, or sit on your shoulder and watch you play games or work, occasionally “kissing” your nose/cheek or stick their heads in or around your ear to tickle. That’s why I love them – so small, yet such dense fluffiness and cuteness.</p>
+"
+  [8]=>
+  string(10) "2019-08-23"
+}
+
+---
+array(9) {
+  [0]=>
+  string(13) "Sugar Gliders"
+  [1]=>
+  string(26) "Tiny little fluff balls..."
+  [2]=>
+  string(16) "Elijah T.he Rose"
+  [3]=>
+  string(2) "41"
+  [4]=>
+  string(0) ""
+  [5]=>
+  string(7) "#000000"
+  [6]=>
+  string(2776) "Sugar gliders are quite adorable, if you have ever seen one. They hail from Australia, and being marsupials
+are related to kangaroos, koalas, and the like. Their most distinctive feature, perhaps, is their webbed together
+limbs that form a glider of sorts, allowing them to soften their landings and jump between branches and such.
+
+Gliders are somewhat exotic pets, but not anymore than, say, foxes are. They live long lives (15+ years) and are very
+social animals that bond to humans and their own. They can become very emotionally attached, to the extent of becoming
+depressed and even suicidal in isolation. They ae also quite intelligent, capable of learning their name and some tricks,
+not unlike a small dog or cat. Their biggest pro -- or con, depending on what type of person you are -- is that they are
+nocturnal (hence the big black eyes and typically dull fur-color). This means that they sleep during the day, and as such,
+are great "pocket pets", riding in a pouch or pocket throughout the day while occasionally waking up to eat or
+potty or eat. However, this also means that at night they go absolutely bat-out-of-heck crazy, jumping to and fro
+and running about. For some this can be a huge drawback, hindering the sleep of the owner, however certain nocturnal
+professions (i.e. engineering and gamers) enjoy these hours of excitement and play as well. For some brief info 
+about them, I created this dossier (parodying <a href="">Ark: Survival Evolved</a>'s style):
+<img class="arcImg" src="../Images/img-0016-HQ-SugarGliderDossier.png"></img>
+Don't be fooled: the "drawings" are merely images of real gliders with a fair bit of editing. I think. It's been some years...
+
+Regarding my personal possession of these critters, I had two during highschool, after my parents decided to get me these instead
+of a cat. Although at first hesitant, I grew to love my two girls very much. Unfortunately, like everything
+under my care, they died a few years later. 
+
+I have recently (6.30.2019) acquired two new gliders, though, and plan
+to make them good pets. I am a big fan of cute things (which some see as creepy but that's for another day), and as such
+gliders bring me good deal of joy -- they're extremely soft and they make a purring-esque vibration when they are cold
+or happy and snuggling up to you. Plus, there are few things in the world more adorable than handing
+a half-grape or apple slice and watching the little ones chew on it merrily. In my experience, they also like to curl up
+on your belly, or sit on your shoulder and watch you play games or work, occasionally "kissing" your nose/cheek or
+stick their heads in or around your ear to tickle. That's why I love them -- so small, yet such dense fluffiness and
+cuteness."
+  [7]=>
+  string(2805) "<p>Sugar gliders are quite adorable, if you have ever seen one. They hail from Australia, and being marsupials are related to kangaroos, koalas, and the like. Their most distinctive feature, perhaps, is their webbed together limbs that form a glider of sorts, allowing them to soften their landings and jump between branches and such.</p>
+<p>Gliders are somewhat exotic pets, but not anymore than, say, foxes are. They live long lives (15+ years) and are very social animals that bond to humans and their own. They can become very emotionally attached, to the extent of becoming depressed and even suicidal in isolation. They ae also quite intelligent, capable of learning their name and some tricks, not unlike a small dog or cat. Their biggest pro – or con, depending on what type of person you are – is that they are nocturnal (hence the big black eyes and typically dull fur-color). This means that they sleep during the day, and as such, are great “pocket pets”, riding in a pouch or pocket throughout the day while occasionally waking up to eat or potty or eat. However, this also means that at night they go absolutely bat-out-of-heck crazy, jumping to and fro and running about. For some this can be a huge drawback, hindering the sleep of the owner, however certain nocturnal professions (i.e. engineering and gamers) enjoy these hours of excitement and play as well. For some brief info about them, I created this dossier (parodying <a href="">Ark: Survival Evolved</a>’s style): <img class="arcImg" src="../Images/img-0016-HQ-SugarGliderDossier.png"></img> Don’t be fooled: the “drawings” are merely images of real gliders with a fair bit of editing. I think. It’s been some years…</p>
+<p>Regarding my personal possession of these critters, I had two during highschool, after my parents decided to get me these instead of a cat. Although at first hesitant, I grew to love my two girls very much. Unfortunately, like everything under my care, they died a few years later.</p>
+<p>I have recently (6.30.2019) acquired two new gliders, though, and plan to make them good pets. I am a big fan of cute things (which some see as creepy but that’s for another day), and as such gliders bring me good deal of joy – they’re extremely soft and they make a purring-esque vibration when they are cold or happy and snuggling up to you. Plus, there are few things in the world more adorable than handing a half-grape or apple slice and watching the little ones chew on it merrily. In my experience, they also like to curl up on your belly, or sit on your shoulder and watch you play games or work, occasionally “kissing” your nose/cheek or stick their heads in or around your ear to tickle. That’s why I love them – so small, yet such dense fluffiness and cuteness.</p>
+"
+  [8]=>
+  string(10) "2019-08-23"
+}
+
+---
+string(25) "?, ?, ?, ?, ?, ?, ?, ?, ?"
+
+---
+string(9) "sssssssss"
+
+---

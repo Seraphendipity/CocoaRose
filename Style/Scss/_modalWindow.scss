@@ -8,7 +8,7 @@ ________________________________________*/
     background: none;
     border-radius: 50%;
     border: none;
-    color: #222;
+    color: #DDD;
     opacity: 0.6;
     transition: color 0.5s, opacity 0.5s;
 
@@ -47,7 +47,8 @@ ________________________________________*/
     
     .modalWindowBtn {
         @include MinimalBtn;
-
+        background-color: #222;
+        border-radius: 0;
     }
     
     
@@ -56,7 +57,7 @@ ________________________________________*/
 
         button {
             position: absolute;
-            width: 10%;
+            width: 5%;
 
             &.modalWindowBtnExt {
                 top: 0%;
@@ -73,7 +74,7 @@ ________________________________________*/
                 }
             }
             &.modalWindowBtnFwd {
-                right: 0%;
+                left: 95%;
                 top: 20%;
                 height: 80%;
                 i {
@@ -113,6 +114,12 @@ ________________________________________*/
             margin-right: 25%;
             margin-left: 25%;
         }
+
+        textarea {
+            width: 100%;
+            max-width: 100%;
+            height: 40vh;
+        }
     }
 
 }
@@ -135,34 +142,58 @@ ________________________________________*/
     }
 }
 
+@mixin articleExpand {
+    top: 0%;
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+
+    header {
+        height: 20%;
+        overflow: auto;
+    } 
+
+    .articleContent {
+        height: 80%;
+    }
+}
+
 .modalElement {
     position: relative;
+
+    
+
     .btnEditMw {
         margin: 0;
         padding: 0;
         border: 0;
     }
 
-    .modalElementMain~button.btnEditMw {
-        position: absolute;
-        top: 30px;
+    .modalElementMain {
+        padding:0;
+        border:0;
+        
+        &~button.btnEditMw {
+            float: right;
+        }
     }
 
     &.modalElementArticle {
         article {
             position: absolute;
             min-height: 100%;
-            max-width: 85%;
+            width: 60%;
             top: 82%;
             background: rgba(40, 40, 40, 0.75);
             border-radius: 0 15px 0 0;
-            transition: top 0.5s ease-in-out 0.5s, border-radius 0.5s;
+            transition: top 0.5s ease-in-out 0.5s, border-radius 0.5s, width 0.5s, max-width 0.5s;
             overflow: auto;
             &:hover {
-                top: 0%;
-                border-radius: 0;
+                @include articleExpand;
             }
+            
         }
+
         h2 {
            // height: 20%;
             text-align: left;
@@ -172,5 +203,11 @@ ________________________________________*/
 
 
         }
+    }
+
+    &.articleExpanded {
+        &.modalElementArticle article {
+            @include articleExpand;
+        } 
     }
 }

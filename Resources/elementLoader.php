@@ -159,14 +159,23 @@ function createImageElement( $imgData, int $groupId = 0, $figClasses = '' ) {
                         tabindex=\"0\">
                     ";
         $result .= ($bSemanticImg) ? "
-                    <button class=\"flipperBtn flipperBtnMeta\">
-                        <i class=\"glyphicon glyphicon-question-sign\"></i>
-                    </button>
+                <div class=\"flipperBtnMenu\"> 
+                <button class=\"flipperBtn btnEditMw\" tabindex=\"0\">
+                    <i class=\"glyphicon glyphicon-pencil\"></i>
+                </button>
+                <button class=\"flipperBtn flipperBtn-js\" tabindex=\"0\">
+                    <i class=\"glyphicon glyphicon-question-sign\"></i>
+                </button>
+                <div class=\"breakClear\"></div>
+            </div>
                 </div>
                 <div class=\"flipperBack\">
-                    <button class=\"flipperBtn flipperBtnImg\" disabled=\"disabled\">
-                        <i class=\"glyphicon glyphicon-picture\"></i>
-                    </button>
+                <div class=\"flipperBtnMenu\" > 
+                <button class=\"flipperBtn flipperBtn-js\" disabled tabindex=\"-1\">
+                    <i class=\"glyphicon glyphicon-picture\"></i>
+                </button>
+                <div class=\"breakClear\"></div>
+            </div>
                     <ul>
                         <li>CITE: <a tabindex=\"-1\" href=\"{$cite}\">{$author}</a></li>
                         <li>DATE: <time datetime=\"{$date}\">{$date}</time></li>
@@ -215,7 +224,6 @@ function createArticleElement( $arcData, int $groupId = 0, $figClasses = '' ) {
                 <button class=\"{$classes}\"
                     data-title=\"{$title}\"
                     data-subtitle=\"{$subtitle}\"
-                    data-contentMd=\"{$contentMd}\"
                     data-mainImgId=\"{$mainImgId}\"
                     data-scheme=\"{$scheme}\"
                     data-colors=\"{$colors}\"
@@ -226,27 +234,37 @@ function createArticleElement( $arcData, int $groupId = 0, $figClasses = '' ) {
                     data-gid=\"{$gid}\">";
                 
                 $result .=    getImgById($mainImgId, false, 'mainArticleImg imgCentered');
-                
+                //TODO: Edit the contentMd and Html to be delivered by JSON async
+                //TODO: ADD Id and Delete button to tab bar, tab bar scrolls out from < arrow
+                //TODO: ADD button is an empty arcblock
                 $result .= "
                     <article>
                         <header>
                             <h2 class=\"\">{$title}</h2>
                             <h3 class=\"\">{$subtitle}</h3>
                         </header>
-                        <div class=\"articleContent\">{$contentHtml}</div>
+                        <div class=\"articleContent\">{$contentHtml}
+                        <div class=\"breakClear\"></div></div>
+                        <div class=\"articleMarkdown hide\">{$contentMd}</div>
                     </article>
                 </button>
-                    <button class=\"flipperBtn flipperBtnMeta\">
-                        <i class=\"glyphicon glyphicon-question-sign\"></i>
-                    </button>
-                    <button class=\"flipperBtn btnEditMw\">
+                <div class=\"flipperBtnMenu\"> 
+                    <button class=\"flipperBtn btnEditMw\" tabindex=\"0\">
                         <i class=\"glyphicon glyphicon-pencil\"></i>
                     </button>
+                    <button class=\"flipperBtn flipperBtn-js\" tabindex=\"0\">
+                        <i class=\"glyphicon glyphicon-question-sign\"></i>
+                    </button>
+                    <div class=\"breakClear\"></div>
+                </div>
                 </div>
                 <div class=\"flipperBack\">
-                    <button class=\"flipperBtn flipperBtnImg\" disabled=\"disabled\">
+                <div class=\"flipperBtnMenu\" > 
+                    <button class=\"flipperBtn flipperBtn-js\" disabled tabindex=\"-1\">
                         <i class=\"glyphicon glyphicon-file\"></i>
                     </button>
+                    <div class=\"breakClear\"></div>
+                </div>
                     <ul>
                         <li>Title: <p>{$title}</p></li>
                         <li>Subtitle: <p>{$subtitle}</p></li>

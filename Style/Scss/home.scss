@@ -1,3 +1,5 @@
+@import 'image';
+@import 'article';
 /*________________________________________
 _  _ ____ _  _ ____ 
 |__| |  | |\/| |___ 
@@ -8,38 +10,40 @@ h2 {
     text-align: center;
 }
 
-.photoIntro {
+header.homePageHeader {
     position: relative;
     height: 100vw;
     height: 100vh;
-}
-.imgHome {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    filter: brightness(40%);
-}
 
-.homePageTitle {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 128px;
-    position: absolute;
-    text-align: left;
-    top: 20%;
-    left: 10%;
-    transform: translate(0, -50%);
-}
+    .homePageHeaderImg {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        filter: brightness(40%);
+    }
 
-.homePageSubtitle {
-    font-size: 64px;
-    color: rgba(255, 255, 255, 0.664);
-    position: absolute;
-    text-align: left;
-    text-decoration: none;
-    top: 60%;
-    left: 10%;
-    max-width: 50%;
-    transform: translate(0, -50%);
+    .homePageHeaderText {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(0, -50%);
+        height: 100%;
+        width: 100%;
+
+        .homePageHeaderTitle {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 128px;
+            text-align: left;
+        }
+
+        .homePageHeaderSubtitle {
+            font-size: 64px;
+            color: rgba(255, 255, 255, 0.664);
+            text-align: left;
+            text-decoration: none;
+            max-width: 50%;
+        }
+    }   
 }
 
 .homeArcBlock {
@@ -68,8 +72,6 @@ h2 {
     box-shadow: inherit;
     border-radius: 0 0 8px 0;
 }
-
-
 
 .homeArcBlockHeader {
     display: block;

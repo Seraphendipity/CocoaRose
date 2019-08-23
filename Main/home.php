@@ -5,15 +5,19 @@
 </head>
 <body>
     <!-- TODO: add Title stuff onto Picture, optimize img, change pic -->
-    <header class="photoIntro">
-        <!-- The Photo intro is the top-most picture that greets the user -->
+    <header class="homePageHeader">
         <picture>
-            <img class="imgHome" src="../Images/img-0000-HQ-FriendsAtTheZoo.jpg" alt="" height="800" width="1000">
+            <img class="homePageHeaderImg" src="../Images/img-0000-HQ-FriendsAtTheZoo.jpg" alt="" height="800" width="1000">
         </picture>
-        <h1 class="homePageTitle">CocoaRose</h1>
-        <h2 class="homePageSubtitle">A blogging &amp; picture site for me and my beloved little sis.</h2>
+        <!-- The Photo intro is the top-most picture that greets the user -->
+        <div class="homePageHeaderText">
+            <h1 class="homePageHeaderTitle">Cocoa<wbr>Rose</h1>
+            <h2 class="homePageHeaderSubtitle">A blogging &amp; picture site for me and my beloved little sis.</h2>
+        </div>
     </header>
-    <?php require_once "../Resources/nav.php" ?>
+    <?php require_once "../Resources/nav.php"; 
+        require_once "../Resources/elementLoader.php"; 
+    ?>
     <!--_______________________________________________________
     _ _  _ ___ ____ ____ 
     | |\ |  |  |__/ |  | 
@@ -46,35 +50,53 @@
     <!-- First sampling, dynamically pulls archive data to display -->
     <!-- Properties: If mobile, pic on left and some text; if on PC,
          alternates picture side -->
-    <h2>Archive</h2> <!-- TODO: Put inside section tag -->
-    <section id="archivePeek"> <?php 
-        require('../Resources/fileRead.php');
-        $postsPerPage = 5;
-        $id = 0; //post index/id
-        $filename = "../Archive/arc-".$id.".html";
-        while ( file_exists($filename) && ($id < $postsPerPage) ) {
-            $header = get_arc_meta($filename);    
-            $content = file_get_contents($filename);
+        <section id="archivePeek">  
+            <h2>Archive</h2>
+            <?php
+                $postsPerPage = 6;
+                $table = 'articles';
+                $data = db_selectData($table);
+                foreach ($data as $i => $row) {
+                    if(!$row['bActive']) {
+                        unset($data[$i]);
+                    } 
+                }
+                $len = (sizeof($data) > $postsPerPage) ? $postsPerPage : sizeof($data);
+                $randData = array_rand($data, $len);
+                shuffle($randData);
+                foreach($randData as $i)  {
+                    echo createArticleElement($data[$i], 1, 'articleBar');
+                }
+                ?>
+                <div class="breakClear"></div></section>
+                        <?php
+//         require('../Resources/fileRead.php');
+//         $postsPerPage = 5;
+//         $id = 0; //post index/id
+//         $filename = "../Archive/arc-".$id.".html";
+//         while ( file_exists($filename) && ($id < $postsPerPage) ) {
+//             $header = get_arc_meta($filename);    
+//             $content = file_get_contents($filename);
 
-            echo <<<POST
-            <div class='homeArcBlock'>
-                <a class='homeArcBlockLink' href="../Main/archive?id={$id}" style='background-image: url(../Images/{$header["bg-img"]});'></a>
-                <header class="homeArcBlockHeader">
-                    <h3 class="homeArcBlockHeaderTitle">{$header["title"]}</h3>
-                    <p class="homeArcBlockHeaderSubtitle">{$header["subtitle"]}
-                    <span class="homeArcBlockHeaderSubtitleDate"></span>
-                    </p>
-                </header>
-POST;
-            echo '<section class="homeArcBlockSummary"><p>';
-                echo $content; //TODO: This is too much data, need to dynamically grab first lines only, or drop down more...
-            echo "<a href='../Main/archive?id={$id}'>...[READ MORE]</a></p></section>";
-            echo '</div>';
+//             echo <<<POST
+//             <div class='homeArcBlock'>
+//                 <a class='homeArcBlockLink' href="../Main/archive?id={$id}" style='background-image: url(../Images/{$header["bg-img"]});'></a>
+//                 <header class="homeArcBlockHeader">
+//                     <h3 class="homeArcBlockHeaderTitle">{$header["title"]}</h3>
+//                     <p class="homeArcBlockHeaderSubtitle">{$header["subtitle"]}
+//                     <span class="homeArcBlockHeaderSubtitleDate"></span>
+//                     </p>
+//                 </header>
+// POST;
+//             echo '<section class="homeArcBlockSummary"><p>';
+//                 echo $content; //TODO: This is too much data, need to dynamically grab first lines only, or drop down more...
+//             echo "<a href='../Main/archive?id={$id}'>...[READ MORE]</a></p></section>";
+//             echo '</div>';
 
-            $id++;
-            $filename = "../Archive/arc-".$id.".html";
+//             $id++;
+//             $filename = "../Archive/arc-".$id.".html";
 
-        }
+        //}
     ?></section><hr/>
     
     <!--_______________________________________________________
@@ -84,17 +106,20 @@ POST;
     ________________________________________________________-->
     <!-- Second sampling, dynamically pulls photos to display -->
     <section id="photoPeek"><?php 
+
         echo '<h2>Images</h2>';
-        $id = 0; //post index/id
-        $imgsPerPage = 6;
-        $imgArr = array_slice(scandir('../Images/'), 2);
-        while ( ($id < sizeof($imgArr)) && ($id < $imgsPerPage) ) {
-            echo <<<POST
-            <div class='arcBlock imgBlock' style="background-image: url(../Images/{$imgArr[$id]});">
-            <!-- <img src="../Images/{$imgArr[$id]}"></img> -->
-            </div>
-POST;
-            $id++; 
+        $postsPerPage = 6;
+        $table = 'images';
+        $data = db_selectData($table);
+        foreach ($data as $i => $row) {
+            if(!$row['bActive']) {
+                unset($data[$i]);
+            } 
+        }
+        $len = (sizeof($data) > $postsPerPage) ? $postsPerPage : sizeof($data);
+        $randData = array_rand($data, $len);
+        foreach($randData as $i)  {
+            echo createImageElement($data[$i], 1, '');
         }
         ?><div class="breakClear"></div></section>
     <!--________________________________________________-->

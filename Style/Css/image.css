@@ -36,6 +36,8 @@ ________________________________________*/
   color: #DDD;
   opacity: 0.6;
   transition: color 0.5s, opacity 0.5s;
+  background-color: #222;
+  border-radius: 0;
 }
 .modalWindow .modalWindowBtn:hover {
   opacity: 0.9;
@@ -45,7 +47,7 @@ ________________________________________*/
 }
 .modalWindow .modalWindowMain button {
   position: absolute;
-  width: 10%;
+  width: 5%;
   /* 100%:80% = 1.25 ratio, invisible "top" is -25%, 1.25*50% - 25% = 37.5%*/
 }
 .modalWindow .modalWindowMain button.modalWindowBtnExt {
@@ -63,7 +65,7 @@ ________________________________________*/
   transform: translateY(-50%);
 }
 .modalWindow .modalWindowMain button.modalWindowBtnFwd {
-  right: 0%;
+  left: 95%;
   top: 20%;
   height: 80%;
 }
@@ -94,6 +96,11 @@ ________________________________________*/
   width: 50%;
   margin-right: 25%;
   margin-left: 25%;
+}
+.modalWindow .modalWindowMeta textarea {
+  width: 100%;
+  max-width: 100%;
+  height: 40vh;
 }
 
 .toolbar {
@@ -150,13 +157,14 @@ ________________________________________*/
   top: 0%;
   border-radius: 0;
   width: 100%;
+  height: 100%;
 }
 .modalElement.modalElementArticle article:hover header {
   height: 20%;
+  overflow: auto;
 }
 .modalElement.modalElementArticle article:hover .articleContent {
   height: 80%;
-  overflow: auto;
 }
 .modalElement.modalElementArticle h2 {
   text-align: left;
@@ -168,13 +176,14 @@ ________________________________________*/
   top: 0%;
   border-radius: 0;
   width: 100%;
+  height: 100%;
 }
 .modalElement.articleExpanded.modalElementArticle article header {
   height: 20%;
+  overflow: auto;
 }
 .modalElement.articleExpanded.modalElementArticle article .articleContent {
   height: 80%;
-  overflow: auto;
 }
 
 /*________________________________________

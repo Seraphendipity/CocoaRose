@@ -1,3 +1,4 @@
+@import 'constants';
 /*________________________________________
 ____ ___ ____ _  _ ___  ____ ____ ___  
 [__   |  |__| |\ | |  \ |__| |__/ |  \ 
@@ -18,19 +19,25 @@ body {
     padding: 0 10%;
 }
 
-p, a, a:hover, a:visited, ul, ol, li, td, figcaption {
+p {
     /* color: #303030; */
     color: #DDD;
     font-size: 16px;//
     text-decoration: none;
+    opacity: 0.85;
+    //transition: opacity $anim-dur;
+
+}
+p:hover {
+    opacity: 1;
 }
 
 h4, h5, h6 {
-    color: #2A2A2A;
+    color: #DDD;
 }
 
 h1, h2, h3 {
-    color: #222;
+    color: #EEE;
 } 
 
 h1 {

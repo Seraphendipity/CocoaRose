@@ -380,14 +380,16 @@ p, a, a:hover, a:visited, ul, ol, li, td, figcaption {
   color: #DDD;
   font-size: 16px;
   text-decoration: none;
+  opacity: 0.85;
+  transition: opacity 0.5s;
 }
 
 h4, h5, h6 {
-  color: #2A2A2A;
+  color: #DDD;
 }
 
 h1, h2, h3 {
-  color: #222;
+  color: #EEE;
 }
 
 h1 {

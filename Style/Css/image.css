@@ -130,6 +130,20 @@ ________________________________________*/
 
 .modalElement {
   position: relative;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  float: left;
+  width: 40%;
+  height: 20em;
+  margin: 2.5%;
+  border-radius: 0.5em;
+  border: 2px solid black;
+  background-color: #DDD;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: filter 1s;
 }
 .modalElement .btnEditMw {
   margin: 0;
@@ -191,14 +205,6 @@ ____ _    _ ___  ___  ____ ____
 |___ |    | |__] |__] |___ |__/ 
 |    |___ | |    |    |___ |  \ 
 ________________________________________*/
-.flipper {
-  width: 45%;
-  margin: 2.5%;
-  height: 50vh;
-  background-color: black;
-  overflow: hidden;
-  perspective: 1000px;
-}
 .flipper .flipperBtnMenu {
   position: absolute;
   background-color: rgba(34, 34, 34, 0.808);
